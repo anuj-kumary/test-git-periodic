@@ -1,0 +1,39 @@
+name: Crypto
+fullyQualifiedName: General.Crypto
+description: Crypto Wallet Number.
+classification:
+  id: 7f268f1e-9173-4ea9-ae41-6ce53ddfd3f0
+  type: classification
+  name: General
+  fullyQualifiedName: General
+  description: "Category describing generic data types, such as `DateTime`, `Location`,\
+    \ or `BankNumber`"
+  displayName: General
+  deleted: false
+children: []
+usageCount: 0
+deprecated: false
+provider: system
+disabled: false
+mutuallyExclusive: false
+domains: []
+dataProducts: []
+owners: []
+reviewers: []
+entityStatus: Unprocessed
+recognizers:
+  - id: 6c4b9945-19ee-481b-8de0-5f8a679db11b
+    name: CryptoRecognizer
+    displayName: Crypto Recognizer
+    description: Recognize common crypto account numbers using regex + checksum.
+    enabled: true
+    isSystemDefault: true
+    recognizerConfig:
+      name: CryptoRecognizer
+      type: predefined
+    confidenceThreshold: 0.6
+    exceptionList: []
+    version: 0.1
+    target: content
+autoClassificationEnabled: true
+autoClassificationPriority: 50

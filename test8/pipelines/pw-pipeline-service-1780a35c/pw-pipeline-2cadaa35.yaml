@@ -1,0 +1,26 @@
+name: pw-pipeline-2cadaa35
+displayName: pw-pipeline-2cadaa35
+fullyQualifiedName: pw-pipeline-service-1780a35c.pw-pipeline-2cadaa35
+description: Description for pw-pipeline-2cadaa35
+dataProducts: []
+tasks:
+  - name: snowflake_task
+    displayName: Snowflake Task
+    fullyQualifiedName: pw-pipeline-service-1780a35c.pw-pipeline-2cadaa35.snowflake_task
+    tags: []
+  - name: presto_task
+    displayName: Presto Task
+    fullyQualifiedName: pw-pipeline-service-1780a35c.pw-pipeline-2cadaa35.presto_task
+    tags: []
+tags: []
+owners: []
+service:
+  id: 25f8cdcc-be59-4386-bc77-8c6839204f7a
+  type: pipelineService
+  name: pw-pipeline-service-1780a35c
+  fullyQualifiedName: pw-pipeline-service-1780a35c
+  displayName: pw-pipeline-service-1780a35c
+  deleted: false
+serviceType: Dagster
+domains: []
+entityStatus: Unprocessed

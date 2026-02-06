@@ -1,0 +1,26 @@
+name: pw-pipeline-a045f5b9
+displayName: pw-pipeline-a045f5b9
+fullyQualifiedName: pw-pipeline-service-8f59dc5b.pw-pipeline-a045f5b9
+description: Description for pw-pipeline-a045f5b9
+dataProducts: []
+tasks:
+  - name: snowflake_task
+    displayName: Snowflake Task
+    fullyQualifiedName: pw-pipeline-service-8f59dc5b.pw-pipeline-a045f5b9.snowflake_task
+    tags: []
+  - name: presto_task
+    displayName: Presto Task
+    fullyQualifiedName: pw-pipeline-service-8f59dc5b.pw-pipeline-a045f5b9.presto_task
+    tags: []
+tags: []
+owners: []
+service:
+  id: 5dae4359-3b51-4131-be63-3ee84b5573dd
+  type: pipelineService
+  name: pw-pipeline-service-8f59dc5b
+  fullyQualifiedName: pw-pipeline-service-8f59dc5b
+  displayName: pw-pipeline-service-8f59dc5b
+  deleted: false
+serviceType: Dagster
+domains: []
+entityStatus: Unprocessed

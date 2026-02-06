@@ -1,0 +1,136 @@
+name: VATCode
+fullyQualifiedName: General.VATCode
+description: "VAT code or identification number. See [VAT Identification Number](https://en.wikipedia.org/wiki/VAT_identification_number)."
+classification:
+  id: 7f268f1e-9173-4ea9-ae41-6ce53ddfd3f0
+  type: classification
+  name: General
+  fullyQualifiedName: General
+  description: "Category describing generic data types, such as `DateTime`, `Location`,\
+    \ or `BankNumber`"
+  displayName: General
+  deleted: false
+children: []
+usageCount: 0
+deprecated: false
+provider: system
+disabled: false
+mutuallyExclusive: false
+domains: []
+dataProducts: []
+owners: []
+reviewers: []
+entityStatus: Unprocessed
+recognizers:
+  - id: 7d30c05c-6d8a-4e5d-a9f4-d433f69b6b36
+    name: EsNifRecognizer
+    displayName: Es Nif Recognizer
+    description: Recognize NIF number using regex and checksum.
+    enabled: true
+    isSystemDefault: true
+    recognizerConfig:
+      name: EsNifRecognizer
+      type: predefined
+      supportedLanguage: es
+    confidenceThreshold: 0.6
+    exceptionList: []
+    version: 0.1
+    target: content
+  - id: 6b088f0f-ffcc-4cd3-a0e3-2f0c69ba5165
+    name: ItVatCodeRecognizer
+    displayName: It Vat Code Recognizer
+    description: "Recognizes Italian VAT code using regex and checksum.<br/><br/>For\
+      \ more information about italian VAT code:<br/><br/>https://en.wikipedia.org/wiki/VAT_identification_number#:~:text=%5B2%5D)-,Italy,-Partita%20IVA"
+    enabled: true
+    isSystemDefault: true
+    recognizerConfig:
+      name: ItVatCodeRecognizer
+      type: predefined
+      supportedLanguage: it
+    confidenceThreshold: 0.6
+    exceptionList: []
+    version: 0.1
+    target: content
+  - id: f6ef989f-afdc-45f3-968b-9b19807dcd3a
+    name: ItFiscalCodeRecognizer
+    displayName: It Fiscal Code Recognizer
+    description: Recognizes IT Fiscal Code using regex.
+    enabled: true
+    isSystemDefault: true
+    recognizerConfig:
+      name: ItFiscalCodeRecognizer
+      type: predefined
+      supportedLanguage: it
+    confidenceThreshold: 0.6
+    exceptionList: []
+    version: 0.1
+    target: content
+  - id: 16cc620b-f62f-48a9-b3b4-11f0fd5edf67
+    name: UsItinRecognizer
+    displayName: Us Itin Recognizer
+    description: Recognizes US ITIN (Individual Taxpayer Identification Number) using
+      regex.
+    enabled: true
+    isSystemDefault: true
+    recognizerConfig:
+      name: UsItinRecognizer
+      type: predefined
+      supportedLanguage: en
+    confidenceThreshold: 0.6
+    exceptionList: []
+    version: 0.1
+    target: content
+  - id: e2cd337e-f8c3-4261-88f5-176f39f774ed
+    name: AuTfnRecognizer
+    displayName: Au Tfn Recognizer
+    description: "Recognizes Australian Tax File Numbers (\"TFN\").<br/><br/>The tax\
+      \ file number (TFN) is a unique identifier issued by the Australian Taxation\
+      \ Office to each taxpaying entity \\u2014 an individual, company,<br/><br/>superannuation\
+      \ fund, partnership, or trust.<br/><br/>The TFN consists of a nine digit number,\
+      \ usually presented in the format NNN NNN NNN.<br/><br/>TFN includes a check\
+      \ digit for detecting erroneous number based on simple modulo 11.<br/><br/>This\
+      \ recognizer uses regex, context words,<br/><br/>and checksum to identify TFN.<br/><br/>Reference:\
+      \ https://www.ato.gov.au/individuals/tax-file-number/"
+    enabled: true
+    isSystemDefault: true
+    recognizerConfig:
+      name: AuTfnRecognizer
+      type: predefined
+      supportedLanguage: en
+    confidenceThreshold: 0.6
+    exceptionList: []
+    version: 0.1
+    target: content
+  - id: 7ad9e365-760e-48aa-8b93-36755a95ce83
+    name: InPanRecognizer
+    displayName: In Pan Recognizer
+    description: |-
+      Recognizes Indian Permanent Account Number ("PAN").<br/><br/>The Permanent Account Number (PAN) is a ten digit alpha-numeric code with the last digit being a check digit calculated using a modified modulus 10 calculation.<br/><br/>This recognizer identifies PAN using regex and context words.<br/><br/>Reference: https://en.wikipedia.org/wiki/Permanent_account_number
+      https://incometaxindia.gov.in/Forms/tps/1.Permanent%20Account%20Number%20(PAN).pdf
+    enabled: true
+    isSystemDefault: true
+    recognizerConfig:
+      name: InPanRecognizer
+      type: predefined
+      supportedLanguage: en
+    confidenceThreshold: 0.6
+    exceptionList: []
+    version: 0.1
+    target: content
+  - id: 025ed9ee-1319-4160-b798-fae190cf3218
+    name: ItVatCodeRecognizer
+    displayName: It Vat Code Recognizer
+    description: "Recognizes Italian VAT code using regex and checksum.<br/><br/>For\
+      \ more information about italian VAT code:<br/><br/>https://en.wikipedia.org/wiki/VAT_identification_number#:~:text=%5B2%5D)-,Italy,-Partita%20IVA"
+    enabled: true
+    isSystemDefault: true
+    recognizerConfig:
+      name: ItVatCodeRecognizer
+      type: predefined
+      supportedLanguage: it
+    confidenceThreshold: 0.6
+    exceptionList: []
+    version: 0.1
+    target: content
+autoClassificationEnabled: true
+autoClassificationPriority: 50

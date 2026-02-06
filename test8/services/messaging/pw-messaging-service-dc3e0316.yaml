@@ -1,0 +1,17 @@
+name: pw-messaging-service-dc3e0316
+fullyQualifiedName: pw-messaging-service-dc3e0316
+serviceType: Kafka
+connection:
+  config:
+    type: Kafka
+    saslPassword: fernet:gAAAAABpheS5runQ8uKI17uXUoptqKM7m43X7ZimHUOEoy32AilzrBNVT0Xd0eaiNlPM6jfTOid2Voly2mrU7fsfeqTF5MwNUQ==
+    saslUsername: admin
+    saslMechanism: PLAIN
+    bootstrapServers: Bootstrap Servers
+    securityProtocol: PLAINTEXT
+    supportsMetadataExtraction: true
+    schemaRegistryTopicSuffixName: -value
+pipelines: []
+tags: []
+owners: []
+dataProducts: []

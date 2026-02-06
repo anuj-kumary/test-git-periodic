@@ -1,0 +1,17 @@
+name: pw-messaging-service-97c22b6e
+fullyQualifiedName: pw-messaging-service-97c22b6e
+serviceType: Kafka
+connection:
+  config:
+    type: Kafka
+    saslPassword: fernet:gAAAAABpheS5MFCyNM6HmFjX7AmZbQJOgYF7lCEWDiUZhpfWBgsCgbioI0DQx5OsA0qnJtkUVNV5gzGWTucTiQKI3ZfxG57z7Q==
+    saslUsername: admin
+    saslMechanism: PLAIN
+    bootstrapServers: Bootstrap Servers
+    securityProtocol: PLAINTEXT
+    supportsMetadataExtraction: true
+    schemaRegistryTopicSuffixName: -value
+pipelines: []
+tags: []
+owners: []
+dataProducts: []

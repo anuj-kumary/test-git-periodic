@@ -1,0 +1,17 @@
+name: pw-messaging-service-bb6531a6
+fullyQualifiedName: pw-messaging-service-bb6531a6
+serviceType: Kafka
+connection:
+  config:
+    type: Kafka
+    saslPassword: fernet:gAAAAABpheKP5ibvvoIGg_jedytME79HzxUCchfT0bW-8m8i44XoPYp1Q0aqxuWpSfkHXAtQHDC_5ublIm1WygTjb7bvAiK7ug==
+    saslUsername: admin
+    saslMechanism: PLAIN
+    bootstrapServers: Bootstrap Servers
+    securityProtocol: PLAINTEXT
+    supportsMetadataExtraction: true
+    schemaRegistryTopicSuffixName: -value
+pipelines: []
+tags: []
+owners: []
+dataProducts: []

@@ -1,0 +1,17 @@
+name: pw-messaging-service-51befd7f
+fullyQualifiedName: pw-messaging-service-51befd7f
+serviceType: Kafka
+connection:
+  config:
+    type: Kafka
+    saslPassword: fernet:gAAAAABpheKQNckG6s09AxiOX5WgVBxTQh3_LegQhUCikq2ezzGSQ-g_TZUGDFuX3MsAUiWo5Hcb2-Yy9Ih_XXmaVqHdS8EdRg==
+    saslUsername: admin
+    saslMechanism: PLAIN
+    bootstrapServers: Bootstrap Servers
+    securityProtocol: PLAINTEXT
+    supportsMetadataExtraction: true
+    schemaRegistryTopicSuffixName: -value
+pipelines: []
+tags: []
+owners: []
+dataProducts: []

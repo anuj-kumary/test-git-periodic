@@ -1,0 +1,14 @@
+name: pw-pipeline-service-38976813
+fullyQualifiedName: pw-pipeline-service-38976813
+serviceType: Dagster
+tags: []
+pipelines: []
+connection:
+  config:
+    host: admin
+    type: Dagster
+    token: fernet:gAAAAABpheKP7Z2F5Itgp4xSrQSR1m46KiwCe43iesjVjHt-a3X_mswKYA5H7HMAwwvnJ0MSzVeqeMJJAyyFUNk6-N2ve1fedQ==
+    timeout: 1000
+    supportsMetadataExtraction: true
+owners: []
+dataProducts: []

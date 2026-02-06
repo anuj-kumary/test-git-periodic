@@ -1,0 +1,64 @@
+name: 127
+displayName: Are you an ethnic minority in your city?
+fullyQualifiedName: sample_superset.127
+description: ""
+chartType: Other
+sourceUrl: http://localhost:8088/superset/explore/?form_data=%7B%22slice_id%22%3A%20127%7D
+owners: []
+tags: []
+service:
+  id: fe37a140-5846-4b48-930c-ffa99a20338b
+  type: dashboardService
+  name: sample_superset
+  fullyQualifiedName: sample_superset
+  displayName: sample_superset
+  deleted: false
+serviceType: Superset
+incrementalChangeDescription:
+  fieldsAdded: []
+  fieldsUpdated:
+    - name: certification
+      oldValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Manual\",\"state\":\"Confirmed\"},\"appliedDate\":1770382181564,\"\
+        expiryDate\":1772974181564}"
+      newValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Automated\",\"state\":\"Confirmed\"},\"appliedDate\":1770382185401,\"\
+        expiryDate\":1772974185401}"
+  fieldsDeleted: []
+  previousVersion: 0.4
+  changeSummary: {}
+domains: []
+dataProducts: []
+certification:
+  tagLabel:
+    tagFQN: Certification.Silver
+    name: Silver
+    description: Silver certified Data Asset.
+    style:
+      color: "#ADADAD"
+      iconURL: SilverCertification.svg
+    source: Classification
+    labelType: Manual
+    state: Confirmed
+  appliedDate: 1770382185429
+  expiryDate: 1772974185429
+dashboards:
+  - id: 54108e9d-639c-4d2f-b338-9597c9d942ec
+    type: dashboard
+    name: 33
+    fullyQualifiedName: sample_superset.33
+    description: ""
+    displayName: Slack Dashboard
+    deleted: false
+  - id: b4da335e-f42c-4a6d-9708-2b619d45a157
+    type: dashboard
+    name: 51
+    fullyQualifiedName: sample_superset.51
+    description: ""
+    displayName: Video Game Sales
+    deleted: false
+entityStatus: Unprocessed

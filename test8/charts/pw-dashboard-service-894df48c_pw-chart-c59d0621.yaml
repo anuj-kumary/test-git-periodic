@@ -1,0 +1,24 @@
+name: pw-chart-c59d0621
+displayName: PW Chart 3923266f
+fullyQualifiedName: pw-dashboard-service-894df48c.pw-chart-c59d0621
+owners: []
+tags: []
+service:
+  id: 958909df-adc0-4473-936d-6323bc31361a
+  type: dashboardService
+  name: pw-dashboard-service-894df48c
+  fullyQualifiedName: pw-dashboard-service-894df48c
+  displayName: pw-dashboard-service-894df48c
+  deleted: false
+serviceType: Superset
+domains: []
+dataProducts: []
+dashboards:
+  - id: ffdb299a-9295-4c0d-bd30-7a1aea76d31b
+    type: dashboard
+    name: pw-dashboard-6edc5f06
+    fullyQualifiedName: pw-dashboard-service-894df48c.pw-dashboard-6edc5f06
+    description: Description for pw-dashboard-6edc5f06
+    displayName: pw-dashboard-6edc5f06
+    deleted: false
+entityStatus: Unprocessed

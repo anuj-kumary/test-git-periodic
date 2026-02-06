@@ -1,0 +1,54 @@
+name: pw-chart-921f3aba
+displayName: PW Chart dcc1f483
+fullyQualifiedName: pw-dashboard-service-0f729695.pw-chart-921f3aba
+owners: []
+tags: []
+service:
+  id: 7f63ddcf-b633-4a4a-a608-83b2e57bd6ee
+  type: dashboardService
+  name: pw-dashboard-service-0f729695
+  fullyQualifiedName: pw-dashboard-service-0f729695
+  displayName: pw-dashboard-service-0f729695
+  deleted: false
+serviceType: Superset
+incrementalChangeDescription:
+  fieldsAdded: []
+  fieldsUpdated:
+    - name: certification
+      oldValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Manual\",\"state\":\"Confirmed\"},\"appliedDate\":1770382180720,\"\
+        expiryDate\":1772974180720}"
+      newValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Automated\",\"state\":\"Confirmed\"},\"appliedDate\":1770382184436,\"\
+        expiryDate\":1772974184436}"
+  fieldsDeleted: []
+  previousVersion: 0.2
+  changeSummary: {}
+domains: []
+dataProducts: []
+certification:
+  tagLabel:
+    tagFQN: Certification.Silver
+    name: Silver
+    description: Silver certified Data Asset.
+    style:
+      color: "#ADADAD"
+      iconURL: SilverCertification.svg
+    source: Classification
+    labelType: Manual
+    state: Confirmed
+  appliedDate: 1770382184449
+  expiryDate: 1772974184449
+dashboards:
+  - id: 6ebb2d23-0d90-43db-9e1c-428a3a3bce0b
+    type: dashboard
+    name: pw-dashboard-4a798355
+    fullyQualifiedName: pw-dashboard-service-0f729695.pw-dashboard-4a798355
+    description: Description for pw-dashboard-4a798355
+    displayName: pw-dashboard-4a798355
+    deleted: false
+entityStatus: Unprocessed

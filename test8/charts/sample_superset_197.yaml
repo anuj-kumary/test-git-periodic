@@ -1,0 +1,71 @@
+name: 197
+displayName: Arcs
+fullyQualifiedName: sample_superset.197
+description: ""
+chartType: Other
+sourceUrl: http://localhost:8088/superset/explore/?form_data=%7B%22slice_id%22%3A%20197%7D
+owners: []
+tags: []
+service:
+  id: fe37a140-5846-4b48-930c-ffa99a20338b
+  type: dashboardService
+  name: sample_superset
+  fullyQualifiedName: sample_superset
+  displayName: sample_superset
+  deleted: false
+serviceType: Superset
+incrementalChangeDescription:
+  fieldsAdded: []
+  fieldsUpdated:
+    - name: certification
+      oldValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Manual\",\"state\":\"Confirmed\"},\"appliedDate\":1770382182186,\"\
+        expiryDate\":1772974182186}"
+      newValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Automated\",\"state\":\"Confirmed\"},\"appliedDate\":1770382185939,\"\
+        expiryDate\":1772974185939}"
+  fieldsDeleted: []
+  previousVersion: 0.4
+  changeSummary: {}
+domains: []
+dataProducts: []
+certification:
+  tagLabel:
+    tagFQN: Certification.Silver
+    name: Silver
+    description: Silver certified Data Asset.
+    style:
+      color: "#ADADAD"
+      iconURL: SilverCertification.svg
+    source: Classification
+    labelType: Manual
+    state: Confirmed
+  appliedDate: 1770382185971
+  expiryDate: 1772974185971
+dashboards:
+  - id: 266b9843-2134-41c1-9f6e-7d535f29bf8a
+    type: dashboard
+    name: 11
+    fullyQualifiedName: sample_superset.11
+    description: ""
+    displayName: FCC New Coder Survey 2018
+    deleted: false
+  - id: a3751823-0e60-4605-811a-eace44080199
+    type: dashboard
+    name: 12
+    fullyQualifiedName: sample_superset.12
+    description: ""
+    displayName: Misc Charts
+    deleted: false
+  - id: 05aa8a94-053a-42e0-9bc4-d68ee278a428
+    type: dashboard
+    name: 9
+    fullyQualifiedName: sample_superset.9
+    description: ""
+    displayName: COVID Vaccine Dashboard
+    deleted: false
+entityStatus: Unprocessed

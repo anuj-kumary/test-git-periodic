@@ -1,0 +1,57 @@
+name: chart_1
+displayName: Chart 1
+fullyQualifiedName: sample_looker.chart_1
+description: This is a sample Chart for Looker
+chartType: Text
+sourceUrl: http://localhost:8088/looker/explore/?form_data=%7B%22slice_id%22%3A%20114%7D
+owners: []
+tags: []
+service:
+  id: a91a1508-57b2-4fc5-92b1-189de98b9d92
+  type: dashboardService
+  name: sample_looker
+  fullyQualifiedName: sample_looker
+  displayName: sample_looker
+  deleted: false
+serviceType: Looker
+incrementalChangeDescription:
+  fieldsAdded: []
+  fieldsUpdated:
+    - name: certification
+      oldValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Manual\",\"state\":\"Confirmed\"},\"appliedDate\":1770382181024,\"\
+        expiryDate\":1772974181024}"
+      newValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Automated\",\"state\":\"Confirmed\"},\"appliedDate\":1770382184790,\"\
+        expiryDate\":1772974184790}"
+  fieldsDeleted: []
+  previousVersion: 0.4
+  changeSummary: {}
+domains: []
+dataProducts: []
+certification:
+  tagLabel:
+    tagFQN: Certification.Silver
+    name: Silver
+    description: Silver certified Data Asset.
+    style:
+      color: "#ADADAD"
+      iconURL: SilverCertification.svg
+    source: Classification
+    labelType: Manual
+    state: Confirmed
+  appliedDate: 1770382184804
+  expiryDate: 1772974184804
+dashboards:
+  - id: e3445d63-5c06-48d5-a4b7-36c47e1a8bc4
+    type: dashboard
+    name: customers
+    fullyQualifiedName: sample_looker.customers
+    description: This is a sample Dashboard for Looker
+    displayName: Customers dashboard
+    deleted: false
+entityStatus: Unprocessed

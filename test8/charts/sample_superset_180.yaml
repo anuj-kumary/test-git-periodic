@@ -1,0 +1,57 @@
+name: 180
+displayName: Boy Name Cloud
+fullyQualifiedName: sample_superset.180
+description: ""
+chartType: Other
+sourceUrl: http://localhost:8088/superset/explore/?form_data=%7B%22slice_id%22%3A%20180%7D
+owners: []
+tags: []
+service:
+  id: fe37a140-5846-4b48-930c-ffa99a20338b
+  type: dashboardService
+  name: sample_superset
+  fullyQualifiedName: sample_superset
+  displayName: sample_superset
+  deleted: false
+serviceType: Superset
+incrementalChangeDescription:
+  fieldsAdded: []
+  fieldsUpdated:
+    - name: certification
+      oldValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Manual\",\"state\":\"Confirmed\"},\"appliedDate\":1770382181974,\"\
+        expiryDate\":1772974181974}"
+      newValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Automated\",\"state\":\"Confirmed\"},\"appliedDate\":1770382185772,\"\
+        expiryDate\":1772974185772}"
+  fieldsDeleted: []
+  previousVersion: 0.4
+  changeSummary: {}
+domains: []
+dataProducts: []
+certification:
+  tagLabel:
+    tagFQN: Certification.Silver
+    name: Silver
+    description: Silver certified Data Asset.
+    style:
+      color: "#ADADAD"
+      iconURL: SilverCertification.svg
+    source: Classification
+    labelType: Manual
+    state: Confirmed
+  appliedDate: 1770382185800
+  expiryDate: 1772974185800
+dashboards:
+  - id: 266b9843-2134-41c1-9f6e-7d535f29bf8a
+    type: dashboard
+    name: 11
+    fullyQualifiedName: sample_superset.11
+    description: ""
+    displayName: FCC New Coder Survey 2018
+    deleted: false
+entityStatus: Unprocessed

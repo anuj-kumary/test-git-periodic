@@ -1,0 +1,18 @@
+name: pw-chart-604ab967
+displayName: pw-chart-604ab967
+fullyQualifiedName: pw-chart-service-ea386d70.pw-chart-604ab967
+description: Description for pw-chart-604ab967
+owners: []
+tags: []
+service:
+  id: c2432991-6e5a-4697-976f-d1eadddcd45d
+  type: dashboardService
+  name: pw-chart-service-ea386d70
+  fullyQualifiedName: pw-chart-service-ea386d70
+  displayName: pw-chart-service-ea386d70
+  deleted: false
+serviceType: Superset
+domains: []
+dataProducts: []
+dashboards: []
+entityStatus: Unprocessed

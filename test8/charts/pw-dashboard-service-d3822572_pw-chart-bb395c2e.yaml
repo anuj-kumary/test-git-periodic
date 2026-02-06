@@ -1,0 +1,24 @@
+name: pw-chart-bb395c2e
+displayName: PW Chart a70d035c
+fullyQualifiedName: pw-dashboard-service-d3822572.pw-chart-bb395c2e
+owners: []
+tags: []
+service:
+  id: edb7f318-0170-4431-915d-ddb594eb31b4
+  type: dashboardService
+  name: pw-dashboard-service-d3822572
+  fullyQualifiedName: pw-dashboard-service-d3822572
+  displayName: pw-dashboard-service-d3822572
+  deleted: false
+serviceType: Superset
+domains: []
+dataProducts: []
+dashboards:
+  - id: 6e9280fa-d593-42ed-8fb1-606a51464bdd
+    type: dashboard
+    name: pw-dashboard-b84f3974
+    fullyQualifiedName: pw-dashboard-service-d3822572.pw-dashboard-b84f3974
+    description: Description for pw-dashboard-b84f3974
+    displayName: pw-dashboard-b84f3974
+    deleted: false
+entityStatus: Unprocessed

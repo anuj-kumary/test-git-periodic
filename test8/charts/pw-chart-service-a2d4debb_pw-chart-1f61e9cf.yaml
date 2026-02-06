@@ -1,0 +1,48 @@
+name: pw-chart-1f61e9cf
+displayName: pw-chart-1f61e9cf
+fullyQualifiedName: pw-chart-service-a2d4debb.pw-chart-1f61e9cf
+description: Description for pw-chart-1f61e9cf
+owners: []
+tags: []
+service:
+  id: 8997a9e3-2ccb-4fdf-b860-06633e0a3aec
+  type: dashboardService
+  name: pw-chart-service-a2d4debb
+  fullyQualifiedName: pw-chart-service-a2d4debb
+  displayName: pw-chart-service-a2d4debb
+  deleted: false
+serviceType: Superset
+incrementalChangeDescription:
+  fieldsAdded: []
+  fieldsUpdated:
+    - name: certification
+      oldValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Manual\",\"state\":\"Confirmed\"},\"appliedDate\":1770382180647,\"\
+        expiryDate\":1772974180647}"
+      newValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Automated\",\"state\":\"Confirmed\"},\"appliedDate\":1770382184373,\"\
+        expiryDate\":1772974184373}"
+  fieldsDeleted: []
+  previousVersion: 0.2
+  changeSummary: {}
+domains: []
+dataProducts: []
+certification:
+  tagLabel:
+    tagFQN: Certification.Silver
+    name: Silver
+    description: Silver certified Data Asset.
+    style:
+      color: "#ADADAD"
+      iconURL: SilverCertification.svg
+    source: Classification
+    labelType: Manual
+    state: Confirmed
+  appliedDate: 1770382184376
+  expiryDate: 1772974184376
+dashboards: []
+entityStatus: Unprocessed

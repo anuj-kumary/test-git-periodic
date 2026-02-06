@@ -1,0 +1,17 @@
+name: PW%dataProduct.b12776e2
+fullyQualifiedName: '"PW%dataProduct.b12776e2"'
+displayName: PW Data Product b12776e2
+description: playwright data product description
+owners: []
+experts: []
+reviewers: []
+domains:
+  - id: 3cdae151-9dc5-40d3-8ad4-4dfe5a685d5f
+    type: domain
+    name: PW%domain.015ff07d
+    fullyQualifiedName: '"PW%domain.015ff07d"'
+    description: playwright domain description
+    displayName: PW Domain 015ff07d
+lifecycleStage: DEVELOPMENT
+tags: []
+entityStatus: Unprocessed

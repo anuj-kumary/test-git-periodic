@@ -1,0 +1,17 @@
+name: PW%dataProduct.03974451
+fullyQualifiedName: '"PW%dataProduct.03974451"'
+displayName: PW Data Product 03974451
+description: playwright data product description
+owners: []
+experts: []
+reviewers: []
+domains:
+  - id: 9814e642-2b83-4834-9a40-0f28d0854607
+    type: domain
+    name: PW%domain.b5082857
+    fullyQualifiedName: '"PW%domain.b5082857"'
+    description: playwright domain description
+    displayName: PW Domain b5082857
+lifecycleStage: DEVELOPMENT
+tags: []
+entityStatus: Unprocessed

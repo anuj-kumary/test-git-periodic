@@ -1,0 +1,16 @@
+name: pw-search-service-eb889f32
+fullyQualifiedName: pw-search-service-eb889f32
+serviceType: ElasticSearch
+connection:
+  config:
+    type: ElasticSearch
+    authType:
+      password: fernet:gAAAAABphdWssVdelQ0Fd0LG_D3LjasNZlhQYE8lViokn5zQPhcV9VockB9Ucw8BXDKAeO8581r4OJZ_uBbIrq-cbFHUyej0pw==
+      username: admin
+    hostPort: elasticsearch:9200
+    connectionTimeoutSecs: 30
+    supportsMetadataExtraction: true
+pipelines: []
+tags: []
+owners: []
+dataProducts: []

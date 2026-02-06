@@ -1,0 +1,16 @@
+name: pw-search-service-d5ee210a
+fullyQualifiedName: pw-search-service-d5ee210a
+serviceType: ElasticSearch
+connection:
+  config:
+    type: ElasticSearch
+    authType:
+      password: fernet:gAAAAABphdWtF3XL6xndG5K7iW0nh90v2KvhfGmxu0ZakKTZSH4nsex3gmMwLD-Ug0AGNXQ90oCERDdnqrAbpnvJp27ExSwX4w==
+      username: admin
+    hostPort: elasticsearch:9200
+    connectionTimeoutSecs: 30
+    supportsMetadataExtraction: true
+pipelines: []
+tags: []
+owners: []
+dataProducts: []

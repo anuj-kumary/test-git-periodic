@@ -1,0 +1,16 @@
+name: pw-search-service-c10c0d4a
+fullyQualifiedName: pw-search-service-c10c0d4a
+serviceType: ElasticSearch
+connection:
+  config:
+    type: ElasticSearch
+    authType:
+      password: fernet:gAAAAABpheKPjKCA4uUgvKyJbkL7Nb6Eu06lAqlebbISNl_WMjl0DBQ_P_GAAvzeT_Ikd2YiGtfJtb7eMfwjt-jFY8agNar9iQ==
+      username: admin
+    hostPort: elasticsearch:9200
+    connectionTimeoutSecs: 30
+    supportsMetadataExtraction: true
+pipelines: []
+tags: []
+owners: []
+dataProducts: []

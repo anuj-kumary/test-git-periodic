@@ -1,0 +1,53 @@
+name: pw-database-28e2237a
+fullyQualifiedName: pw-database-service-50bb832d.pw-database-28e2237a
+dataProducts: []
+tags: []
+owners: []
+service:
+  id: d313808e-5031-439c-8cf6-5e215c1b369d
+  type: databaseService
+  name: pw-database-service-50bb832d
+  fullyQualifiedName: pw-database-service-50bb832d
+  displayName: pw-database-service-50bb832d
+  deleted: false
+serviceType: Mysql
+databaseSchemas:
+  - id: 6324d525-37bc-40d6-a169-7b5d7c3c8ef9
+    type: databaseSchema
+    name: pw-database-schema-9a7d6a8d
+    fullyQualifiedName: pw-database-service-50bb832d.pw-database-28e2237a.pw-database-schema-9a7d6a8d
+    displayName: pw-database-schema-9a7d6a8d
+    deleted: false
+incrementalChangeDescription:
+  fieldsAdded: []
+  fieldsUpdated:
+    - name: certification
+      oldValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Manual\",\"state\":\"Confirmed\"},\"appliedDate\":1770382181560,\"\
+        expiryDate\":1772974181560}"
+      newValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Automated\",\"state\":\"Confirmed\"},\"appliedDate\":1770382185629,\"\
+        expiryDate\":1772974185629}"
+  fieldsDeleted: []
+  previousVersion: 0.2
+  changeSummary: {}
+default: false
+domains: []
+certification:
+  tagLabel:
+    tagFQN: Certification.Silver
+    name: Silver
+    description: Silver certified Data Asset.
+    style:
+      color: "#ADADAD"
+      iconURL: SilverCertification.svg
+    source: Classification
+    labelType: Manual
+    state: Confirmed
+  appliedDate: 1770382185629
+  expiryDate: 1772974185629
+entityStatus: Unprocessed

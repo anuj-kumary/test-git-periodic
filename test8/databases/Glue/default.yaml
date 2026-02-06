@@ -1,0 +1,56 @@
+name: default
+fullyQualifiedName: Glue.default
+description: This **mock** database contains tables related to the Glue service
+dataProducts: []
+tags: []
+owners: []
+service:
+  id: 0a67726f-450b-4463-9538-f7478348f66f
+  type: databaseService
+  name: Glue
+  fullyQualifiedName: Glue
+  displayName: Glue
+  deleted: false
+serviceType: Glue
+databaseSchemas:
+  - id: 908a8eab-b4fc-47c9-893d-03b937cc6733
+    type: databaseSchema
+    name: information_schema
+    fullyQualifiedName: Glue.default.information_schema
+    description: This **mock** database contains tables related to the Glue service
+    displayName: information_schema
+    deleted: false
+incrementalChangeDescription:
+  fieldsAdded: []
+  fieldsUpdated:
+    - name: certification
+      oldValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Manual\",\"state\":\"Confirmed\"},\"appliedDate\":1770382180814,\"\
+        expiryDate\":1772974180814}"
+      newValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Automated\",\"state\":\"Confirmed\"},\"appliedDate\":1770382184882,\"\
+        expiryDate\":1772974184882}"
+  fieldsDeleted: []
+  previousVersion: 0.4
+  changeSummary: {}
+default: false
+sourceUrl: https://www.glue.com/default
+domains: []
+certification:
+  tagLabel:
+    tagFQN: Certification.Silver
+    name: Silver
+    description: Silver certified Data Asset.
+    style:
+      color: "#ADADAD"
+      iconURL: SilverCertification.svg
+    source: Classification
+    labelType: Manual
+    state: Confirmed
+  appliedDate: 1770382184882
+  expiryDate: 1772974184882
+entityStatus: Unprocessed

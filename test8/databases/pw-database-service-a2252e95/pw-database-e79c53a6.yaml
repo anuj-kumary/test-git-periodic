@@ -1,0 +1,23 @@
+name: pw-database-e79c53a6
+fullyQualifiedName: pw-database-service-a2252e95.pw-database-e79c53a6
+dataProducts: []
+tags: []
+owners: []
+service:
+  id: 1c7df27a-2230-4714-ae64-2c39fe2c873a
+  type: databaseService
+  name: pw-database-service-a2252e95
+  fullyQualifiedName: pw-database-service-a2252e95
+  displayName: pw-database-service-a2252e95
+  deleted: false
+serviceType: Mysql
+databaseSchemas:
+  - id: 7a74a63c-5823-4522-b465-f237be8698cc
+    type: databaseSchema
+    name: pw-database-schema-0d9373dd
+    fullyQualifiedName: pw-database-service-a2252e95.pw-database-e79c53a6.pw-database-schema-0d9373dd
+    displayName: pw-database-schema-0d9373dd
+    deleted: false
+default: false
+domains: []
+entityStatus: Unprocessed

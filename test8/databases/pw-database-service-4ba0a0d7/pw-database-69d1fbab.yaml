@@ -1,0 +1,54 @@
+name: pw-database-69d1fbab
+fullyQualifiedName: pw-database-service-4ba0a0d7.pw-database-69d1fbab
+description: description
+dataProducts: []
+tags: []
+owners: []
+service:
+  id: 42cdd53a-da23-4664-9d5d-739be63d259f
+  type: databaseService
+  name: pw-database-service-4ba0a0d7
+  fullyQualifiedName: pw-database-service-4ba0a0d7
+  displayName: pw-database-service-4ba0a0d7
+  deleted: false
+serviceType: Mysql
+databaseSchemas:
+  - id: 2049cbbe-0ef8-4723-8741-0d6025ad1db1
+    type: databaseSchema
+    name: pw-database-schema-584b2a5d
+    fullyQualifiedName: pw-database-service-4ba0a0d7.pw-database-69d1fbab.pw-database-schema-584b2a5d
+    displayName: pw-database-schema-584b2a5d
+    deleted: false
+incrementalChangeDescription:
+  fieldsAdded: []
+  fieldsUpdated:
+    - name: certification
+      oldValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Manual\",\"state\":\"Confirmed\"},\"appliedDate\":1770382181460,\"\
+        expiryDate\":1772974181460}"
+      newValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Automated\",\"state\":\"Confirmed\"},\"appliedDate\":1770382185582,\"\
+        expiryDate\":1772974185582}"
+  fieldsDeleted: []
+  previousVersion: 0.4
+  changeSummary: {}
+default: false
+domains: []
+certification:
+  tagLabel:
+    tagFQN: Certification.Silver
+    name: Silver
+    description: Silver certified Data Asset.
+    style:
+      color: "#ADADAD"
+      iconURL: SilverCertification.svg
+    source: Classification
+    labelType: Manual
+    state: Confirmed
+  appliedDate: 1770382185584
+  expiryDate: 1772974185584
+entityStatus: Unprocessed

@@ -1,0 +1,54 @@
+name: dfdd
+displayName: gfgf
+description: <p>fgfgfg</p>
+style: {}
+fullyQualifiedName: test-glossary.dfdd
+synonyms: []
+glossary:
+  id: f3c7ac9e-8029-449e-aaa5-484d1f800bc4
+  type: glossary
+  name: test-glossary
+  fullyQualifiedName: test-glossary
+  description: <p>dsdsd</p>
+  displayName: test-glossary
+  deleted: false
+children: []
+relatedTerms: []
+references: []
+reviewers: []
+owners:
+  - id: 40cae39d-814f-4334-ad46-8ad404779608
+    type: user
+    name: admin
+    fullyQualifiedName: admin
+    displayName: admin
+    deleted: false
+usageCount: 0
+tags:
+  - tagFQN: General.CreditCardNumber
+    name: CreditCardNumber
+    description: Credit card number of the user.
+    source: Classification
+    labelType: Manual
+    state: Confirmed
+    appliedAt: 1770375818158
+incrementalChangeDescription:
+  fieldsAdded:
+    - name: tags
+      newValue: "[{\"tagFQN\":\"General.CreditCardNumber\",\"name\":\"CreditCardNumber\"\
+        ,\"description\":\"Credit card number of the user.\",\"source\":\"Classification\"\
+        ,\"labelType\":\"Manual\",\"state\":\"Confirmed\"}]"
+  fieldsUpdated: []
+  fieldsDeleted:
+    - name: tags
+      oldValue: "[{\"tagFQN\":\"General.Crypto\",\"name\":\"Crypto\",\"description\"\
+        :\"Crypto Wallet Number.\",\"source\":\"Classification\",\"labelType\":\"\
+        Manual\",\"state\":\"Confirmed\",\"appliedAt\":\"2026-02-06T10:50:26.000211Z\"\
+        }]"
+  previousVersion: 0.5
+  changeSummary: {}
+entityStatus: Approved
+mutuallyExclusive: false
+domains: []
+dataProducts: []
+childrenCount: 0

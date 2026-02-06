@@ -1,0 +1,58 @@
+name: pw-dashboard-data-model-e2970e3d
+displayName: pw-dashboard-data-model-e2970e3d
+fullyQualifiedName: pw-dashboard-service-15d06809.model.pw-dashboard-data-model-e2970e3d
+description: Description for pw-dashboard-data-model-e2970e3d
+owners: []
+dataProducts: []
+tags: []
+incrementalChangeDescription:
+  fieldsAdded: []
+  fieldsUpdated:
+    - name: certification
+      oldValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Manual\",\"state\":\"Confirmed\"},\"appliedDate\":1770382180795,\"\
+        expiryDate\":1772974180795}"
+      newValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Automated\",\"state\":\"Confirmed\"},\"appliedDate\":1770382182954,\"\
+        expiryDate\":1772974182954}"
+  fieldsDeleted: []
+  previousVersion: 0.2
+  changeSummary: {}
+service:
+  id: 160dd8ff-4327-4522-92c5-10f96d5d9cc7
+  type: dashboardService
+  name: pw-dashboard-service-15d06809
+  fullyQualifiedName: pw-dashboard-service-15d06809
+  displayName: pw-dashboard-service-15d06809
+  deleted: false
+serviceType: Superset
+dataModelType: SupersetDataModel
+columns:
+  - name: country_name
+    dataType: VARCHAR
+    dataLength: 256
+    dataTypeDisplay: varchar
+    description: Name of the country.
+    fullyQualifiedName: pw-dashboard-service-15d06809.model.pw-dashboard-data-model-e2970e3d.country_name
+    tags: []
+    children: []
+project: pw-project-ca56b280
+domains: []
+certification:
+  tagLabel:
+    tagFQN: Certification.Silver
+    name: Silver
+    description: Silver certified Data Asset.
+    style:
+      color: "#ADADAD"
+      iconURL: SilverCertification.svg
+    source: Classification
+    labelType: Manual
+    state: Confirmed
+  appliedDate: 1770382182954
+  expiryDate: 1772974182954
+entityStatus: Unprocessed

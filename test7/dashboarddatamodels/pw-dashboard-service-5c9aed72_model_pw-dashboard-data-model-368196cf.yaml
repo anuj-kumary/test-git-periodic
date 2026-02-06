@@ -1,0 +1,72 @@
+name: pw-dashboard-data-model-368196cf
+displayName: pw-dashboard-data-model-368196cf
+fullyQualifiedName: pw-dashboard-service-5c9aed72.model.pw-dashboard-data-model-368196cf
+owners: []
+dataProducts: []
+tags: []
+incrementalChangeDescription:
+  fieldsAdded: []
+  fieldsUpdated:
+    - name: certification
+      oldValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Manual\",\"state\":\"Confirmed\"},\"appliedDate\":1770382181055,\"\
+        expiryDate\":1772974181055}"
+      newValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Automated\",\"state\":\"Confirmed\"},\"appliedDate\":1770382183094,\"\
+        expiryDate\":1772974183094}"
+  fieldsDeleted: []
+  previousVersion: 0.4
+  changeSummary: {}
+service:
+  id: 3ad0519f-45d6-44a8-b755-0d1c26c87c9c
+  type: dashboardService
+  name: pw-dashboard-service-5c9aed72
+  fullyQualifiedName: pw-dashboard-service-5c9aed72
+  displayName: pw-dashboard-service-5c9aed72
+  deleted: false
+serviceType: Superset
+dataModelType: LookMlExplore
+columns:
+  - name: merchant
+    dataType: VARCHAR
+    dataLength: 256
+    dataTypeDisplay: varchar
+    description: merchant
+    fullyQualifiedName: pw-dashboard-service-5c9aed72.model.pw-dashboard-data-model-368196cf.merchant
+    tags: []
+    children: []
+  - name: notes
+    dataType: VARCHAR
+    dataLength: 256
+    dataTypeDisplay: varchar
+    description: merchant
+    fullyQualifiedName: pw-dashboard-service-5c9aed72.model.pw-dashboard-data-model-368196cf.notes
+    tags: []
+    children: []
+  - name: country_name
+    dataType: VARCHAR
+    dataLength: 256
+    dataTypeDisplay: varchar
+    description: Name of the country.
+    fullyQualifiedName: pw-dashboard-service-5c9aed72.model.pw-dashboard-data-model-368196cf.country_name
+    tags: []
+    children: []
+domains: []
+certification:
+  tagLabel:
+    tagFQN: Certification.Silver
+    name: Silver
+    description: Silver certified Data Asset.
+    style:
+      color: "#ADADAD"
+      iconURL: SilverCertification.svg
+    source: Classification
+    labelType: Manual
+    state: Confirmed
+  appliedDate: 1770382183096
+  expiryDate: 1772974183096
+entityStatus: Unprocessed

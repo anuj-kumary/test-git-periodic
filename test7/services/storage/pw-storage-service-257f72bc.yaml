@@ -1,0 +1,17 @@
+name: pw-storage-service-257f72bc
+fullyQualifiedName: pw-storage-service-257f72bc
+serviceType: S3
+connection:
+  config:
+    type: S3
+    awsConfig:
+      enabled: false
+      awsRegion: us-east-2
+      awsAccessKeyId: admin
+      awsSecretAccessKey: fernet:gAAAAABpheKP5wyJGsl-ikd2BVSrqoF5806zW0JybPTsm_VqssmCEDFLCDpWlxTi_dpw_cMUNT50luczh1uNJTHtbLBKTgcW_A==
+      assumeRoleSessionName: OpenMetadataSession
+    supportsMetadataExtraction: true
+pipelines: []
+tags: []
+owners: []
+dataProducts: []

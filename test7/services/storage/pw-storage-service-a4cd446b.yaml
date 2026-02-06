@@ -1,0 +1,17 @@
+name: pw-storage-service-a4cd446b
+fullyQualifiedName: pw-storage-service-a4cd446b
+serviceType: S3
+connection:
+  config:
+    type: S3
+    awsConfig:
+      enabled: false
+      awsRegion: us-east-2
+      awsAccessKeyId: admin
+      awsSecretAccessKey: fernet:gAAAAABphdWtXrRxcVxajNSmJyXqWLWPnwmfFr7CsanS7yJbRIdwLASz6tFMJAkDxwWdTn8c5OrOQESfhK4CkKPFTBtfqwR6fw==
+      assumeRoleSessionName: OpenMetadataSession
+    supportsMetadataExtraction: true
+pipelines: []
+tags: []
+owners: []
+dataProducts: []

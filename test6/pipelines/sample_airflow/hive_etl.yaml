@@ -1,0 +1,66 @@
+name: hive_etl
+displayName: Hive ETL
+fullyQualifiedName: sample_airflow.hive_etl
+description: Hive ETL pipeline
+dataProducts: []
+sourceUrl: http://localhost:8080/tree?dag_id=hive_etl
+tasks:
+  - name: hive_create_table
+    displayName: Hive Create Table
+    fullyQualifiedName: sample_airflow.hive_etl.hive_create_table
+    description: Hive Create Table Task
+    sourceUrl: http://localhost:8080/taskinstance/list/?flt1_dag_id_equals=hive_create_table
+    downstreamTasks:
+      - assert_table_exits
+    taskType: HiveOperator
+    tags: []
+  - name: assert_table_exists
+    displayName: Assert Table Exists
+    fullyQualifiedName: sample_airflow.hive_etl.assert_table_exists
+    description: Assert if a table exists
+    sourceUrl: http://localhost:8080/taskinstance/list/?flt1_dag_id_equals=assert_table_exists
+    downstreamTasks: []
+    taskType: HiveOperator
+    tags: []
+tags: []
+owners: []
+service:
+  id: e5a52093-b94a-4a49-8d22-0eb9922896e0
+  type: pipelineService
+  name: sample_airflow
+  fullyQualifiedName: sample_airflow
+  displayName: sample_airflow
+  deleted: false
+serviceType: Airflow
+incrementalChangeDescription:
+  fieldsAdded: []
+  fieldsUpdated:
+    - name: certification
+      oldValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Manual\",\"state\":\"Confirmed\"},\"appliedDate\":1770382181961,\"\
+        expiryDate\":1772974181961}"
+      newValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Automated\",\"state\":\"Confirmed\"},\"appliedDate\":1770382186072,\"\
+        expiryDate\":1772974186072}"
+  fieldsDeleted: []
+  previousVersion: 0.4
+  changeSummary: {}
+domains: []
+certification:
+  tagLabel:
+    tagFQN: Certification.Silver
+    name: Silver
+    description: Silver certified Data Asset.
+    style:
+      color: "#ADADAD"
+      iconURL: SilverCertification.svg
+    source: Classification
+    labelType: Manual
+    state: Confirmed
+  appliedDate: 1770382186074
+  expiryDate: 1772974186074
+entityStatus: Unprocessed

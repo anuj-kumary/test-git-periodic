@@ -1,0 +1,83 @@
+name: dbt_transform_orders
+displayName: DBT Transform Orders
+fullyQualifiedName: sample_dbtcloud.dbt_transform_orders
+description: DBT pipeline for transforming order data into fact tables - runs daily
+dataProducts: []
+sourceUrl: https://cloud.getdbt.com/deploy/123456/projects/654321/runs/dbt_transform_orders
+tasks:
+  - name: dbt_run_orders
+    displayName: DBT Run Order Transformations
+    fullyQualifiedName: sample_dbtcloud.dbt_transform_orders.dbt_run_orders
+    description: Execute dbt run for order fact tables
+    sourceUrl: https://cloud.getdbt.com/deploy/123456/projects/654321/runs/dbt_transform_orders
+    downstreamTasks:
+      - dbt_test_orders
+    taskType: dbtRunTask
+    tags: []
+  - name: dbt_test_orders
+    displayName: DBT Test Order Models
+    fullyQualifiedName: sample_dbtcloud.dbt_transform_orders.dbt_test_orders
+    description: Execute dbt tests for order models
+    sourceUrl: https://cloud.getdbt.com/deploy/123456/projects/654321/runs/dbt_transform_orders
+    downstreamTasks: []
+    taskType: dbtTestTask
+    tags: []
+pipelineStatus:
+  timestamp: 1770258748875
+  executionStatus: Successful
+  taskStatus:
+    - name: dbt_run_orders
+      executionStatus: Successful
+      inputs: []
+      outputs: []
+    - name: dbt_test_orders
+      executionStatus: Successful
+      inputs: []
+      outputs: []
+  executionId: orders_run_201
+  endTime: 1770262348875
+  inputs: []
+  outputs: []
+tags: []
+owners: []
+service:
+  id: c3408353-5912-4a56-a3c6-a065b6a9c1a5
+  type: pipelineService
+  name: sample_dbtcloud
+  fullyQualifiedName: sample_dbtcloud
+  displayName: sample_dbtcloud
+  deleted: false
+serviceType: DBTCloud
+incrementalChangeDescription:
+  fieldsAdded: []
+  fieldsUpdated:
+    - name: certification
+      oldValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Manual\",\"state\":\"Confirmed\"},\"appliedDate\":1770382182604,\"\
+        expiryDate\":1772974182604}"
+      newValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Automated\",\"state\":\"Confirmed\"},\"appliedDate\":1770382186647,\"\
+        expiryDate\":1772974186647}"
+  fieldsDeleted: []
+  previousVersion: 0.4
+  changeSummary: {}
+scheduleInterval: 0 3 * * *
+domains: []
+certification:
+  tagLabel:
+    tagFQN: Certification.Silver
+    name: Silver
+    description: Silver certified Data Asset.
+    style:
+      color: "#ADADAD"
+      iconURL: SilverCertification.svg
+    source: Classification
+    labelType: Manual
+    state: Confirmed
+  appliedDate: 1770382186649
+  expiryDate: 1772974186649
+entityStatus: Unprocessed

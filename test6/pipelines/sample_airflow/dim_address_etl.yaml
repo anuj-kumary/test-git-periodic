@@ -1,0 +1,83 @@
+name: dim_address_etl
+displayName: dim_address etl
+fullyQualifiedName: sample_airflow.dim_address_etl
+description: dim_address ETL pipeline
+dataProducts: []
+sourceUrl: http://localhost:8080/tree?dag_id=dim_address_etl
+tasks:
+  - name: dim_address_task
+    displayName: dim_address Task
+    fullyQualifiedName: sample_airflow.dim_address_etl.dim_address_task
+    description: Airflow operator to perform ETL and generate dim_address table
+    sourceUrl: http://localhost:8080/taskinstance/list/?flt1_dag_id_equals=dim_address_task
+    downstreamTasks:
+      - assert_table_exists
+    taskType: PrestoOperator
+    tags: []
+  - name: assert_table_exists
+    displayName: Assert Table Exists
+    fullyQualifiedName: sample_airflow.dim_address_etl.assert_table_exists
+    description: Assert if a table exists
+    sourceUrl: http://localhost:8080/taskinstance/list/?flt1_dag_id_equals=assert_table_exists
+    downstreamTasks: []
+    taskType: HiveOperator
+    tags: []
+pipelineStatus:
+  timestamp: 1770023112511
+  executionStatus: Successful
+  taskStatus:
+    - name: dim_address_task
+      executionStatus: Successful
+      inputs: []
+      outputs: []
+    - name: assert_table_exists
+      executionStatus: Successful
+      inputs: []
+      outputs: []
+  executionId: run_2024_001_a1b2c3
+  endTime: 1770023712511
+  inputs: []
+  outputs: []
+tags: []
+owners: []
+service:
+  id: e5a52093-b94a-4a49-8d22-0eb9922896e0
+  type: pipelineService
+  name: sample_airflow
+  fullyQualifiedName: sample_airflow
+  displayName: sample_airflow
+  deleted: false
+serviceType: Airflow
+incrementalChangeDescription:
+  fieldsAdded: []
+  fieldsUpdated:
+    - name: certification
+      oldValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Manual\",\"state\":\"Confirmed\"},\"appliedDate\":1770382181669,\"\
+        expiryDate\":1772974181669}"
+      newValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Automated\",\"state\":\"Confirmed\"},\"appliedDate\":1770382185866,\"\
+        expiryDate\":1772974185866}"
+  fieldsDeleted: []
+  previousVersion: 0.4
+  changeSummary: {}
+scheduleInterval: 5 * * * *
+domains: []
+certification:
+  tagLabel:
+    tagFQN: Certification.Silver
+    name: Silver
+    description: Silver certified Data Asset.
+    style:
+      color: "#ADADAD"
+      iconURL: SilverCertification.svg
+    source: Classification
+    labelType: Manual
+    state: Confirmed
+  appliedDate: 1770382185868
+  expiryDate: 1772974185868
+entityStatus: Unprocessed

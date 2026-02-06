@@ -1,0 +1,56 @@
+name: pw-pipeline-96c9991b
+displayName: pw-pipeline-96c9991b
+fullyQualifiedName: pw-pipeline-service-e5792ec4.pw-pipeline-96c9991b
+description: Description for pw-pipeline-96c9991b
+dataProducts: []
+tasks:
+  - name: snowflake_task
+    displayName: Snowflake Task
+    fullyQualifiedName: pw-pipeline-service-e5792ec4.pw-pipeline-96c9991b.snowflake_task
+    tags: []
+  - name: presto_task
+    displayName: Presto Task
+    fullyQualifiedName: pw-pipeline-service-e5792ec4.pw-pipeline-96c9991b.presto_task
+    tags: []
+tags: []
+owners: []
+service:
+  id: 6a6782c1-b4da-455a-b583-52e8d5782382
+  type: pipelineService
+  name: pw-pipeline-service-e5792ec4
+  fullyQualifiedName: pw-pipeline-service-e5792ec4
+  displayName: pw-pipeline-service-e5792ec4
+  deleted: false
+serviceType: Dagster
+incrementalChangeDescription:
+  fieldsAdded: []
+  fieldsUpdated:
+    - name: certification
+      oldValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Manual\",\"state\":\"Confirmed\"},\"appliedDate\":1770382181608,\"\
+        expiryDate\":1772974181608}"
+      newValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Automated\",\"state\":\"Confirmed\"},\"appliedDate\":1770382185813,\"\
+        expiryDate\":1772974185813}"
+  fieldsDeleted: []
+  previousVersion: 0.2
+  changeSummary: {}
+domains: []
+certification:
+  tagLabel:
+    tagFQN: Certification.Silver
+    name: Silver
+    description: Silver certified Data Asset.
+    style:
+      color: "#ADADAD"
+      iconURL: SilverCertification.svg
+    source: Classification
+    labelType: Manual
+    state: Confirmed
+  appliedDate: 1770382185817
+  expiryDate: 1772974185817
+entityStatus: Unprocessed

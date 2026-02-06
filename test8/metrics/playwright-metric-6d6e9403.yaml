@@ -1,0 +1,46 @@
+name: playwright-metric-6d6e9403
+fullyQualifiedName: playwright-metric-6d6e9403
+displayName: playwright-metric-6d6e9403
+description: Total sales over the last quarter playwright-metric-6d6e9403
+metricExpression:
+  language: SQL
+  code: SUM(sales)
+metricType: SUM
+unitOfMeasurement: DOLLARS
+granularity: QUARTER
+relatedMetrics: []
+owners: []
+reviewers: []
+tags: []
+incrementalChangeDescription:
+  fieldsAdded: []
+  fieldsUpdated:
+    - name: certification
+      oldValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Manual\",\"state\":\"Confirmed\"},\"appliedDate\":1770382180944,\"\
+        expiryDate\":1772974180944}"
+      newValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Automated\",\"state\":\"Confirmed\"},\"appliedDate\":1770382185318,\"\
+        expiryDate\":1772974185318}"
+  fieldsDeleted: []
+  previousVersion: 0.2
+  changeSummary: {}
+dataProducts: []
+certification:
+  tagLabel:
+    tagFQN: Certification.Silver
+    name: Silver
+    description: Silver certified Data Asset.
+    style:
+      color: "#ADADAD"
+      iconURL: SilverCertification.svg
+    source: Classification
+    labelType: Manual
+    state: Confirmed
+  appliedDate: 1770382185323
+  expiryDate: 1772974185323
+entityStatus: Unprocessed

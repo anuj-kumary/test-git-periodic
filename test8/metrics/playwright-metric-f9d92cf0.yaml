@@ -1,0 +1,16 @@
+name: playwright-metric-f9d92cf0
+fullyQualifiedName: playwright-metric-f9d92cf0
+displayName: playwright-metric-f9d92cf0
+description: Total sales over the last quarter playwright-metric-f9d92cf0
+metricExpression:
+  language: SQL
+  code: SUM(sales)
+metricType: SUM
+unitOfMeasurement: DOLLARS
+granularity: QUARTER
+relatedMetrics: []
+owners: []
+reviewers: []
+tags: []
+dataProducts: []
+entityStatus: Unprocessed

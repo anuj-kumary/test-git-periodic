@@ -1,0 +1,120 @@
+name: pw-table-e71ec7f6
+fullyQualifiedName: pw-database-service-4ba0a0d7.pw-database-69d1fbab.pw-database-schema-584b2a5d.pw-table-e71ec7f6
+description: description
+columns:
+  - name: user_id
+    dataType: NUMERIC
+    dataTypeDisplay: numeric
+    description: Unique identifier for the user of your Shopify POS or your Shopify
+      admin.
+    fullyQualifiedName: pw-database-service-4ba0a0d7.pw-database-69d1fbab.pw-database-schema-584b2a5d.pw-table-e71ec7f6.user_id
+    tags: []
+    children: []
+    customMetrics: []
+  - name: shop_id
+    dataType: NUMERIC
+    dataTypeDisplay: numeric
+    description: The ID of the store. This column is a foreign key reference to the
+      shop_id column in the dim.shop table.
+    fullyQualifiedName: pw-database-service-4ba0a0d7.pw-database-69d1fbab.pw-database-schema-584b2a5d.pw-table-e71ec7f6.shop_id
+    tags: []
+    children: []
+    customMetrics: []
+  - name: name
+    dataType: VARCHAR
+    dataLength: 100
+    dataTypeDisplay: varchar
+    description: Name of the staff member.
+    fullyQualifiedName: pw-database-service-4ba0a0d7.pw-database-69d1fbab.pw-database-schema-584b2a5d.pw-table-e71ec7f6.name
+    tags: []
+    children:
+      - name: first_name
+        dataType: VARCHAR
+        dataLength: 100
+        dataTypeDisplay: varchar
+        description: First name of the staff member.
+        fullyQualifiedName: pw-database-service-4ba0a0d7.pw-database-69d1fbab.pw-database-schema-584b2a5d.pw-table-e71ec7f6.name.first_name
+        tags: []
+        children: []
+      - name: last_name
+        dataType: VARCHAR
+        dataLength: 100
+        dataTypeDisplay: varchar
+        fullyQualifiedName: pw-database-service-4ba0a0d7.pw-database-69d1fbab.pw-database-schema-584b2a5d.pw-table-e71ec7f6.name.last_name
+        tags: []
+        children: []
+    customMetrics: []
+  - name: email
+    dataType: VARCHAR
+    dataLength: 100
+    dataTypeDisplay: varchar
+    description: Email address of the staff member.
+    fullyQualifiedName: pw-database-service-4ba0a0d7.pw-database-69d1fbab.pw-database-schema-584b2a5d.pw-table-e71ec7f6.email
+    tags: []
+    children: []
+    customMetrics: []
+owners: []
+databaseSchema:
+  id: 2049cbbe-0ef8-4723-8741-0d6025ad1db1
+  type: databaseSchema
+  name: pw-database-schema-584b2a5d
+  fullyQualifiedName: pw-database-service-4ba0a0d7.pw-database-69d1fbab.pw-database-schema-584b2a5d
+  displayName: pw-database-schema-584b2a5d
+  deleted: false
+database:
+  id: 8475b05e-9318-4dca-96c8-c72a48d00442
+  type: database
+  name: pw-database-69d1fbab
+  fullyQualifiedName: pw-database-service-4ba0a0d7.pw-database-69d1fbab
+  description: description
+  displayName: pw-database-69d1fbab
+  deleted: false
+service:
+  id: 42cdd53a-da23-4664-9d5d-739be63d259f
+  type: databaseService
+  name: pw-database-service-4ba0a0d7
+  fullyQualifiedName: pw-database-service-4ba0a0d7
+  displayName: pw-database-service-4ba0a0d7
+  deleted: false
+serviceType: Mysql
+tags: []
+joins:
+  startDate: 2026-01-07
+  dayCount: 30
+  columnJoins: []
+  directTableJoins: []
+customMetrics: []
+incrementalChangeDescription:
+  fieldsAdded: []
+  fieldsUpdated:
+    - name: certification
+      oldValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Manual\",\"state\":\"Confirmed\"},\"appliedDate\":1770382233075,\"\
+        expiryDate\":1772974233075}"
+      newValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Automated\",\"state\":\"Confirmed\"},\"appliedDate\":1770382234285,\"\
+        expiryDate\":1772974234285}"
+  fieldsDeleted: []
+  previousVersion: 0.4
+  changeSummary: {}
+domains: []
+dataProducts: []
+certification:
+  tagLabel:
+    tagFQN: Certification.Silver
+    name: Silver
+    description: Silver certified Data Asset.
+    style:
+      color: "#ADADAD"
+      iconURL: SilverCertification.svg
+    source: Classification
+    labelType: Manual
+    state: Confirmed
+  appliedDate: 1770382234285
+  expiryDate: 1772974234285
+processedLineage: false
+entityStatus: Unprocessed

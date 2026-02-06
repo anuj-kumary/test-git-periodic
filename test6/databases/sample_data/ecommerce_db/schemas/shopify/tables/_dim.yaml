@@ -1,0 +1,117 @@
+name: dim.shop
+fullyQualifiedName: sample_data.ecommerce_db.shopify."dim.shop"
+description: This dimension table contains online shop information. This table contains
+  one shop per row.
+tableType: Regular
+columns:
+  - name: shop_id
+    dataType: NUMERIC
+    dataTypeDisplay: numeric
+    description: Unique identifier for the store. This column is the primary key for
+      this table.
+    fullyQualifiedName: sample_data.ecommerce_db.shopify."dim.shop".shop_id
+    tags: []
+    constraint: PRIMARY_KEY
+    ordinalPosition: 1
+    children: []
+    customMetrics: []
+  - name: name
+    dataType: VARCHAR
+    dataLength: 100
+    dataTypeDisplay: varchar
+    description: Name of your store.
+    fullyQualifiedName: sample_data.ecommerce_db.shopify."dim.shop".name
+    tags: []
+    ordinalPosition: 2
+    children: []
+    customMetrics: []
+  - name: domain
+    dataType: VARCHAR
+    dataLength: 1000
+    dataTypeDisplay: varchar
+    description: "Primary domain specified for your online store. Your primary domain\
+      \ is the one that your customers and search engines see. For example, www.mycompany.com."
+    fullyQualifiedName: sample_data.ecommerce_db.shopify."dim.shop".domain
+    tags: []
+    ordinalPosition: 3
+    children: []
+    customMetrics: []
+owners: []
+databaseSchema:
+  id: 4924e3ad-24d4-4928-b888-66a8a9f1ddb1
+  type: databaseSchema
+  name: shopify
+  fullyQualifiedName: sample_data.ecommerce_db.shopify
+  description: This **mock** database contains schema related to shopify sales and
+    orders with related dimension tables.
+  displayName: shopify
+  deleted: false
+database:
+  id: 2c678393-2cfc-4536-99d8-442c875cb38e
+  type: database
+  name: ecommerce_db
+  fullyQualifiedName: sample_data.ecommerce_db
+  description: This **mock** database contains schemas related to shopify sales and
+    orders with related dimension tables.
+  displayName: ecommerce_db
+  deleted: false
+service:
+  id: ce1347f4-cf72-4041-9190-4fc4d66134cc
+  type: databaseService
+  name: sample_data
+  fullyQualifiedName: sample_data
+  displayName: sample_data
+  deleted: false
+serviceType: BigQuery
+tags: []
+joins:
+  startDate: 2026-01-07
+  dayCount: 30
+  columnJoins: []
+  directTableJoins: []
+customMetrics: []
+incrementalChangeDescription:
+  fieldsAdded: []
+  fieldsUpdated:
+    - name: certification
+      oldValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Manual\",\"state\":\"Confirmed\"},\"appliedDate\":1770382233951,\"\
+        expiryDate\":1772974233951}"
+      newValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Automated\",\"state\":\"Confirmed\"},\"appliedDate\":1770382235075,\"\
+        expiryDate\":1772974235075}"
+  fieldsDeleted: []
+  previousVersion: 0.4
+  changeSummary: {}
+sourceUrl: http://localhost:8080/dim.shop
+domains: []
+dataProducts: []
+lifeCycle:
+  created:
+    timestamp: 1764348381722
+    accessedByAProcess: Alice
+  updated:
+    timestamp: 1765125981722
+    accessedByAProcess: Bob
+  accessed:
+    timestamp: 1765039581722
+    accessedByAProcess: Charlie
+certification:
+  tagLabel:
+    tagFQN: Certification.Silver
+    name: Silver
+    description: Silver certified Data Asset.
+    style:
+      color: "#ADADAD"
+      iconURL: SilverCertification.svg
+    source: Classification
+    labelType: Manual
+    state: Confirmed
+  appliedDate: 1770382235076
+  expiryDate: 1772974235076
+processedLineage: false
+entityStatus: Unprocessed

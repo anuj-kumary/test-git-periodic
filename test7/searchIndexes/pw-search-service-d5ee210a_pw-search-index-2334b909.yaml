@@ -1,0 +1,86 @@
+name: pw-search-index-2334b909
+fullyQualifiedName: pw-search-service-d5ee210a.pw-search-index-2334b909
+displayName: pw-search-index-2334b909
+description: Description for pw-search-index-2334b909
+service:
+  id: cbdd5cd1-b3e7-4ee6-9801-8cdd290732fc
+  type: searchService
+  name: pw-search-service-d5ee210a
+  fullyQualifiedName: pw-search-service-d5ee210a
+  displayName: pw-search-service-d5ee210a
+  deleted: false
+serviceType: ElasticSearch
+fields:
+  - name: name70bca6a9
+    dataType: TEXT
+    dataTypeDisplay: text
+    description: Table Entity Name.
+    fullyQualifiedName: pw-search-service-d5ee210a.pw-search-index-2334b909.name70bca6a9
+    tags: []
+  - name: databaseSchema97483702
+    dataType: TEXT
+    dataTypeDisplay: text
+    description: Table Entity Database Schema.
+    fullyQualifiedName: pw-search-service-d5ee210a.pw-search-index-2334b909.databaseSchema97483702
+    tags: []
+  - name: description04187f77
+    dataType: TEXT
+    dataTypeDisplay: text
+    description: Table Entity Description.
+    fullyQualifiedName: pw-search-service-d5ee210a.pw-search-index-2334b909.description04187f77
+    tags: []
+  - name: columnsbd2963e2
+    dataType: NESTED
+    dataTypeDisplay: nested
+    description: Table Columns.
+    fullyQualifiedName: pw-search-service-d5ee210a.pw-search-index-2334b909.columnsbd2963e2
+    tags: []
+    children:
+      - name: name557cffa9
+        dataType: TEXT
+        dataTypeDisplay: text
+        description: Column Name.
+        fullyQualifiedName: pw-search-service-d5ee210a.pw-search-index-2334b909.columnsbd2963e2.name557cffa9
+        tags: []
+      - name: descriptionf627d4c1
+        dataType: TEXT
+        dataTypeDisplay: text
+        description: Column Description.
+        fullyQualifiedName: pw-search-service-d5ee210a.pw-search-index-2334b909.columnsbd2963e2.descriptionf627d4c1
+        tags: []
+indexType: Index
+owners: []
+tags: []
+incrementalChangeDescription:
+  fieldsAdded: []
+  fieldsUpdated:
+    - name: certification
+      oldValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Manual\",\"state\":\"Confirmed\"},\"appliedDate\":1770382182358,\"\
+        expiryDate\":1772974182358}"
+      newValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Automated\",\"state\":\"Confirmed\"},\"appliedDate\":1770382185884,\"\
+        expiryDate\":1772974185884}"
+  fieldsDeleted: []
+  previousVersion: 0.4
+  changeSummary: {}
+domains: []
+dataProducts: []
+certification:
+  tagLabel:
+    tagFQN: Certification.Silver
+    name: Silver
+    description: Silver certified Data Asset.
+    style:
+      color: "#ADADAD"
+      iconURL: SilverCertification.svg
+    source: Classification
+    labelType: Manual
+    state: Confirmed
+  appliedDate: 1770382185887
+  expiryDate: 1772974185887
+entityStatus: Unprocessed

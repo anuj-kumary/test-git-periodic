@@ -1,0 +1,63 @@
+name: agent_performance_summary
+fullyQualifiedName: sample_data.ecommerce_db.shopify.agent_performance_summary
+description: Summary of agent performance metrics derived from multiple tables including
+  ssot_utilization_detail for comprehensive reporting.
+tableType: Regular
+columns:
+  - name: agent_id
+    dataType: VARCHAR
+    dataLength: 100
+    dataTypeDisplay: varchar
+    description: Agent identifier
+    fullyQualifiedName: sample_data.ecommerce_db.shopify.agent_performance_summary.agent_id
+    tags: []
+    ordinalPosition: 1
+    children: []
+    customMetrics: []
+  - name: performance_score
+    dataType: DECIMAL
+    dataTypeDisplay: decimal
+    description: Overall performance score
+    fullyQualifiedName: sample_data.ecommerce_db.shopify.agent_performance_summary.performance_score
+    tags: []
+    ordinalPosition: 2
+    children: []
+    customMetrics: []
+owners: []
+databaseSchema:
+  id: 4924e3ad-24d4-4928-b888-66a8a9f1ddb1
+  type: databaseSchema
+  name: shopify
+  fullyQualifiedName: sample_data.ecommerce_db.shopify
+  description: This **mock** database contains schema related to shopify sales and
+    orders with related dimension tables.
+  displayName: shopify
+  deleted: false
+database:
+  id: 2c678393-2cfc-4536-99d8-442c875cb38e
+  type: database
+  name: ecommerce_db
+  fullyQualifiedName: sample_data.ecommerce_db
+  description: This **mock** database contains schemas related to shopify sales and
+    orders with related dimension tables.
+  displayName: ecommerce_db
+  deleted: false
+service:
+  id: ce1347f4-cf72-4041-9190-4fc4d66134cc
+  type: databaseService
+  name: sample_data
+  fullyQualifiedName: sample_data
+  displayName: sample_data
+  deleted: false
+serviceType: BigQuery
+tags: []
+joins:
+  startDate: 2026-01-07
+  dayCount: 30
+  columnJoins: []
+  directTableJoins: []
+customMetrics: []
+domains: []
+dataProducts: []
+processedLineage: false
+entityStatus: Unprocessed

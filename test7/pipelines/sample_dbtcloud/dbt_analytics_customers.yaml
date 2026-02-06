@@ -1,0 +1,70 @@
+name: dbt_analytics_customers
+displayName: DBT Customer Analytics
+fullyQualifiedName: sample_dbtcloud.dbt_analytics_customers
+description: DBT pipeline for customer analytics and aggregations - runs daily
+dataProducts: []
+sourceUrl: https://cloud.getdbt.com/deploy/123456/projects/654321/runs/dbt_analytics_customers
+tasks:
+  - name: dbt_build_analytics
+    displayName: DBT Build Customer Analytics
+    fullyQualifiedName: sample_dbtcloud.dbt_analytics_customers.dbt_build_analytics
+    description: Execute dbt build for customer analytics models
+    sourceUrl: https://cloud.getdbt.com/deploy/123456/projects/654321/runs/dbt_analytics_customers
+    downstreamTasks: []
+    taskType: dbtBuildTask
+    tags: []
+pipelineStatus:
+  timestamp: 1770376567057
+  executionStatus: Successful
+  taskStatus:
+    - name: dbt_build_analytics
+      executionStatus: Successful
+      inputs: []
+      outputs: []
+  executionId: analytics_run_301
+  endTime: 1770378967057
+  inputs: []
+  outputs: []
+tags: []
+owners: []
+service:
+  id: c3408353-5912-4a56-a3c6-a065b6a9c1a5
+  type: pipelineService
+  name: sample_dbtcloud
+  fullyQualifiedName: sample_dbtcloud
+  displayName: sample_dbtcloud
+  deleted: false
+serviceType: DBTCloud
+incrementalChangeDescription:
+  fieldsAdded: []
+  fieldsUpdated:
+    - name: certification
+      oldValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Manual\",\"state\":\"Confirmed\"},\"appliedDate\":1770382182353,\"\
+        expiryDate\":1772974182353}"
+      newValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Automated\",\"state\":\"Confirmed\"},\"appliedDate\":1770382186446,\"\
+        expiryDate\":1772974186446}"
+  fieldsDeleted: []
+  previousVersion: 0.4
+  changeSummary: {}
+scheduleInterval: 0 4 * * *
+domains: []
+certification:
+  tagLabel:
+    tagFQN: Certification.Silver
+    name: Silver
+    description: Silver certified Data Asset.
+    style:
+      color: "#ADADAD"
+      iconURL: SilverCertification.svg
+    source: Classification
+    labelType: Manual
+    state: Confirmed
+  appliedDate: 1770382186447
+  expiryDate: 1772974186447
+entityStatus: Unprocessed

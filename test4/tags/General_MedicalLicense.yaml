@@ -1,0 +1,39 @@
+name: MedicalLicense
+fullyQualifiedName: General.MedicalLicense
+description: Common medical license numbers.
+classification:
+  id: 7f268f1e-9173-4ea9-ae41-6ce53ddfd3f0
+  type: classification
+  name: General
+  fullyQualifiedName: General
+  description: "Category describing generic data types, such as `DateTime`, `Location`,\
+    \ or `BankNumber`"
+  displayName: General
+  deleted: false
+children: []
+usageCount: 0
+deprecated: false
+provider: system
+disabled: false
+mutuallyExclusive: false
+domains: []
+dataProducts: []
+owners: []
+reviewers: []
+entityStatus: Unprocessed
+recognizers:
+  - id: b437465b-dbb4-49de-9496-e0e0184e8bd8
+    name: MedicalLicenseRecognizer
+    displayName: Medical License Recognizer
+    description: Recognize common Medical license numbers using regex + checksum.
+    enabled: true
+    isSystemDefault: true
+    recognizerConfig:
+      name: MedicalLicenseRecognizer
+      type: predefined
+    confidenceThreshold: 0.6
+    exceptionList: []
+    version: 0.1
+    target: content
+autoClassificationEnabled: true
+autoClassificationPriority: 50

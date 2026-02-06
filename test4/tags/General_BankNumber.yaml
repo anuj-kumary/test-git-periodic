@@ -1,0 +1,81 @@
+name: BankNumber
+fullyQualifiedName: General.BankNumber
+description: Bank Account Number.
+classification:
+  id: 7f268f1e-9173-4ea9-ae41-6ce53ddfd3f0
+  type: classification
+  name: General
+  fullyQualifiedName: General
+  description: "Category describing generic data types, such as `DateTime`, `Location`,\
+    \ or `BankNumber`"
+  displayName: General
+  deleted: false
+children: []
+usageCount: 0
+deprecated: false
+provider: system
+disabled: false
+mutuallyExclusive: false
+domains: []
+dataProducts: []
+owners: []
+reviewers: []
+entityStatus: Unprocessed
+recognizers:
+  - id: 4a989647-9dd0-4226-abc1-c05c67bf0dda
+    name: UsBankRecognizer
+    displayName: Us Bank Recognizer
+    description: Recognizes US bank number using regex.
+    enabled: true
+    isSystemDefault: true
+    recognizerConfig:
+      name: UsBankRecognizer
+      type: predefined
+      supportedLanguage: en
+    confidenceThreshold: 0.6
+    exceptionList: []
+    version: 0.1
+    target: content
+  - id: c3b42147-8ed5-4bdc-92b6-94cfa1da6f86
+    name: AbaRoutingRecognizer
+    displayName: ABA Routing Recognizer
+    description: Recognize American Banking Association (ABA) routing number.<br/><br/>Also
+      known as routing transit number (RTN) and used to identify financial institutions
+      and process transactions.
+    enabled: true
+    isSystemDefault: true
+    recognizerConfig:
+      name: AbaRoutingRecognizer
+      type: predefined
+    confidenceThreshold: 0.6
+    exceptionList: []
+    version: 0.1
+    target: content
+  - id: d7fcfc8d-5718-47ce-8555-57fd8f4eb02d
+    name: us_bank_number
+    displayName: US bank number column name
+    description: A regex recognizer for column names
+    enabled: true
+    isSystemDefault: true
+    recognizerConfig:
+      type: pattern
+      context: []
+      patterns:
+        - name: us_bank_number_pattern_0
+          regex: "\\b(account|acct|acc)[_-]?(number|num|no)\\b"
+          score: 0.6
+        - name: us_bank_number_pattern_1
+          regex: "\\bbank[_-]?(account|number|num|no)?\\b"
+          score: 0.6
+      regexFlags:
+        dotAll: true
+        multiline: true
+        ignoreCase: true
+      supportedEntity: US_BANK_NUMBER
+      supportedLanguage: en
+    confidenceThreshold: 0.6
+    exceptionList: []
+    version: 0.1
+    target: column_name
+autoClassificationEnabled: true
+autoClassificationPriority: 50

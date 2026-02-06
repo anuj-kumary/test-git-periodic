@@ -1,0 +1,98 @@
+name: marketing
+fullyQualifiedName: Glue.default.information_schema.marketing
+description: Marketing data
+tableType: Iceberg
+columns:
+  - name: ad_id
+    dataType: NUMERIC
+    dataTypeDisplay: bigint
+    description: Ad ID
+    fullyQualifiedName: Glue.default.information_schema.marketing.ad_id
+    tags: []
+    ordinalPosition: 1
+    children: []
+    customMetrics: []
+  - name: campaign_id
+    dataType: NUMERIC
+    dataTypeDisplay: bigint
+    description: campaign ID
+    fullyQualifiedName: Glue.default.information_schema.marketing.campaign_id
+    tags:
+      - tagFQN: KnowledgeCenter.Article
+        name: Article
+        description: Knowledge Article.
+        source: Classification
+        labelType: Manual
+        state: Confirmed
+        appliedAt: 1770380083169
+        appliedBy: admin
+    ordinalPosition: 1
+    children: []
+    customMetrics: []
+owners: []
+databaseSchema:
+  id: 908a8eab-b4fc-47c9-893d-03b937cc6733
+  type: databaseSchema
+  name: information_schema
+  fullyQualifiedName: Glue.default.information_schema
+  description: This **mock** database contains tables related to the Glue service
+  displayName: information_schema
+  deleted: false
+database:
+  id: 0658e15c-e0cf-4996-9cad-f1f0a1204066
+  type: database
+  name: default
+  fullyQualifiedName: Glue.default
+  description: This **mock** database contains tables related to the Glue service
+  displayName: default
+  deleted: false
+service:
+  id: 0a67726f-450b-4463-9538-f7478348f66f
+  type: databaseService
+  name: Glue
+  fullyQualifiedName: Glue
+  displayName: Glue
+  deleted: false
+serviceType: Glue
+tags: []
+joins:
+  startDate: 2026-01-07
+  dayCount: 30
+  columnJoins: []
+  directTableJoins: []
+customMetrics: []
+incrementalChangeDescription:
+  fieldsAdded: []
+  fieldsUpdated:
+    - name: certification
+      oldValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Manual\",\"state\":\"Confirmed\"},\"appliedDate\":1770382201364,\"\
+        expiryDate\":1772974201364}"
+      newValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Automated\",\"state\":\"Confirmed\"},\"appliedDate\":1770382202765,\"\
+        expiryDate\":1772974202765}"
+  fieldsDeleted: []
+  previousVersion: 0.5
+  changeSummary: {}
+sourceUrl: https://www.glue.com/marketing
+domains: []
+dataProducts: []
+certification:
+  tagLabel:
+    tagFQN: Certification.Silver
+    name: Silver
+    description: Silver certified Data Asset.
+    style:
+      color: "#ADADAD"
+      iconURL: SilverCertification.svg
+    source: Classification
+    labelType: Manual
+    state: Confirmed
+  appliedDate: 1770382202766
+  expiryDate: 1772974202766
+processedLineage: false
+entityStatus: Unprocessed

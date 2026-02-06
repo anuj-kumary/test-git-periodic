@@ -1,0 +1,49 @@
+name: forecast_sales
+fullyQualifiedName: mlflow_svc.forecast_sales
+displayName: Sales Forecast Predictions
+description: Time series forecasting model for predicting future sales based on historical
+  trends and seasonality patterns
+algorithm: mlmodel
+mlFeatures:
+  - name: historical_sales
+    dataType: numerical
+    fullyQualifiedName: mlflow_svc.forecast_sales.historical_sales
+    featureSources: []
+  - name: month
+    dataType: categorical
+    fullyQualifiedName: mlflow_svc.forecast_sales.month
+    featureSources: []
+  - name: promotion_flag
+    dataType: categorical
+    fullyQualifiedName: mlflow_svc.forecast_sales.promotion_flag
+    featureSources: []
+mlHyperParameters:
+  - name: seasonality_mode
+    value: multiplicative
+  - name: changepoint_prior_scale
+    value: 0.05
+  - name: seasonality_prior_scale
+    value: 10.0
+dashboard:
+  id: ddf9f088-c1ab-4259-a0c6-17fd657ea4ee
+  type: dashboard
+  name: forecast_sales_performance
+  fullyQualifiedName: sample_superset.forecast_sales_performance
+  description: ""
+  displayName: ETA Predictions Performance
+  deleted: false
+mlStore:
+  storage: mlflow-artifacts:/2/xyz789abc012/artifacts/model
+owners: []
+tags: []
+service:
+  id: 84005f66-c946-4b4c-9dcf-30b03e4268fe
+  type: mlmodelService
+  name: mlflow_svc
+  fullyQualifiedName: mlflow_svc
+  displayName: mlflow_svc
+  deleted: false
+serviceType: Mlflow
+domains: []
+dataProducts: []
+entityStatus: Unprocessed

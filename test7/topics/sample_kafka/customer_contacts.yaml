@@ -1,0 +1,52 @@
+name: customer_contacts
+fullyQualifiedName: sample_kafka.customer_contacts
+description: "Kafka topic to capture the customer contacts such as email, phone"
+service:
+  id: 7d1d755a-fefa-45d6-9d07-3015a82aca66
+  type: messagingService
+  name: sample_kafka
+  fullyQualifiedName: sample_kafka
+  displayName: sample_kafka
+  deleted: false
+serviceType: Kafka
+partitions: 56
+cleanupPolicies:
+  - delete
+replicationFactor: 2
+maximumMessageSize: 167
+retentionSize: 4.55858109E8
+owners: []
+tags: []
+incrementalChangeDescription:
+  fieldsAdded: []
+  fieldsUpdated:
+    - name: certification
+      oldValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Manual\",\"state\":\"Confirmed\"},\"appliedDate\":1770382183993,\"\
+        expiryDate\":1772974183993}"
+      newValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Automated\",\"state\":\"Confirmed\"},\"appliedDate\":1770382186677,\"\
+        expiryDate\":1772974186677}"
+  fieldsDeleted: []
+  previousVersion: 0.4
+  changeSummary: {}
+domains: []
+dataProducts: []
+certification:
+  tagLabel:
+    tagFQN: Certification.Silver
+    name: Silver
+    description: Silver certified Data Asset.
+    style:
+      color: "#ADADAD"
+      iconURL: SilverCertification.svg
+    source: Classification
+    labelType: Manual
+    state: Confirmed
+  appliedDate: 1770382186680
+  expiryDate: 1772974186680
+entityStatus: Unprocessed

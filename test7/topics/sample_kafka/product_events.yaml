@@ -1,0 +1,96 @@
+name: product_events
+fullyQualifiedName: sample_kafka.product_events
+description: "Kafka topic to capture the product events. This topic will get updates\
+  \ on products decription, price etc."
+service:
+  id: 7d1d755a-fefa-45d6-9d07-3015a82aca66
+  type: messagingService
+  name: sample_kafka
+  fullyQualifiedName: sample_kafka
+  displayName: sample_kafka
+  deleted: false
+serviceType: Kafka
+messageSchema:
+  schemaText: "{\"namespace\":\"openmetadata.kafka\",\"type\":\"record\",\"name\"\
+    :\"Product\",\"fields\":[{\"name\":\"product_id\",\"type\":\"int\"},{\"name\"\
+    :\"title\",\"type\":\"string\"},{\"name\":\"price\",\"type\":\"double\"},{\"name\"\
+    :\"sku\",\"type\":\"string\"},{\"name\":\"barcode\",\"type\":\"string\"},{\"name\"\
+    :\"shop_id\",\"type\":\"int\"}]}"
+  schemaType: Avro
+  schemaFields:
+    - name: Product
+      dataType: RECORD
+      fullyQualifiedName: sample_kafka.product_events.Product
+      tags: []
+      children:
+        - name: product_id
+          dataType: INT
+          dataTypeDisplay: int
+          fullyQualifiedName: sample_kafka.product_events.Product.product_id
+          tags: []
+        - name: title
+          dataType: STRING
+          dataTypeDisplay: string
+          fullyQualifiedName: sample_kafka.product_events.Product.title
+          tags: []
+        - name: price
+          dataType: DOUBLE
+          dataTypeDisplay: double
+          fullyQualifiedName: sample_kafka.product_events.Product.price
+          tags: []
+        - name: sku
+          dataType: STRING
+          dataTypeDisplay: string
+          fullyQualifiedName: sample_kafka.product_events.Product.sku
+          tags: []
+        - name: barcode
+          dataType: STRING
+          dataTypeDisplay: string
+          fullyQualifiedName: sample_kafka.product_events.Product.barcode
+          tags: []
+        - name: shop_id
+          dataType: INT
+          dataTypeDisplay: int
+          fullyQualifiedName: sample_kafka.product_events.Product.shop_id
+          tags: []
+partitions: 128
+cleanupPolicies:
+  - delete
+replicationFactor: 4
+maximumMessageSize: 208
+retentionSize: 1.068320655E9
+owners: []
+tags: []
+incrementalChangeDescription:
+  fieldsAdded: []
+  fieldsUpdated:
+    - name: certification
+      oldValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Manual\",\"state\":\"Confirmed\"},\"appliedDate\":1770382184299,\"\
+        expiryDate\":1772974184299}"
+      newValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Automated\",\"state\":\"Confirmed\"},\"appliedDate\":1770382186843,\"\
+        expiryDate\":1772974186843}"
+  fieldsDeleted: []
+  previousVersion: 0.4
+  changeSummary: {}
+domains: []
+dataProducts: []
+certification:
+  tagLabel:
+    tagFQN: Certification.Silver
+    name: Silver
+    description: Silver certified Data Asset.
+    style:
+      color: "#ADADAD"
+      iconURL: SilverCertification.svg
+    source: Classification
+    labelType: Manual
+    state: Confirmed
+  appliedDate: 1770382186844
+  expiryDate: 1772974186844
+entityStatus: Unprocessed

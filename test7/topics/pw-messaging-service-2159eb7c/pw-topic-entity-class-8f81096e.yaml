@@ -1,0 +1,88 @@
+name: pw-topic-entity-class-8f81096e
+fullyQualifiedName: pw-messaging-service-2159eb7c.pw-topic-entity-class-8f81096e
+displayName: pw-topic-entity-class-8f81096e
+description: Description for pw-topic-entity-class-8f81096e
+service:
+  id: 8f1d18fc-0a09-4541-af49-8a8f9f970542
+  type: messagingService
+  name: pw-messaging-service-2159eb7c
+  fullyQualifiedName: pw-messaging-service-2159eb7c
+  displayName: pw-messaging-service-2159eb7c
+  deleted: false
+serviceType: Kafka
+messageSchema:
+  schemaText: |-
+    {"type":"object","required":["name","age","club_name"],"properties":{"name":{"type":"object","required":["first_name","last_name"],
+        "properties":{"first_name":{"type":"string"},"last_name":{"type":"string"}}},"age":{"type":"integer"},"club_name":{"type":"string"}}}
+  schemaType: JSON
+  schemaFields:
+    - name: defaultc269642d
+      dataType: RECORD
+      fullyQualifiedName: pw-messaging-service-2159eb7c.pw-topic-entity-class-8f81096e.defaultc269642d
+      tags: []
+      children:
+        - name: namefe39d734
+          dataType: RECORD
+          fullyQualifiedName: pw-messaging-service-2159eb7c.pw-topic-entity-class-8f81096e.defaultc269642d.namefe39d734
+          tags: []
+          children:
+            - name: first_name
+              dataType: STRING
+              description: Description for schema field first_name
+              fullyQualifiedName: pw-messaging-service-2159eb7c.pw-topic-entity-class-8f81096e.defaultc269642d.namefe39d734.first_name
+              tags: []
+            - name: last_name
+              dataType: STRING
+              fullyQualifiedName: pw-messaging-service-2159eb7c.pw-topic-entity-class-8f81096e.defaultc269642d.namefe39d734.last_name
+              tags: []
+        - name: age
+          dataType: INT
+          fullyQualifiedName: pw-messaging-service-2159eb7c.pw-topic-entity-class-8f81096e.defaultc269642d.age
+          tags: []
+        - name: club_name
+          dataType: STRING
+          fullyQualifiedName: pw-messaging-service-2159eb7c.pw-topic-entity-class-8f81096e.defaultc269642d.club_name
+          tags: []
+    - name: secondaryb3900333
+      dataType: RECORD
+      fullyQualifiedName: pw-messaging-service-2159eb7c.pw-topic-entity-class-8f81096e.secondaryb3900333
+      tags: []
+      children: []
+partitions: 128
+cleanupPolicies: []
+retentionSize: -1.0
+owners: []
+tags: []
+incrementalChangeDescription:
+  fieldsAdded: []
+  fieldsUpdated:
+    - name: certification
+      oldValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Manual\",\"state\":\"Confirmed\"},\"appliedDate\":1770382183277,\"\
+        expiryDate\":1772974183277}"
+      newValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Automated\",\"state\":\"Confirmed\"},\"appliedDate\":1770382186431,\"\
+        expiryDate\":1772974186431}"
+  fieldsDeleted: []
+  previousVersion: 0.4
+  changeSummary: {}
+domains: []
+dataProducts: []
+certification:
+  tagLabel:
+    tagFQN: Certification.Silver
+    name: Silver
+    description: Silver certified Data Asset.
+    style:
+      color: "#ADADAD"
+      iconURL: SilverCertification.svg
+    source: Classification
+    labelType: Manual
+    state: Confirmed
+  appliedDate: 1770382186434
+  expiryDate: 1772974186434
+entityStatus: Unprocessed

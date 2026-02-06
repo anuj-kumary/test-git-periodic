@@ -1,0 +1,87 @@
+name: json_schema_record
+fullyQualifiedName: sample_kafka.json_schema_record
+description: All Json Schema record related events gets captured in this topic
+service:
+  id: 7d1d755a-fefa-45d6-9d07-3015a82aca66
+  type: messagingService
+  name: sample_kafka
+  fullyQualifiedName: sample_kafka
+  displayName: sample_kafka
+  deleted: false
+serviceType: Kafka
+messageSchema:
+  schemaText: "{\"type\":\"object\",\"required\":[\"name\",\"age\",\"club_name\"],\"\
+    properties\":{\"name\":{\"type\":\"object\",\"required\":[\"first_name\",\"last_name\"\
+    ],\"properties\":{\"first_name\":{\"type\":\"string\"},\"last_name\":{\"type\"\
+    :\"string\"}}},\"age\":{\"type\":\"integer\"},\"club_name\":{\"type\":\"string\"\
+    }}}"
+  schemaType: JSON
+  schemaFields:
+    - name: default
+      dataType: RECORD
+      fullyQualifiedName: sample_kafka.json_schema_record.default
+      tags: []
+      children:
+        - name: name
+          dataType: RECORD
+          fullyQualifiedName: sample_kafka.json_schema_record.default.name
+          tags: []
+          children:
+            - name: first_name
+              dataType: STRING
+              fullyQualifiedName: sample_kafka.json_schema_record.default.name.first_name
+              tags: []
+            - name: last_name
+              dataType: STRING
+              fullyQualifiedName: sample_kafka.json_schema_record.default.name.last_name
+              tags: []
+        - name: age
+          dataType: INT
+          fullyQualifiedName: sample_kafka.json_schema_record.default.age
+          tags: []
+        - name: club_name
+          dataType: STRING
+          fullyQualifiedName: sample_kafka.json_schema_record.default.club_name
+          tags: []
+partitions: 128
+cleanupPolicies:
+  - compact
+  - delete
+replicationFactor: 4
+maximumMessageSize: 249
+retentionSize: 1.931232624E9
+owners: []
+tags: []
+incrementalChangeDescription:
+  fieldsAdded: []
+  fieldsUpdated:
+    - name: certification
+      oldValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Manual\",\"state\":\"Confirmed\"},\"appliedDate\":1770382184162,\"\
+        expiryDate\":1772974184162}"
+      newValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Automated\",\"state\":\"Confirmed\"},\"appliedDate\":1770382186760,\"\
+        expiryDate\":1772974186760}"
+  fieldsDeleted: []
+  previousVersion: 0.4
+  changeSummary: {}
+domains: []
+dataProducts: []
+certification:
+  tagLabel:
+    tagFQN: Certification.Silver
+    name: Silver
+    description: Silver certified Data Asset.
+    style:
+      color: "#ADADAD"
+      iconURL: SilverCertification.svg
+    source: Classification
+    labelType: Manual
+    state: Confirmed
+  appliedDate: 1770382186761
+  expiryDate: 1772974186761
+entityStatus: Unprocessed

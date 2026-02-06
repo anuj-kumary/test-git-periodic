@@ -1,0 +1,115 @@
+name: pw-table-a6bc08be-d64c-42e2-a8b0-046e2afff454
+displayName: pw table f258f8db-e8aa-4feb-9460-ae4a7ca47fbf
+fullyQualifiedName: pw-database-service-98ad034f.pw-database-3a6e4977.pw-database-schema-a02ed55a.pw-table-a6bc08be-d64c-42e2-a8b0-046e2afff454
+description: description
+tableType: MaterializedView
+columns:
+  - name: user_id101e1c13
+    dataType: NUMERIC
+    dataTypeDisplay: numeric
+    description: Unique identifier for the user of your Shopify POS or your Shopify
+      admin.
+    fullyQualifiedName: pw-database-service-98ad034f.pw-database-3a6e4977.pw-database-schema-a02ed55a.pw-table-a6bc08be-d64c-42e2-a8b0-046e2afff454.user_id101e1c13
+    tags: []
+    children: []
+    customMetrics: []
+  - name: shop_id40f04428
+    dataType: INT
+    dataTypeDisplay: int
+    description: The ID of the store. This column is a foreign key reference to the
+      shop_id column in the dim.shop table.
+    fullyQualifiedName: pw-database-service-98ad034f.pw-database-3a6e4977.pw-database-schema-a02ed55a.pw-table-a6bc08be-d64c-42e2-a8b0-046e2afff454.shop_id40f04428
+    tags: []
+    children: []
+    customMetrics: []
+  - name: namef81a871c
+    dataType: VARCHAR
+    dataLength: 100
+    dataTypeDisplay: varchar
+    description: Name of the staff member.
+    fullyQualifiedName: pw-database-service-98ad034f.pw-database-3a6e4977.pw-database-schema-a02ed55a.pw-table-a6bc08be-d64c-42e2-a8b0-046e2afff454.namef81a871c
+    tags: []
+    children:
+      - name: first_namea707942f
+        dataType: STRUCT
+        dataLength: 100
+        dataTypeDisplay: "struct<username:varchar(32),name:varchar(32),sex:char(1),address:varchar(128),mail:varchar(64),birthdate:varchar(16)>"
+        description: First name of the staff member.
+        fullyQualifiedName: pw-database-service-98ad034f.pw-database-3a6e4977.pw-database-schema-a02ed55a.pw-table-a6bc08be-d64c-42e2-a8b0-046e2afff454.namef81a871c.first_namea707942f
+        tags: []
+        children: []
+      - name: last_name7cfbdd47
+        dataType: ARRAY
+        dataLength: 100
+        dataTypeDisplay: "array<struct<type:string,provider:array<int>>>"
+        fullyQualifiedName: pw-database-service-98ad034f.pw-database-3a6e4977.pw-database-schema-a02ed55a.pw-table-a6bc08be-d64c-42e2-a8b0-046e2afff454.namef81a871c.last_name7cfbdd47
+        tags: []
+        children:
+          - name: address902c4351
+            dataType: STRUCT
+            dataLength: 100
+            dataTypeDisplay: "struct<username:varchar(32),name:varchar(32),sex:char(1),address:varchar(128),mail:varchar(64),birthdate:varchar(16)>"
+            description: First name of the staff member.
+            fullyQualifiedName: pw-database-service-98ad034f.pw-database-3a6e4977.pw-database-schema-a02ed55a.pw-table-a6bc08be-d64c-42e2-a8b0-046e2afff454.namef81a871c.last_name7cfbdd47.address902c4351
+            tags: []
+            children: []
+          - name: mail4a364097
+            dataType: ARRAY
+            dataLength: 100
+            dataTypeDisplay: "array<struct<type:string,provider:array<int>>>"
+            fullyQualifiedName: pw-database-service-98ad034f.pw-database-3a6e4977.pw-database-schema-a02ed55a.pw-table-a6bc08be-d64c-42e2-a8b0-046e2afff454.namef81a871c.last_name7cfbdd47.mail4a364097
+            tags: []
+            children: []
+    customMetrics: []
+  - name: email04ff898d
+    dataType: VARCHAR
+    dataLength: 100
+    dataTypeDisplay: varchar
+    description: Email address of the staff member.
+    fullyQualifiedName: pw-database-service-98ad034f.pw-database-3a6e4977.pw-database-schema-a02ed55a.pw-table-a6bc08be-d64c-42e2-a8b0-046e2afff454.email04ff898d
+    tags: []
+    children: []
+    customMetrics: []
+  - name: created_atdda01278
+    dataType: TIMESTAMP
+    dataLength: 100
+    dataTypeDisplay: timestamp
+    description: entity created time
+    fullyQualifiedName: pw-database-service-98ad034f.pw-database-3a6e4977.pw-database-schema-a02ed55a.pw-table-a6bc08be-d64c-42e2-a8b0-046e2afff454.created_atdda01278
+    tags: []
+    children: []
+    customMetrics: []
+owners: []
+databaseSchema:
+  id: 0450907c-f767-44d5-99f7-dad0c8a0753b
+  type: databaseSchema
+  name: pw-database-schema-a02ed55a
+  fullyQualifiedName: pw-database-service-98ad034f.pw-database-3a6e4977.pw-database-schema-a02ed55a
+  displayName: pw-database-schema-a02ed55a
+  deleted: false
+database:
+  id: d22cff3b-d816-4ce4-9c4a-3b6462553876
+  type: database
+  name: pw-database-3a6e4977
+  fullyQualifiedName: pw-database-service-98ad034f.pw-database-3a6e4977
+  displayName: pw-database-3a6e4977
+  deleted: false
+service:
+  id: 13e5ee23-46ef-4583-b1d1-9a63c6c9acbf
+  type: databaseService
+  name: pw-database-service-98ad034f
+  fullyQualifiedName: pw-database-service-98ad034f
+  displayName: pw-database-service-98ad034f
+  deleted: false
+serviceType: Mysql
+tags: []
+joins:
+  startDate: 2026-01-07
+  dayCount: 30
+  columnJoins: []
+  directTableJoins: []
+customMetrics: []
+domains: []
+dataProducts: []
+processedLineage: false
+entityStatus: Unprocessed

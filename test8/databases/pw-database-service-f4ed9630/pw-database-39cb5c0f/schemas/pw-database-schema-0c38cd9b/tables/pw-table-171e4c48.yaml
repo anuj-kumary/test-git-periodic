@@ -1,0 +1,90 @@
+name: pw-table-171e4c48
+fullyQualifiedName: pw-database-service-f4ed9630.pw-database-39cb5c0f.pw-database-schema-0c38cd9b.pw-table-171e4c48
+description: description
+columns:
+  - name: user_id
+    dataType: NUMERIC
+    dataTypeDisplay: numeric
+    description: Unique identifier for the user of your Shopify POS or your Shopify
+      admin.
+    fullyQualifiedName: pw-database-service-f4ed9630.pw-database-39cb5c0f.pw-database-schema-0c38cd9b.pw-table-171e4c48.user_id
+    tags: []
+    children: []
+    customMetrics: []
+  - name: shop_id
+    dataType: NUMERIC
+    dataTypeDisplay: numeric
+    description: The ID of the store. This column is a foreign key reference to the
+      shop_id column in the dim.shop table.
+    fullyQualifiedName: pw-database-service-f4ed9630.pw-database-39cb5c0f.pw-database-schema-0c38cd9b.pw-table-171e4c48.shop_id
+    tags: []
+    children: []
+    customMetrics: []
+  - name: name
+    dataType: VARCHAR
+    dataLength: 100
+    dataTypeDisplay: varchar
+    description: Name of the staff member.
+    fullyQualifiedName: pw-database-service-f4ed9630.pw-database-39cb5c0f.pw-database-schema-0c38cd9b.pw-table-171e4c48.name
+    tags: []
+    children:
+      - name: first_name
+        dataType: VARCHAR
+        dataLength: 100
+        dataTypeDisplay: varchar
+        description: First name of the staff member.
+        fullyQualifiedName: pw-database-service-f4ed9630.pw-database-39cb5c0f.pw-database-schema-0c38cd9b.pw-table-171e4c48.name.first_name
+        tags: []
+        children: []
+      - name: last_name
+        dataType: VARCHAR
+        dataLength: 100
+        dataTypeDisplay: varchar
+        fullyQualifiedName: pw-database-service-f4ed9630.pw-database-39cb5c0f.pw-database-schema-0c38cd9b.pw-table-171e4c48.name.last_name
+        tags: []
+        children: []
+    customMetrics: []
+  - name: email
+    dataType: VARCHAR
+    dataLength: 100
+    dataTypeDisplay: varchar
+    description: Email address of the staff member.
+    fullyQualifiedName: pw-database-service-f4ed9630.pw-database-39cb5c0f.pw-database-schema-0c38cd9b.pw-table-171e4c48.email
+    tags: []
+    children: []
+    customMetrics: []
+owners: []
+databaseSchema:
+  id: a683b516-f542-4b50-ad7a-3726e12c8faf
+  type: databaseSchema
+  name: pw-database-schema-0c38cd9b
+  fullyQualifiedName: pw-database-service-f4ed9630.pw-database-39cb5c0f.pw-database-schema-0c38cd9b
+  displayName: pw-database-schema-0c38cd9b
+  deleted: false
+database:
+  id: 8c954c0d-d433-42e0-96bf-d382d92d4f58
+  type: database
+  name: pw-database-39cb5c0f
+  fullyQualifiedName: pw-database-service-f4ed9630.pw-database-39cb5c0f
+  description: description
+  displayName: pw-database-39cb5c0f
+  deleted: false
+service:
+  id: b7ad71e3-3ba0-487b-a855-945c88a77f7b
+  type: databaseService
+  name: pw-database-service-f4ed9630
+  fullyQualifiedName: pw-database-service-f4ed9630
+  displayName: pw-database-service-f4ed9630
+  deleted: false
+serviceType: Mysql
+tags: []
+joins:
+  startDate: 2026-01-07
+  dayCount: 30
+  columnJoins: []
+  directTableJoins: []
+customMetrics: []
+domains: []
+dataProducts: []
+processedLineage: false
+entityStatus: Unprocessed

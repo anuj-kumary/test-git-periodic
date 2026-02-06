@@ -1,0 +1,154 @@
+name: pw-table-f1b2dd52-b22b-4eb6-b4a5-a7bb1235f716
+displayName: pw table 5e356baf-4a3c-4586-b267-f6540e0fdf6d
+fullyQualifiedName: pw-database-service-e495c7ae.pw-database-018a7747.pw-database-schema-184bde53.pw-table-f1b2dd52-b22b-4eb6-b4a5-a7bb1235f716
+description: description
+tableType: SecureView
+columns:
+  - name: user_idead143b8
+    dataType: NUMERIC
+    dataTypeDisplay: numeric
+    description: Unique identifier for the user of your Shopify POS or your Shopify
+      admin.
+    fullyQualifiedName: pw-database-service-e495c7ae.pw-database-018a7747.pw-database-schema-184bde53.pw-table-f1b2dd52-b22b-4eb6-b4a5-a7bb1235f716.user_idead143b8
+    tags: []
+    children: []
+    customMetrics: []
+  - name: shop_id65abeb45
+    dataType: INT
+    dataTypeDisplay: int
+    description: The ID of the store. This column is a foreign key reference to the
+      shop_id column in the dim.shop table.
+    fullyQualifiedName: pw-database-service-e495c7ae.pw-database-018a7747.pw-database-schema-184bde53.pw-table-f1b2dd52-b22b-4eb6-b4a5-a7bb1235f716.shop_id65abeb45
+    tags: []
+    children: []
+    customMetrics: []
+  - name: namee341d118
+    dataType: VARCHAR
+    dataLength: 100
+    dataTypeDisplay: varchar
+    description: Name of the staff member.
+    fullyQualifiedName: pw-database-service-e495c7ae.pw-database-018a7747.pw-database-schema-184bde53.pw-table-f1b2dd52-b22b-4eb6-b4a5-a7bb1235f716.namee341d118
+    tags: []
+    children:
+      - name: first_namec60f6ac0
+        dataType: STRUCT
+        dataLength: 100
+        dataTypeDisplay: "struct<username:varchar(32),name:varchar(32),sex:char(1),address:varchar(128),mail:varchar(64),birthdate:varchar(16)>"
+        description: First name of the staff member.
+        fullyQualifiedName: pw-database-service-e495c7ae.pw-database-018a7747.pw-database-schema-184bde53.pw-table-f1b2dd52-b22b-4eb6-b4a5-a7bb1235f716.namee341d118.first_namec60f6ac0
+        tags: []
+        children: []
+      - name: last_name5f5077f9
+        dataType: ARRAY
+        dataLength: 100
+        dataTypeDisplay: "array<struct<type:string,provider:array<int>>>"
+        fullyQualifiedName: pw-database-service-e495c7ae.pw-database-018a7747.pw-database-schema-184bde53.pw-table-f1b2dd52-b22b-4eb6-b4a5-a7bb1235f716.namee341d118.last_name5f5077f9
+        tags: []
+        children:
+          - name: addressc1c466b4
+            dataType: STRUCT
+            dataLength: 100
+            dataTypeDisplay: "struct<username:varchar(32),name:varchar(32),sex:char(1),address:varchar(128),mail:varchar(64),birthdate:varchar(16)>"
+            description: First name of the staff member.
+            fullyQualifiedName: pw-database-service-e495c7ae.pw-database-018a7747.pw-database-schema-184bde53.pw-table-f1b2dd52-b22b-4eb6-b4a5-a7bb1235f716.namee341d118.last_name5f5077f9.addressc1c466b4
+            tags: []
+            children: []
+          - name: mail88b33d27
+            dataType: ARRAY
+            dataLength: 100
+            dataTypeDisplay: "array<struct<type:string,provider:array<int>>>"
+            fullyQualifiedName: pw-database-service-e495c7ae.pw-database-018a7747.pw-database-schema-184bde53.pw-table-f1b2dd52-b22b-4eb6-b4a5-a7bb1235f716.namee341d118.last_name5f5077f9.mail88b33d27
+            tags: []
+            children: []
+    customMetrics: []
+  - name: email9ea7bdb6
+    dataType: VARCHAR
+    dataLength: 100
+    dataTypeDisplay: varchar
+    description: Email address of the staff member.
+    fullyQualifiedName: pw-database-service-e495c7ae.pw-database-018a7747.pw-database-schema-184bde53.pw-table-f1b2dd52-b22b-4eb6-b4a5-a7bb1235f716.email9ea7bdb6
+    tags: []
+    children: []
+    customMetrics: []
+  - name: created_atdb57b357
+    dataType: TIMESTAMP
+    dataLength: 100
+    dataTypeDisplay: timestamp
+    description: entity created time
+    fullyQualifiedName: pw-database-service-e495c7ae.pw-database-018a7747.pw-database-schema-184bde53.pw-table-f1b2dd52-b22b-4eb6-b4a5-a7bb1235f716.created_atdb57b357
+    tags: []
+    children: []
+    customMetrics: []
+owners:
+  - id: b5233bf4-b542-484c-bb36-90519174cf96
+    type: user
+    name: jollyac8470fb.lion68fc92c2.1770382539595
+    fullyQualifiedName: '"jollyac8470fb.lion68fc92c2.1770382539595"'
+    displayName: Jollyac8470fbLion68fc92c2
+    deleted: false
+databaseSchema:
+  id: 3f227755-8daa-4a1d-ab2a-4ef22827d963
+  type: databaseSchema
+  name: pw-database-schema-184bde53
+  fullyQualifiedName: pw-database-service-e495c7ae.pw-database-018a7747.pw-database-schema-184bde53
+  displayName: pw-database-schema-184bde53
+  deleted: false
+database:
+  id: 42fca7ff-eb66-4bc5-936e-1aae77c5f83c
+  type: database
+  name: pw-database-018a7747
+  fullyQualifiedName: pw-database-service-e495c7ae.pw-database-018a7747
+  displayName: pw-database-018a7747
+  deleted: false
+service:
+  id: 8c44133a-a766-45ed-98a0-afedaef92a7a
+  type: databaseService
+  name: pw-database-service-e495c7ae
+  fullyQualifiedName: pw-database-service-e495c7ae
+  displayName: pw-database-service-e495c7ae
+  deleted: false
+serviceType: Mysql
+tags:
+  - tagFQN: Tier.Tier1
+    name: Tier1
+    description: |-
+      **Critical Source of Truth business data assets of an organization**
+
+      - Used in critical metrics and dashboards to drive business and product decisions
+
+      - Used in critical compliance reporting to regulators, govt entities, and third party
+
+      - Used in brand or revenue impacting online user-facing experiences (search results, advertisement, promotions, and experimentation)
+
+      - Other high impact use, such as ML models and fraud detection
+
+      - Source used to derive other critical Tier-1 datasets
+    source: Classification
+    labelType: Manual
+    state: Confirmed
+    appliedAt: 1770382548238
+    appliedBy: admin
+joins:
+  startDate: 2026-01-07
+  dayCount: 30
+  columnJoins: []
+  directTableJoins: []
+customMetrics: []
+incrementalChangeDescription:
+  fieldsAdded:
+    - name: owners
+      newValue: "[{\"id\":\"b5233bf4-b542-484c-bb36-90519174cf96\",\"type\":\"user\"\
+        ,\"name\":\"jollyac8470fb.lion68fc92c2.1770382539595\",\"fullyQualifiedName\"\
+        :\"\\\"jollyac8470fb.lion68fc92c2.1770382539595\\\"\",\"displayName\":\"Jollyac8470fbLion68fc92c2\"\
+        ,\"deleted\":false}]"
+  fieldsUpdated: []
+  fieldsDeleted: []
+  previousVersion: 0.2
+  changeSummary:
+    owners:
+      changedBy: admin
+      changedAt: 1770382548217
+domains: []
+dataProducts: []
+processedLineage: false
+entityStatus: Unprocessed

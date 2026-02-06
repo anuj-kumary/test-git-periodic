@@ -1,0 +1,173 @@
+name: pw-table-c7e97403-bbb1-4b2c-a485-47045913a292
+displayName: pw table b28a41a7-c9cf-4e02-8548-bb8e1f51a7b0
+fullyQualifiedName: pw-database-service-9297d50b.pw-database-8c728a82.pw-database-schema-bad470f3.pw-table-c7e97403-bbb1-4b2c-a485-47045913a292
+description: description
+tableType: SecureView
+columns:
+  - name: user_id3001780a
+    dataType: NUMERIC
+    dataTypeDisplay: numeric
+    description: Unique identifier for the user of your Shopify POS or your Shopify
+      admin.
+    fullyQualifiedName: pw-database-service-9297d50b.pw-database-8c728a82.pw-database-schema-bad470f3.pw-table-c7e97403-bbb1-4b2c-a485-47045913a292.user_id3001780a
+    tags: []
+    children: []
+    customMetrics: []
+  - name: shop_id2717f60d
+    dataType: INT
+    dataTypeDisplay: int
+    description: The ID of the store. This column is a foreign key reference to the
+      shop_id column in the dim.shop table.
+    fullyQualifiedName: pw-database-service-9297d50b.pw-database-8c728a82.pw-database-schema-bad470f3.pw-table-c7e97403-bbb1-4b2c-a485-47045913a292.shop_id2717f60d
+    tags: []
+    children: []
+    customMetrics: []
+  - name: name70c6976d
+    dataType: VARCHAR
+    dataLength: 100
+    dataTypeDisplay: varchar
+    description: Name of the staff member.
+    fullyQualifiedName: pw-database-service-9297d50b.pw-database-8c728a82.pw-database-schema-bad470f3.pw-table-c7e97403-bbb1-4b2c-a485-47045913a292.name70c6976d
+    tags: []
+    children:
+      - name: first_name62fa0196
+        dataType: STRUCT
+        dataLength: 100
+        dataTypeDisplay: "struct<username:varchar(32),name:varchar(32),sex:char(1),address:varchar(128),mail:varchar(64),birthdate:varchar(16)>"
+        description: First name of the staff member.
+        fullyQualifiedName: pw-database-service-9297d50b.pw-database-8c728a82.pw-database-schema-bad470f3.pw-table-c7e97403-bbb1-4b2c-a485-47045913a292.name70c6976d.first_name62fa0196
+        tags: []
+        children: []
+      - name: last_name6e6d5084
+        dataType: ARRAY
+        dataLength: 100
+        dataTypeDisplay: "array<struct<type:string,provider:array<int>>>"
+        fullyQualifiedName: pw-database-service-9297d50b.pw-database-8c728a82.pw-database-schema-bad470f3.pw-table-c7e97403-bbb1-4b2c-a485-47045913a292.name70c6976d.last_name6e6d5084
+        tags: []
+        children:
+          - name: address6a4ce362
+            dataType: STRUCT
+            dataLength: 100
+            dataTypeDisplay: "struct<username:varchar(32),name:varchar(32),sex:char(1),address:varchar(128),mail:varchar(64),birthdate:varchar(16)>"
+            description: First name of the staff member.
+            fullyQualifiedName: pw-database-service-9297d50b.pw-database-8c728a82.pw-database-schema-bad470f3.pw-table-c7e97403-bbb1-4b2c-a485-47045913a292.name70c6976d.last_name6e6d5084.address6a4ce362
+            tags: []
+            children: []
+          - name: mail566e5c79
+            dataType: ARRAY
+            dataLength: 100
+            dataTypeDisplay: "array<struct<type:string,provider:array<int>>>"
+            fullyQualifiedName: pw-database-service-9297d50b.pw-database-8c728a82.pw-database-schema-bad470f3.pw-table-c7e97403-bbb1-4b2c-a485-47045913a292.name70c6976d.last_name6e6d5084.mail566e5c79
+            tags: []
+            children: []
+    customMetrics: []
+  - name: email86474315
+    dataType: VARCHAR
+    dataLength: 100
+    dataTypeDisplay: varchar
+    description: Email address of the staff member.
+    fullyQualifiedName: pw-database-service-9297d50b.pw-database-8c728a82.pw-database-schema-bad470f3.pw-table-c7e97403-bbb1-4b2c-a485-47045913a292.email86474315
+    tags: []
+    children: []
+    customMetrics: []
+  - name: created_at8ffe8a69
+    dataType: TIMESTAMP
+    dataLength: 100
+    dataTypeDisplay: timestamp
+    description: entity created time
+    fullyQualifiedName: pw-database-service-9297d50b.pw-database-8c728a82.pw-database-schema-bad470f3.pw-table-c7e97403-bbb1-4b2c-a485-47045913a292.created_at8ffe8a69
+    tags: []
+    children: []
+    customMetrics: []
+owners:
+  - id: c7ad554b-7b6b-4109-b37f-dc8a9df1f1c7
+    type: user
+    name: jolly729880d2.tigere6129a5e.1770382078627
+    fullyQualifiedName: '"jolly729880d2.tigere6129a5e.1770382078627"'
+    displayName: Jolly729880d2Tigere6129a5e
+    deleted: false
+databaseSchema:
+  id: d9910805-4629-49dd-adab-b7daccc300bb
+  type: databaseSchema
+  name: pw-database-schema-bad470f3
+  fullyQualifiedName: pw-database-service-9297d50b.pw-database-8c728a82.pw-database-schema-bad470f3
+  displayName: pw-database-schema-bad470f3
+  deleted: false
+database:
+  id: d2ec597e-eaa3-4dd0-89d5-d450551b7590
+  type: database
+  name: pw-database-8c728a82
+  fullyQualifiedName: pw-database-service-9297d50b.pw-database-8c728a82
+  displayName: pw-database-8c728a82
+  deleted: false
+service:
+  id: 3f2a8cf4-d7e5-47d9-be4a-f77444dca1bc
+  type: databaseService
+  name: pw-database-service-9297d50b
+  fullyQualifiedName: pw-database-service-9297d50b
+  displayName: pw-database-service-9297d50b
+  deleted: false
+serviceType: Mysql
+tags:
+  - tagFQN: Tier.Tier1
+    name: Tier1
+    description: |-
+      **Critical Source of Truth business data assets of an organization**
+
+      - Used in critical metrics and dashboards to drive business and product decisions
+
+      - Used in critical compliance reporting to regulators, govt entities, and third party
+
+      - Used in brand or revenue impacting online user-facing experiences (search results, advertisement, promotions, and experimentation)
+
+      - Other high impact use, such as ML models and fraud detection
+
+      - Source used to derive other critical Tier-1 datasets
+    source: Classification
+    labelType: Manual
+    state: Confirmed
+    appliedAt: 1770382087668
+    appliedBy: admin
+joins:
+  startDate: 2026-01-07
+  dayCount: 30
+  columnJoins: []
+  directTableJoins: []
+customMetrics: []
+incrementalChangeDescription:
+  fieldsAdded: []
+  fieldsUpdated:
+    - name: certification
+      oldValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Gold\",\"name\":\"Gold\"\
+        ,\"description\":\"Gold certified Data Asset.\",\"style\":{\"color\":\"#FFCE00\"\
+        ,\"iconURL\":\"GoldCertification.svg\"},\"source\":\"Classification\",\"labelType\"\
+        :\"Manual\",\"state\":\"Confirmed\"},\"appliedDate\":1770382233378,\"expiryDate\"\
+        :1772974233378}"
+      newValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Gold\",\"name\":\"Gold\"\
+        ,\"description\":\"Gold certified Data Asset.\",\"style\":{\"color\":\"#FFCE00\"\
+        ,\"iconURL\":\"GoldCertification.svg\"},\"source\":\"Classification\",\"labelType\"\
+        :\"Automated\",\"state\":\"Confirmed\"},\"appliedDate\":1770382234542,\"expiryDate\"\
+        :1772974234542}"
+  fieldsDeleted: []
+  previousVersion: 0.3
+  changeSummary:
+    owners:
+      changedBy: admin
+      changedAt: 1770382087650
+domains: []
+dataProducts: []
+certification:
+  tagLabel:
+    tagFQN: Certification.Gold
+    name: Gold
+    description: Gold certified Data Asset.
+    style:
+      color: "#FFCE00"
+      iconURL: GoldCertification.svg
+    source: Classification
+    labelType: Manual
+    state: Confirmed
+  appliedDate: 1770382234542
+  expiryDate: 1772974234542
+processedLineage: false
+entityStatus: Unprocessed

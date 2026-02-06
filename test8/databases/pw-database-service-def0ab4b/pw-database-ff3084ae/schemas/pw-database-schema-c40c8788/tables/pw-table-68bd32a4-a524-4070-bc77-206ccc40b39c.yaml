@@ -1,0 +1,154 @@
+name: pw-table-68bd32a4-a524-4070-bc77-206ccc40b39c
+displayName: pw table 9002aa38-63de-4a46-8a25-b033e559a861
+fullyQualifiedName: pw-database-service-def0ab4b.pw-database-ff3084ae.pw-database-schema-c40c8788.pw-table-68bd32a4-a524-4070-bc77-206ccc40b39c
+description: description
+tableType: SecureView
+columns:
+  - name: user_id20aab1a2
+    dataType: NUMERIC
+    dataTypeDisplay: numeric
+    description: Unique identifier for the user of your Shopify POS or your Shopify
+      admin.
+    fullyQualifiedName: pw-database-service-def0ab4b.pw-database-ff3084ae.pw-database-schema-c40c8788.pw-table-68bd32a4-a524-4070-bc77-206ccc40b39c.user_id20aab1a2
+    tags: []
+    children: []
+    customMetrics: []
+  - name: shop_id78df19cf
+    dataType: INT
+    dataTypeDisplay: int
+    description: The ID of the store. This column is a foreign key reference to the
+      shop_id column in the dim.shop table.
+    fullyQualifiedName: pw-database-service-def0ab4b.pw-database-ff3084ae.pw-database-schema-c40c8788.pw-table-68bd32a4-a524-4070-bc77-206ccc40b39c.shop_id78df19cf
+    tags: []
+    children: []
+    customMetrics: []
+  - name: name8f728389
+    dataType: VARCHAR
+    dataLength: 100
+    dataTypeDisplay: varchar
+    description: Name of the staff member.
+    fullyQualifiedName: pw-database-service-def0ab4b.pw-database-ff3084ae.pw-database-schema-c40c8788.pw-table-68bd32a4-a524-4070-bc77-206ccc40b39c.name8f728389
+    tags: []
+    children:
+      - name: first_name0eadd46e
+        dataType: STRUCT
+        dataLength: 100
+        dataTypeDisplay: "struct<username:varchar(32),name:varchar(32),sex:char(1),address:varchar(128),mail:varchar(64),birthdate:varchar(16)>"
+        description: First name of the staff member.
+        fullyQualifiedName: pw-database-service-def0ab4b.pw-database-ff3084ae.pw-database-schema-c40c8788.pw-table-68bd32a4-a524-4070-bc77-206ccc40b39c.name8f728389.first_name0eadd46e
+        tags: []
+        children: []
+      - name: last_name08df40a5
+        dataType: ARRAY
+        dataLength: 100
+        dataTypeDisplay: "array<struct<type:string,provider:array<int>>>"
+        fullyQualifiedName: pw-database-service-def0ab4b.pw-database-ff3084ae.pw-database-schema-c40c8788.pw-table-68bd32a4-a524-4070-bc77-206ccc40b39c.name8f728389.last_name08df40a5
+        tags: []
+        children:
+          - name: addressf148a55b
+            dataType: STRUCT
+            dataLength: 100
+            dataTypeDisplay: "struct<username:varchar(32),name:varchar(32),sex:char(1),address:varchar(128),mail:varchar(64),birthdate:varchar(16)>"
+            description: First name of the staff member.
+            fullyQualifiedName: pw-database-service-def0ab4b.pw-database-ff3084ae.pw-database-schema-c40c8788.pw-table-68bd32a4-a524-4070-bc77-206ccc40b39c.name8f728389.last_name08df40a5.addressf148a55b
+            tags: []
+            children: []
+          - name: mail42e1c478
+            dataType: ARRAY
+            dataLength: 100
+            dataTypeDisplay: "array<struct<type:string,provider:array<int>>>"
+            fullyQualifiedName: pw-database-service-def0ab4b.pw-database-ff3084ae.pw-database-schema-c40c8788.pw-table-68bd32a4-a524-4070-bc77-206ccc40b39c.name8f728389.last_name08df40a5.mail42e1c478
+            tags: []
+            children: []
+    customMetrics: []
+  - name: emailf9b7a461
+    dataType: VARCHAR
+    dataLength: 100
+    dataTypeDisplay: varchar
+    description: Email address of the staff member.
+    fullyQualifiedName: pw-database-service-def0ab4b.pw-database-ff3084ae.pw-database-schema-c40c8788.pw-table-68bd32a4-a524-4070-bc77-206ccc40b39c.emailf9b7a461
+    tags: []
+    children: []
+    customMetrics: []
+  - name: created_at9912a688
+    dataType: TIMESTAMP
+    dataLength: 100
+    dataTypeDisplay: timestamp
+    description: entity created time
+    fullyQualifiedName: pw-database-service-def0ab4b.pw-database-ff3084ae.pw-database-schema-c40c8788.pw-table-68bd32a4-a524-4070-bc77-206ccc40b39c.created_at9912a688
+    tags: []
+    children: []
+    customMetrics: []
+owners:
+  - id: a608ae47-2d89-4b90-b5ff-ad30f39cb351
+    type: user
+    name: brightff96d731.panther46b884e5.1770382539596
+    fullyQualifiedName: '"brightff96d731.panther46b884e5.1770382539596"'
+    displayName: Brightff96d731Panther46b884e5
+    deleted: false
+databaseSchema:
+  id: 79a0f96e-c82e-4b00-8b0d-b12631343e40
+  type: databaseSchema
+  name: pw-database-schema-c40c8788
+  fullyQualifiedName: pw-database-service-def0ab4b.pw-database-ff3084ae.pw-database-schema-c40c8788
+  displayName: pw-database-schema-c40c8788
+  deleted: false
+database:
+  id: 2f5104fc-ca0f-402b-97d4-0c71f2c1ca5e
+  type: database
+  name: pw-database-ff3084ae
+  fullyQualifiedName: pw-database-service-def0ab4b.pw-database-ff3084ae
+  displayName: pw-database-ff3084ae
+  deleted: false
+service:
+  id: e2a84187-9a14-4039-8c18-6f9a4dde0e1b
+  type: databaseService
+  name: pw-database-service-def0ab4b
+  fullyQualifiedName: pw-database-service-def0ab4b
+  displayName: pw-database-service-def0ab4b
+  deleted: false
+serviceType: Mysql
+tags:
+  - tagFQN: Tier.Tier1
+    name: Tier1
+    description: |-
+      **Critical Source of Truth business data assets of an organization**
+
+      - Used in critical metrics and dashboards to drive business and product decisions
+
+      - Used in critical compliance reporting to regulators, govt entities, and third party
+
+      - Used in brand or revenue impacting online user-facing experiences (search results, advertisement, promotions, and experimentation)
+
+      - Other high impact use, such as ML models and fraud detection
+
+      - Source used to derive other critical Tier-1 datasets
+    source: Classification
+    labelType: Manual
+    state: Confirmed
+    appliedAt: 1770382548043
+    appliedBy: admin
+joins:
+  startDate: 2026-01-07
+  dayCount: 30
+  columnJoins: []
+  directTableJoins: []
+customMetrics: []
+incrementalChangeDescription:
+  fieldsAdded:
+    - name: owners
+      newValue: "[{\"id\":\"a608ae47-2d89-4b90-b5ff-ad30f39cb351\",\"type\":\"user\"\
+        ,\"name\":\"brightff96d731.panther46b884e5.1770382539596\",\"fullyQualifiedName\"\
+        :\"\\\"brightff96d731.panther46b884e5.1770382539596\\\"\",\"displayName\"\
+        :\"Brightff96d731Panther46b884e5\",\"deleted\":false}]"
+  fieldsUpdated: []
+  fieldsDeleted: []
+  previousVersion: 0.2
+  changeSummary:
+    owners:
+      changedBy: admin
+      changedAt: 1770382548023
+domains: []
+dataProducts: []
+processedLineage: false
+entityStatus: Unprocessed

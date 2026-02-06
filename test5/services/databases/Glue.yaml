@@ -1,0 +1,19 @@
+name: Glue
+fullyQualifiedName: Glue
+serviceType: Glue
+connection:
+  config:
+    type: Glue
+    awsConfig:
+      enabled: false
+      awsRegion: aws region
+      endPointURL: https://glue.region_name.amazonaws.com/
+      awsAccessKeyId: aws accessKey id
+      awsSecretAccessKey: fernet:gAAAAABphc1lebZ8eYG2hN2esMjkzgViLC0VaKcGQNSc3nxbNIAwgrowyfYgg0RsaGNqmSsypY9OJ4YZ5P0z3j--rchOhN2Qt3EDfu1F_hTGc6je-sIitjc=
+      assumeRoleSessionName: OpenMetadataSession
+    supportsDBTExtraction: true
+    supportsMetadataExtraction: true
+pipelines: []
+tags: []
+owners: []
+dataProducts: []

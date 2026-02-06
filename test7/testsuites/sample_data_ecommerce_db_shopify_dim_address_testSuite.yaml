@@ -1,0 +1,123 @@
+name: sample_data.ecommerce_db.shopify.dim_address.testSuite
+fullyQualifiedName: sample_data.ecommerce_db.shopify.dim_address.testSuite
+description: This is an executable test suite linked to an entity
+tests:
+  - id: 125c2ec6-889e-4b08-b7c7-0e814ffda0b9
+    type: testCase
+    name: column_value_max_to_be_between
+    fullyQualifiedName: sample_data.ecommerce_db.shopify.dim_address.shop_id.column_value_max_to_be_between
+    description: test the value of a column is between x and y
+    displayName: column_value_max_to_be_between
+    deleted: false
+  - id: d3550bc4-9c52-4cee-a5d5-0d8748ae9c41
+    type: testCase
+    name: column_values_to_be_between
+    fullyQualifiedName: sample_data.ecommerce_db.shopify.dim_address.zip.column_values_to_be_between
+    description: test the number of column in table is between x and y
+    displayName: column_values_to_be_between
+    deleted: false
+  - id: c1eb0fb2-c778-4f27-954f-37b1b95ddae3
+    type: testCase
+    name: column_values_to_be_between_with_sample_rows
+    fullyQualifiedName: sample_data.ecommerce_db.shopify.dim_address.zip.column_values_to_be_between_with_sample_rows
+    description: example of failing test with sample rows
+    displayName: column_values_to_be_between_with_sample_rows
+    deleted: false
+  - id: 42b8f383-c725-48f6-9952-ac5771b9fcbb
+    type: testCase
+    name: column_values_to_match_regex
+    fullyQualifiedName: sample_data.ecommerce_db.shopify.dim_address.last_name.column_values_to_match_regex
+    description: test value of a column match regex
+    displayName: column_values_to_match_regex
+    deleted: false
+  - id: f8f15d27-dfdc-4d11-9853-3b48ebffad10
+    type: testCase
+    name: diff_columns
+    fullyQualifiedName: sample_data.ecommerce_db.shopify.dim_address.diff_columns
+    description: compare with a table with different columns
+    displayName: diff_columns
+    deleted: false
+  - id: 014d409c-a806-4c08-9b3c-7ccef7d4f1d7
+    type: testCase
+    name: diff_with_production
+    fullyQualifiedName: sample_data.ecommerce_db.shopify.dim_address.diff_with_production
+    description: compare with production data
+    displayName: diff_with_production
+    deleted: false
+  - id: d27a365d-90b4-48ab-8548-a2a39e164c4c
+    type: testCase
+    name: table_column_count_between
+    fullyQualifiedName: sample_data.ecommerce_db.shopify.dim_address.table_column_count_between
+    description: test the number of column in table is between x and y
+    displayName: table_column_count_between
+    deleted: false
+  - id: 470a44b7-4672-4401-9cb4-cbd0f6a848ac
+    type: testCase
+    name: table_column_count_equals
+    fullyQualifiedName: sample_data.ecommerce_db.shopify.dim_address.table_column_count_equals
+    description: test the number of column in table
+    displayName: table_column_count_equals
+    deleted: false
+pipelines: []
+serviceType: TestSuite
+owners: []
+basic: true
+basicEntityReference:
+  id: 59b8a7a1-af90-417a-884c-8cbd9e7883fe
+  type: table
+  name: dim_address
+  fullyQualifiedName: sample_data.ecommerce_db.shopify.dim_address
+summary:
+  success: 4
+  failed: 3
+  aborted: 1
+  queued: 0
+  total: 8
+  columnTestSummary:
+    - success: 1
+      failed: 0
+      aborted: 0
+      queued: 0
+      total: 1
+      entityLink: <#E::table::sample_data.ecommerce_db.shopify.dim_address::columns::last_name>
+    - success: 0
+      failed: 1
+      aborted: 1
+      queued: 0
+      total: 2
+      entityLink: <#E::table::sample_data.ecommerce_db.shopify.dim_address::columns::zip>
+    - success: 1
+      failed: 0
+      aborted: 0
+      queued: 0
+      total: 1
+      entityLink: <#E::table::sample_data.ecommerce_db.shopify.dim_address::columns::shop_id>
+testCaseResultSummary:
+  - testCaseName: sample_data.ecommerce_db.shopify.dim_address.table_column_count_equals
+    status: Success
+    timestamp: 1770376571154
+  - testCaseName: sample_data.ecommerce_db.shopify.dim_address.table_column_count_between
+    status: Success
+    timestamp: 1770376572662
+  - testCaseName: sample_data.ecommerce_db.shopify.dim_address.shop_id.column_value_max_to_be_between
+    status: Success
+    timestamp: 1770376573785
+  - testCaseName: sample_data.ecommerce_db.shopify.dim_address.last_name.column_values_to_match_regex
+    status: Success
+    timestamp: 1770376574819
+  - testCaseName: sample_data.ecommerce_db.shopify.dim_address.zip.column_values_to_be_between
+    status: Aborted
+    timestamp: 1770376575808
+  - testCaseName: sample_data.ecommerce_db.shopify.dim_address.zip.column_values_to_be_between_with_sample_rows
+    status: Failed
+    timestamp: 1770376577091
+  - testCaseName: sample_data.ecommerce_db.shopify.dim_address.diff_with_production
+    status: Failed
+    timestamp: 1770376577398
+  - testCaseName: sample_data.ecommerce_db.shopify.dim_address.diff_columns
+    status: Failed
+    timestamp: 1770376577617
+domains: []
+tags: []
+inherited: false
+reviewers: []

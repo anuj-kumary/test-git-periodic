@@ -1,0 +1,27 @@
+name: forecast_sales_performance
+displayName: ETA Predictions Performance
+fullyQualifiedName: sample_superset.forecast_sales_performance
+description: ""
+sourceUrl: http://localhost:808/superset/dashboard/forecast_sales_performance/
+charts:
+  - id: 581c9889-d00b-4a6a-acba-1c600176278c
+    type: chart
+    name: 211
+    fullyQualifiedName: sample_superset.211
+    description: ""
+    displayName: Sales Predictions Accuracy
+    deleted: false
+dataModels: []
+owners: []
+tags: []
+service:
+  id: fe37a140-5846-4b48-930c-ffa99a20338b
+  type: dashboardService
+  name: sample_superset
+  fullyQualifiedName: sample_superset
+  displayName: sample_superset
+  deleted: false
+serviceType: Superset
+domains: []
+dataProducts: []
+entityStatus: Unprocessed

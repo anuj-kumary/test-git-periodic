@@ -1,0 +1,41 @@
+name: 33
+displayName: Slack Dashboard
+fullyQualifiedName: sample_superset.33
+description: ""
+sourceUrl: http://localhost:808/superset/dashboard/10/
+charts:
+  - id: 2cb71876-7ce6-404d-a479-34774bddd1a3
+    type: chart
+    name: 114
+    fullyQualifiedName: sample_superset.114
+    description: ""
+    displayName: "# of Games That Hit 100k in Sales By Release Year"
+    deleted: false
+  - id: 0cd21d9e-639c-4f7d-b15e-b6b7b9d50ff7
+    type: chart
+    name: 127
+    fullyQualifiedName: sample_superset.127
+    description: ""
+    displayName: Are you an ethnic minority in your city?
+    deleted: false
+  - id: b34a6017-38ec-477d-bf64-94329d23d708
+    type: chart
+    name: 92
+    fullyQualifiedName: sample_superset.92
+    description: ""
+    displayName: ✈️ Relocation ability
+    deleted: false
+dataModels: []
+owners: []
+tags: []
+service:
+  id: fe37a140-5846-4b48-930c-ffa99a20338b
+  type: dashboardService
+  name: sample_superset
+  fullyQualifiedName: sample_superset
+  displayName: sample_superset
+  deleted: false
+serviceType: Superset
+domains: []
+dataProducts: []
+entityStatus: Unprocessed

@@ -1,0 +1,34 @@
+name: 51
+displayName: Video Game Sales
+fullyQualifiedName: sample_superset.51
+description: ""
+sourceUrl: http://localhost:808/superset/dashboard/11/
+charts:
+  - id: 0cd21d9e-639c-4f7d-b15e-b6b7b9d50ff7
+    type: chart
+    name: 127
+    fullyQualifiedName: sample_superset.127
+    description: ""
+    displayName: Are you an ethnic minority in your city?
+    deleted: false
+  - id: 8b38c65c-f894-417d-a115-a99dbc80fd72
+    type: chart
+    name: 183
+    fullyQualifiedName: sample_superset.183
+    description: ""
+    displayName: Average and Sum Trends
+    deleted: false
+dataModels: []
+owners: []
+tags: []
+service:
+  id: fe37a140-5846-4b48-930c-ffa99a20338b
+  type: dashboardService
+  name: sample_superset
+  fullyQualifiedName: sample_superset
+  displayName: sample_superset
+  deleted: false
+serviceType: Superset
+domains: []
+dataProducts: []
+entityStatus: Unprocessed

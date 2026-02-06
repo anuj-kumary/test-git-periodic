@@ -1,0 +1,34 @@
+name: 12
+displayName: Misc Charts
+fullyQualifiedName: sample_superset.12
+description: ""
+sourceUrl: http://localhost:808/superset/dashboard/misc_charts/
+charts:
+  - id: 0cd21d9e-639c-4f7d-b15e-b6b7b9d50ff7
+    type: chart
+    name: 127
+    fullyQualifiedName: sample_superset.127
+    description: ""
+    displayName: Are you an ethnic minority in your city?
+    deleted: false
+  - id: f7fa4390-fac1-41bc-ba39-696a770665af
+    type: chart
+    name: 197
+    fullyQualifiedName: sample_superset.197
+    description: ""
+    displayName: Arcs
+    deleted: false
+dataModels: []
+owners: []
+tags: []
+service:
+  id: fe37a140-5846-4b48-930c-ffa99a20338b
+  type: dashboardService
+  name: sample_superset
+  fullyQualifiedName: sample_superset
+  displayName: sample_superset
+  deleted: false
+serviceType: Superset
+domains: []
+dataProducts: []
+entityStatus: Unprocessed

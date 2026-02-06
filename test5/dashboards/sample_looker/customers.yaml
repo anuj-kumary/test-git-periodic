@@ -1,0 +1,34 @@
+name: customers
+displayName: Customers dashboard
+fullyQualifiedName: sample_looker.customers
+description: This is a sample Dashboard for Looker
+sourceUrl: http://localhost:808/looker/dashboard/1/
+charts:
+  - id: 88504d52-abe9-4dc0-945e-682bbb0b3a5b
+    type: chart
+    name: chart_1
+    fullyQualifiedName: sample_looker.chart_1
+    description: This is a sample Chart for Looker
+    displayName: Chart 1
+    deleted: false
+  - id: eed84ccd-1347-4cfa-a42a-d7cae662a7e9
+    type: chart
+    name: chart_2
+    fullyQualifiedName: sample_looker.chart_2
+    description: This is a sample Chart for Looker
+    displayName: Chart 2
+    deleted: false
+dataModels: []
+owners: []
+tags: []
+service:
+  id: a91a1508-57b2-4fc5-92b1-189de98b9d92
+  type: dashboardService
+  name: sample_looker
+  fullyQualifiedName: sample_looker
+  displayName: sample_looker
+  deleted: false
+serviceType: Looker
+domains: []
+dataProducts: []
+entityStatus: Unprocessed

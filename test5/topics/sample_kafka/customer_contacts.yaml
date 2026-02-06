@@ -1,0 +1,22 @@
+name: customer_contacts
+fullyQualifiedName: sample_kafka.customer_contacts
+description: "Kafka topic to capture the customer contacts such as email, phone"
+service:
+  id: 7d1d755a-fefa-45d6-9d07-3015a82aca66
+  type: messagingService
+  name: sample_kafka
+  fullyQualifiedName: sample_kafka
+  displayName: sample_kafka
+  deleted: false
+serviceType: Kafka
+partitions: 56
+cleanupPolicies:
+  - delete
+replicationFactor: 2
+maximumMessageSize: 167
+retentionSize: 4.55858109E8
+owners: []
+tags: []
+domains: []
+dataProducts: []
+entityStatus: Unprocessed

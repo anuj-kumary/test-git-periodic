@@ -1,0 +1,55 @@
+name: insert_user_data
+fullyQualifiedName: sample_data.ecommerce_db.shopify.insert_user_data
+description: Procedure to Insert User Data
+storedProcedureCode:
+  code: |-
+    CREATE OR REPLACE PROCEDURE insert_user_data(user_name varchar, email varchar, age int) RETURNS int NOT NULL LANGUAGE SQL AS $$DECLARE user_id INT;BEGIN
+      INSERT INTO users
+                  (
+                              NAME,
+                              email,
+                              age
+                  )
+                  VALUES
+                  (
+                              user_name,
+                              email,
+                              age
+                  )
+                  returning id
+      INTO        user_id;
+
+      RETURN user_id;
+    END;$$;
+dataProducts: []
+databaseSchema:
+  id: 4924e3ad-24d4-4928-b888-66a8a9f1ddb1
+  type: databaseSchema
+  name: shopify
+  fullyQualifiedName: sample_data.ecommerce_db.shopify
+  description: This **mock** database contains schema related to shopify sales and
+    orders with related dimension tables.
+  displayName: shopify
+  deleted: false
+database:
+  id: 2c678393-2cfc-4536-99d8-442c875cb38e
+  type: database
+  name: ecommerce_db
+  fullyQualifiedName: sample_data.ecommerce_db
+  description: This **mock** database contains schemas related to shopify sales and
+    orders with related dimension tables.
+  displayName: ecommerce_db
+  deleted: false
+service:
+  id: ce1347f4-cf72-4041-9190-4fc4d66134cc
+  type: databaseService
+  name: sample_data
+  fullyQualifiedName: sample_data
+  displayName: sample_data
+  deleted: false
+serviceType: BigQuery
+owners: []
+tags: []
+domains: []
+processedLineage: false
+entityStatus: Unprocessed

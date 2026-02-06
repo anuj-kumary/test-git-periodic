@@ -1,0 +1,17 @@
+name: test-glossary
+fullyQualifiedName: test-glossary
+description: <p>dsdsd</p>
+reviewers: []
+owners:
+  - id: 40cae39d-814f-4334-ad46-8ad404779608
+    type: user
+    name: admin
+    fullyQualifiedName: admin
+    displayName: admin
+    deleted: false
+usageCount: 0
+tags: []
+termCount: 1
+mutuallyExclusive: false
+dataProducts: []
+entityStatus: Unprocessed

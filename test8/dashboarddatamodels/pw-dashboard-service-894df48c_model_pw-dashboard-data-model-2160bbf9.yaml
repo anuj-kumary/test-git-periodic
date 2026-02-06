@@ -1,0 +1,42 @@
+name: pw-dashboard-data-model-2160bbf9
+displayName: pw-dashboard-data-model-2160bbf9
+fullyQualifiedName: pw-dashboard-service-894df48c.model.pw-dashboard-data-model-2160bbf9
+owners: []
+dataProducts: []
+tags: []
+service:
+  id: 958909df-adc0-4473-936d-6323bc31361a
+  type: dashboardService
+  name: pw-dashboard-service-894df48c
+  fullyQualifiedName: pw-dashboard-service-894df48c
+  displayName: pw-dashboard-service-894df48c
+  deleted: false
+serviceType: Superset
+dataModelType: SupersetDataModel
+columns:
+  - name: merchant
+    dataType: VARCHAR
+    dataLength: 256
+    dataTypeDisplay: varchar
+    description: merchant
+    fullyQualifiedName: pw-dashboard-service-894df48c.model.pw-dashboard-data-model-2160bbf9.merchant
+    tags: []
+    children: []
+  - name: notes
+    dataType: VARCHAR
+    dataLength: 256
+    dataTypeDisplay: varchar
+    description: merchant
+    fullyQualifiedName: pw-dashboard-service-894df48c.model.pw-dashboard-data-model-2160bbf9.notes
+    tags: []
+    children: []
+  - name: country_name
+    dataType: VARCHAR
+    dataLength: 256
+    dataTypeDisplay: varchar
+    description: Name of the country.
+    fullyQualifiedName: pw-dashboard-service-894df48c.model.pw-dashboard-data-model-2160bbf9.country_name
+    tags: []
+    children: []
+domains: []
+entityStatus: Unprocessed

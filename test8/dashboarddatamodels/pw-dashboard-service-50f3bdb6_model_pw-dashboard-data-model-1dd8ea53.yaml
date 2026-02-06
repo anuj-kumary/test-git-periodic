@@ -1,0 +1,28 @@
+name: pw-dashboard-data-model-1dd8ea53
+displayName: pw-dashboard-data-model-1dd8ea53
+fullyQualifiedName: pw-dashboard-service-50f3bdb6.model.pw-dashboard-data-model-1dd8ea53
+description: Description for pw-dashboard-data-model-1dd8ea53
+owners: []
+dataProducts: []
+tags: []
+service:
+  id: fae66cdc-9d00-4f9d-96b1-6cf6136b9c53
+  type: dashboardService
+  name: pw-dashboard-service-50f3bdb6
+  fullyQualifiedName: pw-dashboard-service-50f3bdb6
+  displayName: pw-dashboard-service-50f3bdb6
+  deleted: false
+serviceType: Superset
+dataModelType: SupersetDataModel
+columns:
+  - name: country_name
+    dataType: VARCHAR
+    dataLength: 256
+    dataTypeDisplay: varchar
+    description: Name of the country.
+    fullyQualifiedName: pw-dashboard-service-50f3bdb6.model.pw-dashboard-data-model-1dd8ea53.country_name
+    tags: []
+    children: []
+project: pw-project-db5f3a51
+domains: []
+entityStatus: Unprocessed

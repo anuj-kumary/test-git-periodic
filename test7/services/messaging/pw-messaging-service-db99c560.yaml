@@ -1,0 +1,17 @@
+name: pw-messaging-service-db99c560
+fullyQualifiedName: pw-messaging-service-db99c560
+serviceType: Kafka
+connection:
+  config:
+    type: Kafka
+    saslPassword: fernet:gAAAAABpheKQmErtBmL3PmfUw-Pxx0Ws8qCVkntYrpj0TPL-WDhsLym3AHS9hQ-aGdKca4CCGUU4oIsyB1PUB5ELXLJTgArUJw==
+    saslUsername: admin
+    saslMechanism: PLAIN
+    bootstrapServers: Bootstrap Servers
+    securityProtocol: PLAINTEXT
+    supportsMetadataExtraction: true
+    schemaRegistryTopicSuffixName: -value
+pipelines: []
+tags: []
+owners: []
+dataProducts: []

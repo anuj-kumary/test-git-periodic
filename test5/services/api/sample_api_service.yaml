@@ -1,0 +1,13 @@
+name: sample_api_service
+fullyQualifiedName: sample_api_service
+serviceType: Rest
+connection:
+  config:
+    type: Rest
+    token: fernet:gAAAAABphc1m-uiLRCAXeNzqkTH2w8-5lZUH33kH4djwm6T5rAOrw4jSphHLO74Ec14THo5yR7zkdwokT-3h2zJMTU3L_xxn1Q==
+    openAPISchemaURL: https://petstore3.swagger.io/
+    supportsMetadataExtraction: true
+pipelines: []
+tags: []
+owners: []
+dataProducts: []

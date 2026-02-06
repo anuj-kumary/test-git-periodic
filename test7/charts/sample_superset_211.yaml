@@ -1,0 +1,57 @@
+name: 211
+displayName: Sales Predictions Accuracy
+fullyQualifiedName: sample_superset.211
+description: ""
+chartType: Line
+sourceUrl: http://localhost:8088/superset/explore/?form_data=%7B%22slice_id%22%3A%20180%7D
+owners: []
+tags: []
+service:
+  id: fe37a140-5846-4b48-930c-ffa99a20338b
+  type: dashboardService
+  name: sample_superset
+  fullyQualifiedName: sample_superset
+  displayName: sample_superset
+  deleted: false
+serviceType: Superset
+incrementalChangeDescription:
+  fieldsAdded: []
+  fieldsUpdated:
+    - name: certification
+      oldValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Manual\",\"state\":\"Confirmed\"},\"appliedDate\":1770382182354,\"\
+        expiryDate\":1772974182354}"
+      newValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Automated\",\"state\":\"Confirmed\"},\"appliedDate\":1770382186109,\"\
+        expiryDate\":1772974186109}"
+  fieldsDeleted: []
+  previousVersion: 0.4
+  changeSummary: {}
+domains: []
+dataProducts: []
+certification:
+  tagLabel:
+    tagFQN: Certification.Silver
+    name: Silver
+    description: Silver certified Data Asset.
+    style:
+      color: "#ADADAD"
+      iconURL: SilverCertification.svg
+    source: Classification
+    labelType: Manual
+    state: Confirmed
+  appliedDate: 1770382186125
+  expiryDate: 1772974186125
+dashboards:
+  - id: ddf9f088-c1ab-4259-a0c6-17fd657ea4ee
+    type: dashboard
+    name: forecast_sales_performance
+    fullyQualifiedName: sample_superset.forecast_sales_performance
+    description: ""
+    displayName: ETA Predictions Performance
+    deleted: false
+entityStatus: Unprocessed

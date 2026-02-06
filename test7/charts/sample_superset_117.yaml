@@ -1,0 +1,64 @@
+name: 117
+displayName: Age distribution of respondents
+fullyQualifiedName: sample_superset.117
+description: ""
+chartType: Histogram
+sourceUrl: http://localhost:8088/superset/explore/?form_data=%7B%22slice_id%22%3A%20117%7D
+owners: []
+tags: []
+service:
+  id: fe37a140-5846-4b48-930c-ffa99a20338b
+  type: dashboardService
+  name: sample_superset
+  fullyQualifiedName: sample_superset
+  displayName: sample_superset
+  deleted: false
+serviceType: Superset
+incrementalChangeDescription:
+  fieldsAdded: []
+  fieldsUpdated:
+    - name: certification
+      oldValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Manual\",\"state\":\"Confirmed\"},\"appliedDate\":1770382181431,\"\
+        expiryDate\":1772974181431}"
+      newValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Automated\",\"state\":\"Confirmed\"},\"appliedDate\":1770382185230,\"\
+        expiryDate\":1772974185230}"
+  fieldsDeleted: []
+  previousVersion: 0.4
+  changeSummary: {}
+domains: []
+dataProducts: []
+certification:
+  tagLabel:
+    tagFQN: Certification.Silver
+    name: Silver
+    description: Silver certified Data Asset.
+    style:
+      color: "#ADADAD"
+      iconURL: SilverCertification.svg
+    source: Classification
+    labelType: Manual
+    state: Confirmed
+  appliedDate: 1770382185310
+  expiryDate: 1772974185310
+dashboards:
+  - id: aef78f27-e8b1-4376-8fb4-2b29518df0af
+    type: dashboard
+    name: 31
+    fullyQualifiedName: sample_superset.31
+    description: ""
+    displayName: Sales Dashboard
+    deleted: false
+  - id: 05aa8a94-053a-42e0-9bc4-d68ee278a428
+    type: dashboard
+    name: 9
+    fullyQualifiedName: sample_superset.9
+    description: ""
+    displayName: COVID Vaccine Dashboard
+    deleted: false
+entityStatus: Unprocessed

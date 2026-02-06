@@ -1,0 +1,57 @@
+name: chart_4
+displayName: Chart 4
+fullyQualifiedName: sample_looker.chart_4
+description: This is a sample Chart for Looker
+chartType: Histogram
+sourceUrl: http://localhost:8088/looker/explore/?form_data=%7B%22slice_id%22%3A%20117%7D
+owners: []
+tags: []
+service:
+  id: a91a1508-57b2-4fc5-92b1-189de98b9d92
+  type: dashboardService
+  name: sample_looker
+  fullyQualifiedName: sample_looker
+  displayName: sample_looker
+  deleted: false
+serviceType: Looker
+incrementalChangeDescription:
+  fieldsAdded: []
+  fieldsUpdated:
+    - name: certification
+      oldValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Manual\",\"state\":\"Confirmed\"},\"appliedDate\":1770382181254,\"\
+        expiryDate\":1772974181254}"
+      newValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Automated\",\"state\":\"Confirmed\"},\"appliedDate\":1770382184977,\"\
+        expiryDate\":1772974184977}"
+  fieldsDeleted: []
+  previousVersion: 0.4
+  changeSummary: {}
+domains: []
+dataProducts: []
+certification:
+  tagLabel:
+    tagFQN: Certification.Silver
+    name: Silver
+    description: Silver certified Data Asset.
+    style:
+      color: "#ADADAD"
+      iconURL: SilverCertification.svg
+    source: Classification
+    labelType: Manual
+    state: Confirmed
+  appliedDate: 1770382185004
+  expiryDate: 1772974185004
+dashboards:
+  - id: 821fe360-01eb-4d17-a2a6-1c8d1b82beb9
+    type: dashboard
+    name: orders
+    fullyQualifiedName: sample_looker.orders
+    description: This is a sample Dashboard for Looker
+    displayName: Orders Dashboard
+    deleted: false
+entityStatus: Unprocessed

@@ -1,0 +1,17 @@
+name: pw-messaging-service-aaddbd83
+fullyQualifiedName: pw-messaging-service-aaddbd83
+serviceType: Kafka
+connection:
+  config:
+    type: Kafka
+    saslPassword: fernet:gAAAAABphdWtPIla_E0PGowIrbkBReCzlpCJEKqZ7f5Vyp49-uk68ZHq66SAgt6Fxf2JLbhg0zjvmJdEjExHPANJEKIKerMaZg==
+    saslUsername: admin
+    saslMechanism: PLAIN
+    bootstrapServers: Bootstrap Servers
+    securityProtocol: PLAINTEXT
+    supportsMetadataExtraction: true
+    schemaRegistryTopicSuffixName: -value
+pipelines: []
+tags: []
+owners: []
+dataProducts: []

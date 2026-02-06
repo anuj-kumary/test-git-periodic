@@ -1,0 +1,133 @@
+name: fact_events
+fullyQualifiedName: sample_data.ecommerce_db.shopify.fact_events
+description: Event fact table from Trino warehouse for real-time analytics
+tableType: Regular
+columns:
+  - name: event_id
+    dataType: BIGINT
+    dataTypeDisplay: bigint
+    description: Unique event identifier
+    fullyQualifiedName: sample_data.ecommerce_db.shopify.fact_events.event_id
+    tags: []
+    ordinalPosition: 1
+    children: []
+    customMetrics: []
+  - name: user_id
+    dataType: BIGINT
+    dataTypeDisplay: bigint
+    description: User who triggered the event
+    fullyQualifiedName: sample_data.ecommerce_db.shopify.fact_events.user_id
+    tags: []
+    ordinalPosition: 2
+    children: []
+    customMetrics: []
+  - name: event_type
+    dataType: VARCHAR
+    dataLength: 100
+    dataTypeDisplay: varchar
+    description: Type of event
+    fullyQualifiedName: sample_data.ecommerce_db.shopify.fact_events.event_type
+    tags: []
+    ordinalPosition: 3
+    children: []
+    customMetrics: []
+  - name: event_data
+    dataType: JSON
+    dataTypeDisplay: json
+    description: Event payload in JSON format
+    fullyQualifiedName: sample_data.ecommerce_db.shopify.fact_events.event_data
+    tags: []
+    ordinalPosition: 4
+    children: []
+    customMetrics: []
+  - name: event_timestamp
+    dataType: TIMESTAMP
+    dataTypeDisplay: timestamp
+    description: When the event occurred
+    fullyQualifiedName: sample_data.ecommerce_db.shopify.fact_events.event_timestamp
+    tags: []
+    ordinalPosition: 5
+    children: []
+    customMetrics: []
+  - name: session_id
+    dataType: VARCHAR
+    dataLength: 100
+    dataTypeDisplay: varchar
+    description: Session identifier
+    fullyQualifiedName: sample_data.ecommerce_db.shopify.fact_events.session_id
+    tags: []
+    ordinalPosition: 6
+    children: []
+    customMetrics: []
+tableConstraints:
+  - constraintType: PRIMARY_KEY
+    columns:
+      - event_id
+owners: []
+databaseSchema:
+  id: 4924e3ad-24d4-4928-b888-66a8a9f1ddb1
+  type: databaseSchema
+  name: shopify
+  fullyQualifiedName: sample_data.ecommerce_db.shopify
+  description: This **mock** database contains schema related to shopify sales and
+    orders with related dimension tables.
+  displayName: shopify
+  deleted: false
+database:
+  id: 2c678393-2cfc-4536-99d8-442c875cb38e
+  type: database
+  name: ecommerce_db
+  fullyQualifiedName: sample_data.ecommerce_db
+  description: This **mock** database contains schemas related to shopify sales and
+    orders with related dimension tables.
+  displayName: ecommerce_db
+  deleted: false
+service:
+  id: ce1347f4-cf72-4041-9190-4fc4d66134cc
+  type: databaseService
+  name: sample_data
+  fullyQualifiedName: sample_data
+  displayName: sample_data
+  deleted: false
+serviceType: BigQuery
+tags: []
+joins:
+  startDate: 2026-01-07
+  dayCount: 30
+  columnJoins: []
+  directTableJoins: []
+customMetrics: []
+incrementalChangeDescription:
+  fieldsAdded: []
+  fieldsUpdated:
+    - name: certification
+      oldValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Manual\",\"state\":\"Confirmed\"},\"appliedDate\":1770382234409,\"\
+        expiryDate\":1772974234409}"
+      newValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Automated\",\"state\":\"Confirmed\"},\"appliedDate\":1770382235621,\"\
+        expiryDate\":1772974235621}"
+  fieldsDeleted: []
+  previousVersion: 0.4
+  changeSummary: {}
+domains: []
+dataProducts: []
+certification:
+  tagLabel:
+    tagFQN: Certification.Silver
+    name: Silver
+    description: Silver certified Data Asset.
+    style:
+      color: "#ADADAD"
+      iconURL: SilverCertification.svg
+    source: Classification
+    labelType: Manual
+    state: Confirmed
+  appliedDate: 1770382235621
+  expiryDate: 1772974235621
+processedLineage: false
+entityStatus: Unprocessed

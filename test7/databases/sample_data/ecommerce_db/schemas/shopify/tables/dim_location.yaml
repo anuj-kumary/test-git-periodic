@@ -1,0 +1,170 @@
+name: dim_location
+fullyQualifiedName: sample_data.ecommerce_db.shopify.dim_location
+description: The dimension table contains metrics about your Shopify POS. This table
+  contains one row per Shopify POS location. You can use this table to generate a
+  list of the Shopify POS locations or you can join the table with the sales table
+  to measure sales performance.
+tableType: Regular
+columns:
+  - name: location_id
+    dataType: NUMERIC
+    dataTypeDisplay: numeric
+    fullyQualifiedName: sample_data.ecommerce_db.shopify.dim_location.location_id
+    tags: []
+    constraint: PRIMARY_KEY
+    ordinalPosition: 1
+    children: []
+    customMetrics: []
+  - name: shop_id
+    dataType: NUMERIC
+    dataTypeDisplay: numeric
+    description: The ID of the store. This column is a foreign key reference to the
+      shop_id column in the dim_shop table.
+    fullyQualifiedName: sample_data.ecommerce_db.shopify.dim_location.shop_id
+    tags: []
+    ordinalPosition: 2
+    children: []
+    customMetrics: []
+  - name: name
+    dataType: VARCHAR
+    dataLength: 100
+    dataTypeDisplay: varchar
+    description: "Name of the POS location as provided by the merchant. For example,\
+      \ 150 Elgin Street or Downtown Boutique."
+    fullyQualifiedName: sample_data.ecommerce_db.shopify.dim_location.name
+    tags: []
+    ordinalPosition: 3
+    children: []
+    customMetrics: []
+  - name: address
+    dataType: STRUCT
+    dataTypeDisplay: "struct<street_name:varchar(24),zipcode:int,city:varchar(100),country:struct<country_code:int,\
+      \ name:varchar(100)>>"
+    fullyQualifiedName: sample_data.ecommerce_db.shopify.dim_location.address
+    tags: []
+    children:
+      - name: street_name
+        dataType: VARCHAR
+        dataLength: 24
+        dataTypeDisplay: VARCHAR(24)
+        fullyQualifiedName: sample_data.ecommerce_db.shopify.dim_location.address.street_name
+        tags: []
+        children: []
+      - name: zipcode
+        dataType: INT
+        dataTypeDisplay: int
+        fullyQualifiedName: sample_data.ecommerce_db.shopify.dim_location.address.zipcode
+        tags: []
+        children: []
+      - name: city
+        dataType: VARCHAR
+        dataLength: 100
+        dataTypeDisplay: VARCHAR(100)
+        fullyQualifiedName: sample_data.ecommerce_db.shopify.dim_location.address.city
+        tags: []
+        children: []
+      - name: country
+        dataType: STRUCT
+        dataTypeDisplay: "struct<country_code:int, country_name:varchar(100)>"
+        fullyQualifiedName: sample_data.ecommerce_db.shopify.dim_location.address.country
+        tags: []
+        children:
+          - name: country_code
+            dataType: INT
+            dataTypeDisplay: INT
+            fullyQualifiedName: sample_data.ecommerce_db.shopify.dim_location.address.country.country_code
+            tags: []
+            children: []
+          - name: country_name
+            dataType: VARCHAR
+            dataLength: 100
+            dataTypeDisplay: VARCHAR(100)
+            fullyQualifiedName: sample_data.ecommerce_db.shopify.dim_location.address.country.country_name
+            tags: []
+            children: []
+    customMetrics: []
+owners: []
+databaseSchema:
+  id: 4924e3ad-24d4-4928-b888-66a8a9f1ddb1
+  type: databaseSchema
+  name: shopify
+  fullyQualifiedName: sample_data.ecommerce_db.shopify
+  description: This **mock** database contains schema related to shopify sales and
+    orders with related dimension tables.
+  displayName: shopify
+  deleted: false
+database:
+  id: 2c678393-2cfc-4536-99d8-442c875cb38e
+  type: database
+  name: ecommerce_db
+  fullyQualifiedName: sample_data.ecommerce_db
+  description: This **mock** database contains schemas related to shopify sales and
+    orders with related dimension tables.
+  displayName: ecommerce_db
+  deleted: false
+service:
+  id: ce1347f4-cf72-4041-9190-4fc4d66134cc
+  type: databaseService
+  name: sample_data
+  fullyQualifiedName: sample_data
+  displayName: sample_data
+  deleted: false
+serviceType: BigQuery
+schemaDefinition: "CREATE TABLE dim_location(location_id NUMERIC PRIMARY KEY, shop_id\
+  \ NUMERIC)"
+tags: []
+joins:
+  startDate: 2026-01-07
+  dayCount: 30
+  columnJoins: []
+  directTableJoins: []
+customMetrics: []
+incrementalChangeDescription:
+  fieldsAdded: []
+  fieldsUpdated:
+    - name: certification
+      oldValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Manual\",\"state\":\"Confirmed\"},\"appliedDate\":1770382234345,\"\
+        expiryDate\":1772974234345}"
+      newValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Automated\",\"state\":\"Confirmed\"},\"appliedDate\":1770382235538,\"\
+        expiryDate\":1772974235538}"
+  fieldsDeleted: []
+  previousVersion: 0.4
+  changeSummary: {}
+sourceUrl: http://localhost:8080/dim_location
+domains: []
+dataProducts: []
+lifeCycle:
+  created:
+    timestamp: 1770050781716
+    accessedBy:
+      id: 46f222f9-061b-4ba1-ad1c-c64eb39d2028
+      type: user
+      fullyQualifiedName: anthony_wall4
+      href: http://host.docker.internal:8585/api/v1/users/f351403a-5a64-4aee-9137-0218c80e4be5
+  updated:
+    timestamp: 1770050781716
+    accessedByAProcess: Alice
+  accessed:
+    timestamp: 1770050781717
+    accessedByAProcess: David
+certification:
+  tagLabel:
+    tagFQN: Certification.Silver
+    name: Silver
+    description: Silver certified Data Asset.
+    style:
+      color: "#ADADAD"
+      iconURL: SilverCertification.svg
+    source: Classification
+    labelType: Manual
+    state: Confirmed
+  appliedDate: 1770382235538
+  expiryDate: 1772974235538
+processedLineage: false
+entityStatus: Unprocessed

@@ -1,0 +1,87 @@
+name: tables
+fullyQualifiedName: ometa_api_service.tables
+endpointURL: https://docs.open-metadata.org/swagger.html#tag/Tables
+apiEndpoints:
+  - id: 6de8c6fe-aebf-4da3-920e-610977ba03e9
+    type: apiEndpoint
+    name: createTable
+    fullyQualifiedName: ometa_api_service.tables.createTable
+    description: Create a new table under an existing database
+    displayName: Create a table
+    deleted: false
+  - id: 266ce71e-761a-4deb-87f2-e760f64461df
+    type: apiEndpoint
+    name: deleteTable
+    fullyQualifiedName: ometa_api_service.tables.deleteTable
+    description: Delete table by ID
+    displayName: Delete table by ID
+    deleted: false
+  - id: bb6cccd6-8da2-400d-af58-3cb64b0672b0
+    type: apiEndpoint
+    name: listTables
+    fullyQualifiedName: ometa_api_service.tables.listTables
+    description: Get a list of tables
+    displayName: List tables
+    deleted: false
+owners: []
+tags:
+  - tagFQN: Tier.Tier1
+    name: Tier1
+    description: |-
+      **Critical Source of Truth business data assets of an organization**
+
+      - Used in critical metrics and dashboards to drive business and product decisions
+
+      - Used in critical compliance reporting to regulators, govt entities, and third party
+
+      - Used in brand or revenue impacting online user-facing experiences (search results, advertisement, promotions, and experimentation)
+
+      - Other high impact use, such as ML models and fraud detection
+
+      - Source used to derive other critical Tier-1 datasets
+    source: Classification
+    labelType: Manual
+    state: Confirmed
+    appliedAt: 1770379984106
+    appliedBy: admin
+service:
+  id: c38aa3f1-c9ec-4152-a78d-88b42f8bffdf
+  type: apiService
+  name: ometa_api_service
+  fullyQualifiedName: ometa_api_service
+  displayName: ometa_api_service
+  deleted: false
+serviceType: Rest
+incrementalChangeDescription:
+  fieldsAdded: []
+  fieldsUpdated:
+    - name: certification
+      oldValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Gold\",\"name\":\"Gold\"\
+        ,\"description\":\"Gold certified Data Asset.\",\"style\":{\"color\":\"#FFCE00\"\
+        ,\"iconURL\":\"GoldCertification.svg\"},\"source\":\"Classification\",\"labelType\"\
+        :\"Manual\",\"state\":\"Confirmed\"},\"appliedDate\":1770382179798,\"expiryDate\"\
+        :1772974179798}"
+      newValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Gold\",\"name\":\"Gold\"\
+        ,\"description\":\"Gold certified Data Asset.\",\"style\":{\"color\":\"#FFCE00\"\
+        ,\"iconURL\":\"GoldCertification.svg\"},\"source\":\"Classification\",\"labelType\"\
+        :\"Automated\",\"state\":\"Confirmed\"},\"appliedDate\":1770382182196,\"expiryDate\"\
+        :1772974182196}"
+  fieldsDeleted: []
+  previousVersion: 0.6
+  changeSummary: {}
+domains: []
+dataProducts: []
+certification:
+  tagLabel:
+    tagFQN: Certification.Gold
+    name: Gold
+    description: Gold certified Data Asset.
+    style:
+      color: "#FFCE00"
+      iconURL: GoldCertification.svg
+    source: Classification
+    labelType: Manual
+    state: Confirmed
+  appliedDate: 1770382182197
+  expiryDate: 1772974182197
+entityStatus: Unprocessed

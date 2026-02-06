@@ -1,0 +1,75 @@
+name: pet
+fullyQualifiedName: sample_api_service.pet
+endpointURL: https://petstore3.swagger.io/#/pet
+apiEndpoints:
+  - id: 833c51ae-cc30-437b-b021-bdf8735863c2
+    type: apiEndpoint
+    name: addPet
+    fullyQualifiedName: sample_api_service.pet.addPet
+    description: add a new pet
+    displayName: Add Pet
+    deleted: false
+  - id: d44a0e32-897d-459e-b1a7-f4b178048c2c
+    type: apiEndpoint
+    name: deletePet
+    fullyQualifiedName: sample_api_service.pet.deletePet
+    description: Delete pet by ID
+    displayName: Delete pet by ID
+    deleted: false
+  - id: d06d7cfb-d179-4893-a45b-948cf41ba42e
+    type: apiEndpoint
+    name: getPetById
+    fullyQualifiedName: sample_api_service.pet.getPetById
+    description: Returns a single pet
+    displayName: Find pet by ID
+    deleted: false
+  - id: 327e1e14-a28a-4f73-a450-709b5d45c34b
+    type: apiEndpoint
+    name: updatePet
+    fullyQualifiedName: sample_api_service.pet.updatePet
+    description: Update an existing pet
+    displayName: Update Pet
+    deleted: false
+owners: []
+tags: []
+service:
+  id: 626210e4-d432-4b25-9c18-ac7b8e02f605
+  type: apiService
+  name: sample_api_service
+  fullyQualifiedName: sample_api_service
+  displayName: sample_api_service
+  deleted: false
+serviceType: Rest
+incrementalChangeDescription:
+  fieldsAdded: []
+  fieldsUpdated:
+    - name: certification
+      oldValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Manual\",\"state\":\"Confirmed\"},\"appliedDate\":1770382180372,\"\
+        expiryDate\":1772974180372}"
+      newValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Automated\",\"state\":\"Confirmed\"},\"appliedDate\":1770382182719,\"\
+        expiryDate\":1772974182719}"
+  fieldsDeleted: []
+  previousVersion: 0.4
+  changeSummary: {}
+domains: []
+dataProducts: []
+certification:
+  tagLabel:
+    tagFQN: Certification.Silver
+    name: Silver
+    description: Silver certified Data Asset.
+    style:
+      color: "#ADADAD"
+      iconURL: SilverCertification.svg
+    source: Classification
+    labelType: Manual
+    state: Confirmed
+  appliedDate: 1770382182720
+  expiryDate: 1772974182720
+entityStatus: Unprocessed

@@ -1,0 +1,54 @@
+name: pw-api-collection-4a85362e
+displayName: pw-api-collection-4a85362e
+fullyQualifiedName: pw-api-service-9df193a4.pw-api-collection-4a85362e
+apiEndpoints:
+  - id: b305bd84-96aa-4a4f-b36f-85fecd3ca50b
+    type: apiEndpoint
+    name: pw-api-endpoint-1435d8c4
+    fullyQualifiedName: pw-api-service-9df193a4.pw-api-collection-4a85362e.pw-api-endpoint-1435d8c4
+    description: Description for pw-api-endpoint-1435d8c4
+    displayName: pw-api-endpoint-1435d8c4
+    deleted: false
+owners: []
+tags: []
+service:
+  id: f9f635a9-92d8-4686-85a1-92a74c64d0ed
+  type: apiService
+  name: pw-api-service-9df193a4
+  fullyQualifiedName: pw-api-service-9df193a4
+  displayName: pw-api-service-9df193a4
+  deleted: false
+serviceType: Rest
+incrementalChangeDescription:
+  fieldsAdded: []
+  fieldsUpdated:
+    - name: certification
+      oldValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Manual\",\"state\":\"Confirmed\"},\"appliedDate\":1770382180083,\"\
+        expiryDate\":1772974180083}"
+      newValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Automated\",\"state\":\"Confirmed\"},\"appliedDate\":1770382182488,\"\
+        expiryDate\":1772974182488}"
+  fieldsDeleted: []
+  previousVersion: 0.2
+  changeSummary: {}
+domains: []
+dataProducts: []
+certification:
+  tagLabel:
+    tagFQN: Certification.Silver
+    name: Silver
+    description: Silver certified Data Asset.
+    style:
+      color: "#ADADAD"
+      iconURL: SilverCertification.svg
+    source: Classification
+    labelType: Manual
+    state: Confirmed
+  appliedDate: 1770382182488
+  expiryDate: 1772974182488
+entityStatus: Unprocessed

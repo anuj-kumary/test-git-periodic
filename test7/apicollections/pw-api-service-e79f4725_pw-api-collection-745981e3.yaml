@@ -1,0 +1,53 @@
+name: pw-api-collection-745981e3
+fullyQualifiedName: pw-api-service-e79f4725.pw-api-collection-745981e3
+description: Description for pw-api-collection-745981e3
+apiEndpoints:
+  - id: 8c6614d8-b0e2-4d02-a1d6-f8ef4df44634
+    type: apiEndpoint
+    name: pw-api-endpoint-bcef49a9
+    fullyQualifiedName: pw-api-service-e79f4725.pw-api-collection-745981e3.pw-api-endpoint-bcef49a9
+    displayName: pw-api-endpoint-bcef49a9
+    deleted: false
+owners: []
+tags: []
+service:
+  id: 8e890646-7605-4c26-9ff9-c8fa1844dbdf
+  type: apiService
+  name: pw-api-service-e79f4725
+  fullyQualifiedName: pw-api-service-e79f4725
+  displayName: pw-api-service-e79f4725
+  deleted: false
+serviceType: Rest
+incrementalChangeDescription:
+  fieldsAdded: []
+  fieldsUpdated:
+    - name: certification
+      oldValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Manual\",\"state\":\"Confirmed\"},\"appliedDate\":1770382180299,\"\
+        expiryDate\":1772974180299}"
+      newValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Automated\",\"state\":\"Confirmed\"},\"appliedDate\":1770382182672,\"\
+        expiryDate\":1772974182672}"
+  fieldsDeleted: []
+  previousVersion: 0.2
+  changeSummary: {}
+domains: []
+dataProducts: []
+certification:
+  tagLabel:
+    tagFQN: Certification.Silver
+    name: Silver
+    description: Silver certified Data Asset.
+    style:
+      color: "#ADADAD"
+      iconURL: SilverCertification.svg
+    source: Classification
+    labelType: Manual
+    state: Confirmed
+  appliedDate: 1770382182672
+  expiryDate: 1772974182672
+entityStatus: Unprocessed

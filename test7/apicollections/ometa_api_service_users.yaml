@@ -1,0 +1,68 @@
+name: users
+fullyQualifiedName: ometa_api_service.users
+endpointURL: https://docs.open-metadata.org/swagger.html#tag/Users
+apiEndpoints:
+  - id: 218aa554-1426-4310-ba23-8d5d785e0ea4
+    type: apiEndpoint
+    name: createUser
+    fullyQualifiedName: ometa_api_service.users.createUser
+    description: Create a new user
+    displayName: Create a user
+    deleted: false
+  - id: d5493f04-278f-4906-85b9-0febb93d73f2
+    type: apiEndpoint
+    name: deleteUser
+    fullyQualifiedName: ometa_api_service.users.deleteUser
+    description: Delete user by ID
+    displayName: Delete user by ID
+    deleted: false
+  - id: 293e5f1f-fb63-4c1b-b2ca-320215580582
+    type: apiEndpoint
+    name: listUsers
+    fullyQualifiedName: ometa_api_service.users.listUsers
+    description: Get a list of users
+    displayName: List users
+    deleted: false
+owners: []
+tags: []
+service:
+  id: c38aa3f1-c9ec-4152-a78d-88b42f8bffdf
+  type: apiService
+  name: ometa_api_service
+  fullyQualifiedName: ometa_api_service
+  displayName: ometa_api_service
+  deleted: false
+serviceType: Rest
+incrementalChangeDescription:
+  fieldsAdded: []
+  fieldsUpdated:
+    - name: certification
+      oldValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Manual\",\"state\":\"Confirmed\"},\"appliedDate\":1770382179862,\"\
+        expiryDate\":1772974179862}"
+      newValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Automated\",\"state\":\"Confirmed\"},\"appliedDate\":1770382182249,\"\
+        expiryDate\":1772974182249}"
+  fieldsDeleted: []
+  previousVersion: 0.4
+  changeSummary: {}
+domains: []
+dataProducts: []
+certification:
+  tagLabel:
+    tagFQN: Certification.Silver
+    name: Silver
+    description: Silver certified Data Asset.
+    style:
+      color: "#ADADAD"
+      iconURL: SilverCertification.svg
+    source: Classification
+    labelType: Manual
+    state: Confirmed
+  appliedDate: 1770382182250
+  expiryDate: 1772974182250
+entityStatus: Unprocessed

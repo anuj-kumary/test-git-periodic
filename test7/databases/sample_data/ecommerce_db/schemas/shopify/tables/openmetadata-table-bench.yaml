@@ -1,0 +1,205 @@
+name: openmetadata-table-bench
+fullyQualifiedName: sample_data.ecommerce_db.shopify.openmetadata-table-bench
+description: This table serves as a testing playground for askCollate on different
+  tasks. The main content is food-related products.
+tableType: Regular
+columns:
+  - name: product_id
+    dataType: VARCHAR
+    dataLength: 50
+    dataTypeDisplay: varchar
+    description: Unique identifier for the food product.
+    fullyQualifiedName: sample_data.ecommerce_db.shopify.openmetadata-table-bench.product_id
+    tags: []
+    ordinalPosition: 1
+    children: []
+    customMetrics: []
+  - name: product_name
+    dataType: VARCHAR
+    dataLength: 200
+    dataTypeDisplay: varchar
+    description: Name of the food product or dish.
+    fullyQualifiedName: sample_data.ecommerce_db.shopify.openmetadata-table-bench.product_name
+    tags: []
+    ordinalPosition: 2
+    children: []
+    customMetrics: []
+  - name: category
+    dataType: VARCHAR
+    dataLength: 100
+    dataTypeDisplay: varchar
+    description: "Category of the food product (e.g., Dairy, Bakery, Produce, Spices,\
+      \ Beverages, Proteins)."
+    fullyQualifiedName: sample_data.ecommerce_db.shopify.openmetadata-table-bench.category
+    tags: []
+    ordinalPosition: 3
+    children: []
+    customMetrics: []
+  - name: price
+    dataType: DECIMAL
+    dataTypeDisplay: "decimal(10,2)"
+    description: Price of the product in USD.
+    fullyQualifiedName: sample_data.ecommerce_db.shopify.openmetadata-table-bench.price
+    tags: []
+    ordinalPosition: 4
+    children: []
+    customMetrics: []
+  - name: country
+    dataType: VARCHAR
+    dataLength: 50
+    dataTypeDisplay: varchar
+    description: Country of origin for the product.
+    fullyQualifiedName: sample_data.ecommerce_db.shopify.openmetadata-table-bench.country
+    tags: []
+    ordinalPosition: 5
+    children: []
+    customMetrics: []
+  - name: description
+    dataType: TEXT
+    dataTypeDisplay: text
+    description: "Detailed description of the product, including ingredients or preparation\
+      \ notes."
+    fullyQualifiedName: sample_data.ecommerce_db.shopify.openmetadata-table-bench.description
+    tags: []
+    ordinalPosition: 6
+    children: []
+    customMetrics: []
+  - name: organic
+    dataType: BOOLEAN
+    dataTypeDisplay: boolean
+    description: Indicates whether the product is organic.
+    fullyQualifiedName: sample_data.ecommerce_db.shopify.openmetadata-table-bench.organic
+    tags: []
+    ordinalPosition: 7
+    children: []
+    customMetrics: []
+  - name: calories_per_serving
+    dataType: INT
+    dataTypeDisplay: int
+    description: Approximate calories per standard serving.
+    fullyQualifiedName: sample_data.ecommerce_db.shopify.openmetadata-table-bench.calories_per_serving
+    tags: []
+    ordinalPosition: 8
+    children: []
+    customMetrics: []
+  - name: allergens
+    dataType: VARCHAR
+    dataLength: 200
+    dataTypeDisplay: varchar
+    description: "List of common allergens present (e.g., nuts, dairy, gluten)."
+    fullyQualifiedName: sample_data.ecommerce_db.shopify.openmetadata-table-bench.allergens
+    tags: []
+    ordinalPosition: 9
+    children: []
+    customMetrics: []
+  - name: shelf_life_days
+    dataType: INT
+    dataTypeDisplay: int
+    description: Typical shelf life in days from production date.
+    fullyQualifiedName: sample_data.ecommerce_db.shopify.openmetadata-table-bench.shelf_life_days
+    tags: []
+    ordinalPosition: 10
+    children: []
+    customMetrics: []
+tableConstraints:
+  - constraintType: PRIMARY_KEY
+    columns:
+      - product_id
+owners: []
+databaseSchema:
+  id: 4924e3ad-24d4-4928-b888-66a8a9f1ddb1
+  type: databaseSchema
+  name: shopify
+  fullyQualifiedName: sample_data.ecommerce_db.shopify
+  description: This **mock** database contains schema related to shopify sales and
+    orders with related dimension tables.
+  displayName: shopify
+  deleted: false
+database:
+  id: 2c678393-2cfc-4536-99d8-442c875cb38e
+  type: database
+  name: ecommerce_db
+  fullyQualifiedName: sample_data.ecommerce_db
+  description: This **mock** database contains schemas related to shopify sales and
+    orders with related dimension tables.
+  displayName: ecommerce_db
+  deleted: false
+service:
+  id: ce1347f4-cf72-4041-9190-4fc4d66134cc
+  type: databaseService
+  name: sample_data
+  fullyQualifiedName: sample_data
+  displayName: sample_data
+  deleted: false
+serviceType: BigQuery
+schemaDefinition: "CREATE TABLE openmetadata_table_bench(product_id VARCHAR(50) PRIMARY\
+  \ KEY, product_name VARCHAR(200), category VARCHAR(100), price DECIMAL(10,2), country\
+  \ VARCHAR(50), description TEXT)"
+tags:
+  - tagFQN: Tier.Tier4
+    name: Tier4
+    description: |-
+      **Team level datasets that are typically non-business and general internal system**
+
+      - Used in product metrics, and dashboards to drive team decisions
+
+      - Used to track operational metrics of internal systems owned by the team
+
+      - Source used to derive other critical Tier-4 datasets
+    source: Classification
+    labelType: Manual
+    state: Confirmed
+    appliedAt: 1770376559298
+joins:
+  startDate: 2026-01-07
+  dayCount: 30
+  columnJoins: []
+  directTableJoins: []
+customMetrics:
+  - id: 81e8546d-5737-4686-9b56-1655826792e3
+    name: AveragePriceByCategory
+    expression: "SELECT category, AVG(price) FROM openmetadata_table_bench GROUP BY\
+      \ category"
+    updatedAt: 1770376560993
+    updatedBy: admin
+  - id: e2512d62-b303-47e0-a580-e429a84b0516
+    name: CountOfOrganicProducts
+    expression: SELECT COUNT(product_id) FROM openmetadata_table_bench WHERE organic
+      = true
+    updatedAt: 1770376560981
+    updatedBy: admin
+incrementalChangeDescription:
+  fieldsAdded: []
+  fieldsUpdated:
+    - name: certification
+      oldValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Manual\",\"state\":\"Confirmed\"},\"appliedDate\":1770382235095,\"\
+        expiryDate\":1772974235095}"
+      newValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Automated\",\"state\":\"Confirmed\"},\"appliedDate\":1770382236366,\"\
+        expiryDate\":1772974236366}"
+  fieldsDeleted: []
+  previousVersion: 0.5
+  changeSummary: {}
+sourceUrl: http://localhost:8080/openmetadata-table-bench
+domains: []
+dataProducts: []
+certification:
+  tagLabel:
+    tagFQN: Certification.Silver
+    name: Silver
+    description: Silver certified Data Asset.
+    style:
+      color: "#ADADAD"
+      iconURL: SilverCertification.svg
+    source: Classification
+    labelType: Manual
+    state: Confirmed
+  appliedDate: 1770382236367
+  expiryDate: 1772974236367
+processedLineage: false
+entityStatus: Unprocessed

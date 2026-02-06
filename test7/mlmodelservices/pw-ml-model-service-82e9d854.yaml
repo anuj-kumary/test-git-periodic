@@ -1,0 +1,13 @@
+name: pw-ml-model-service-82e9d854
+fullyQualifiedName: pw-ml-model-service-82e9d854
+serviceType: Mlflow
+pipelines: []
+connection:
+  config:
+    type: Mlflow
+    registryUri: Registry URI
+    trackingUri: Tracking URI
+    supportsMetadataExtraction: true
+tags: []
+owners: []
+dataProducts: []

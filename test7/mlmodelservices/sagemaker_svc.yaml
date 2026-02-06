@@ -1,0 +1,17 @@
+name: sagemaker_svc
+fullyQualifiedName: sagemaker_svc
+serviceType: SageMaker
+pipelines: []
+connection:
+  config:
+    type: SageMaker
+    awsConfig:
+      enabled: false
+      awsRegion: us-east-1
+      awsAccessKeyId: aws_access_key_id
+      awsSecretAccessKey: fernet:gAAAAABphc1m2j3-HkCW9IB4srjSZUebGttcPWafmQwo2kBSySKoiz17LJhYHfjHen1W2BxSM1mc9ppJXUbUw9EqTDQZGDCYlFh-_-2Jwe3vh7IfdSmFkLE=
+      assumeRoleSessionName: OpenMetadataSession
+    supportsMetadataExtraction: true
+tags: []
+owners: []
+dataProducts: []

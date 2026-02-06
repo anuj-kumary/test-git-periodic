@@ -1,0 +1,60 @@
+name: pw-database-schema-46353e3a
+fullyQualifiedName: pw-database-service-db87c883.pw-database-e587dcb1.pw-database-schema-46353e3a
+dataProducts: []
+owners: []
+service:
+  id: 41b46d79-8002-4987-8519-54d1aafed8fc
+  type: databaseService
+  name: pw-database-service-db87c883
+  fullyQualifiedName: pw-database-service-db87c883
+  displayName: pw-database-service-db87c883
+  deleted: false
+serviceType: Mysql
+database:
+  id: ff10695e-43bd-4bb0-a0d3-7021c804f89a
+  type: database
+  name: pw-database-e587dcb1
+  fullyQualifiedName: pw-database-service-db87c883.pw-database-e587dcb1
+  displayName: pw-database-e587dcb1
+  deleted: false
+tables:
+  - id: f8cc4993-fb58-4102-92ed-e71902bc44eb
+    type: table
+    name: pw-table-cde784db-9534-4af5-baa4-25b96525a3aa
+    fullyQualifiedName: pw-database-service-db87c883.pw-database-e587dcb1.pw-database-schema-46353e3a.pw-table-cde784db-9534-4af5-baa4-25b96525a3aa
+    description: description
+    displayName: pw table d5cd242d-ae59-4807-baa4-737d42723afd
+    deleted: false
+tags: []
+incrementalChangeDescription:
+  fieldsAdded: []
+  fieldsUpdated:
+    - name: certification
+      oldValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Manual\",\"state\":\"Confirmed\"},\"appliedDate\":1770382184161,\"\
+        expiryDate\":1772974184161}"
+      newValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Automated\",\"state\":\"Confirmed\"},\"appliedDate\":1770382186543,\"\
+        expiryDate\":1772974186543}"
+  fieldsDeleted: []
+  previousVersion: 0.2
+  changeSummary: {}
+domains: []
+certification:
+  tagLabel:
+    tagFQN: Certification.Silver
+    name: Silver
+    description: Silver certified Data Asset.
+    style:
+      color: "#ADADAD"
+      iconURL: SilverCertification.svg
+    source: Classification
+    labelType: Manual
+    state: Confirmed
+  appliedDate: 1770382186544
+  expiryDate: 1772974186544
+entityStatus: Unprocessed

@@ -1,0 +1,70 @@
+name: information_schema
+fullyQualifiedName: Glue.default.information_schema
+description: This **mock** database contains tables related to the Glue service
+dataProducts: []
+owners: []
+service:
+  id: 0a67726f-450b-4463-9538-f7478348f66f
+  type: databaseService
+  name: Glue
+  fullyQualifiedName: Glue
+  displayName: Glue
+  deleted: false
+serviceType: Glue
+database:
+  id: 0658e15c-e0cf-4996-9cad-f1f0a1204066
+  type: database
+  name: default
+  fullyQualifiedName: Glue.default
+  description: This **mock** database contains tables related to the Glue service
+  displayName: default
+  deleted: false
+tables:
+  - id: 0608160f-3a9d-495f-a671-4c1bc3009303
+    type: table
+    name: marketing
+    fullyQualifiedName: Glue.default.information_schema.marketing
+    description: Marketing data
+    displayName: marketing
+    deleted: false
+  - id: 5bb6c06f-146e-4169-9055-0a6dbcc59aa0
+    type: table
+    name: sales
+    fullyQualifiedName: Glue.default.information_schema.sales
+    description: Sales data
+    displayName: sales
+    deleted: false
+tags: []
+incrementalChangeDescription:
+  fieldsAdded: []
+  fieldsUpdated:
+    - name: certification
+      oldValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Manual\",\"state\":\"Confirmed\"},\"appliedDate\":1770382180861,\"\
+        expiryDate\":1772974180861}"
+      newValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Automated\",\"state\":\"Confirmed\"},\"appliedDate\":1770382183368,\"\
+        expiryDate\":1772974183368}"
+  fieldsDeleted: []
+  previousVersion: 0.4
+  changeSummary: {}
+sourceUrl: https://www.glue.com/information_schema
+domains: []
+certification:
+  tagLabel:
+    tagFQN: Certification.Silver
+    name: Silver
+    description: Silver certified Data Asset.
+    style:
+      color: "#ADADAD"
+      iconURL: SilverCertification.svg
+    source: Classification
+    labelType: Manual
+    state: Confirmed
+  appliedDate: 1770382183368
+  expiryDate: 1772974183368
+entityStatus: Unprocessed

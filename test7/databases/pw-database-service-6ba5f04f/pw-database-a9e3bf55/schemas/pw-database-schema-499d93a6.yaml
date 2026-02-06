@@ -1,0 +1,53 @@
+name: pw-database-schema-499d93a6
+fullyQualifiedName: pw-database-service-6ba5f04f.pw-database-a9e3bf55.pw-database-schema-499d93a6
+dataProducts: []
+owners: []
+service:
+  id: 663070b8-2b32-4a89-a120-f211e5066dd2
+  type: databaseService
+  name: pw-database-service-6ba5f04f
+  fullyQualifiedName: pw-database-service-6ba5f04f
+  displayName: pw-database-service-6ba5f04f
+  deleted: false
+serviceType: Mysql
+database:
+  id: 33b1161b-2c62-4745-9759-e352bcbab32a
+  type: database
+  name: pw-database-a9e3bf55
+  fullyQualifiedName: pw-database-service-6ba5f04f.pw-database-a9e3bf55
+  displayName: pw-database-a9e3bf55
+  deleted: false
+tables: []
+tags: []
+incrementalChangeDescription:
+  fieldsAdded: []
+  fieldsUpdated:
+    - name: certification
+      oldValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Manual\",\"state\":\"Confirmed\"},\"appliedDate\":1770382183190,\"\
+        expiryDate\":1772974183190}"
+      newValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Automated\",\"state\":\"Confirmed\"},\"appliedDate\":1770382185919,\"\
+        expiryDate\":1772974185919}"
+  fieldsDeleted: []
+  previousVersion: 0.2
+  changeSummary: {}
+domains: []
+certification:
+  tagLabel:
+    tagFQN: Certification.Silver
+    name: Silver
+    description: Silver certified Data Asset.
+    style:
+      color: "#ADADAD"
+      iconURL: SilverCertification.svg
+    source: Classification
+    labelType: Manual
+    state: Confirmed
+  appliedDate: 1770382185921
+  expiryDate: 1772974185921
+entityStatus: Unprocessed

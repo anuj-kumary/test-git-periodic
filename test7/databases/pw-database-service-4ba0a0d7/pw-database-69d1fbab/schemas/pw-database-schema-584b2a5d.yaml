@@ -1,0 +1,61 @@
+name: pw-database-schema-584b2a5d
+fullyQualifiedName: pw-database-service-4ba0a0d7.pw-database-69d1fbab.pw-database-schema-584b2a5d
+dataProducts: []
+owners: []
+service:
+  id: 42cdd53a-da23-4664-9d5d-739be63d259f
+  type: databaseService
+  name: pw-database-service-4ba0a0d7
+  fullyQualifiedName: pw-database-service-4ba0a0d7
+  displayName: pw-database-service-4ba0a0d7
+  deleted: false
+serviceType: Mysql
+database:
+  id: 8475b05e-9318-4dca-96c8-c72a48d00442
+  type: database
+  name: pw-database-69d1fbab
+  fullyQualifiedName: pw-database-service-4ba0a0d7.pw-database-69d1fbab
+  description: description
+  displayName: pw-database-69d1fbab
+  deleted: false
+tables:
+  - id: 509620da-fa76-4b2c-8158-4468f3297ccf
+    type: table
+    name: pw-table-e71ec7f6
+    fullyQualifiedName: pw-database-service-4ba0a0d7.pw-database-69d1fbab.pw-database-schema-584b2a5d.pw-table-e71ec7f6
+    description: description
+    displayName: pw-table-e71ec7f6
+    deleted: false
+tags: []
+incrementalChangeDescription:
+  fieldsAdded: []
+  fieldsUpdated:
+    - name: certification
+      oldValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Manual\",\"state\":\"Confirmed\"},\"appliedDate\":1770382183038,\"\
+        expiryDate\":1772974183038}"
+      newValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Automated\",\"state\":\"Confirmed\"},\"appliedDate\":1770382185739,\"\
+        expiryDate\":1772974185739}"
+  fieldsDeleted: []
+  previousVersion: 0.4
+  changeSummary: {}
+domains: []
+certification:
+  tagLabel:
+    tagFQN: Certification.Silver
+    name: Silver
+    description: Silver certified Data Asset.
+    style:
+      color: "#ADADAD"
+      iconURL: SilverCertification.svg
+    source: Classification
+    labelType: Manual
+    state: Confirmed
+  appliedDate: 1770382185740
+  expiryDate: 1772974185740
+entityStatus: Unprocessed

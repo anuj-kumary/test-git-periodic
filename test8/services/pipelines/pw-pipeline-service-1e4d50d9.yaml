@@ -1,0 +1,14 @@
+name: pw-pipeline-service-1e4d50d9
+fullyQualifiedName: pw-pipeline-service-1e4d50d9
+serviceType: Dagster
+tags: []
+pipelines: []
+connection:
+  config:
+    host: admin
+    type: Dagster
+    token: fernet:gAAAAABphdWsEyuftB03AMLRo_ToDIE1JYogwAbOJbb9061JOXhfYtjdLuiLNXO1uidSnye2oiJBjpflD-BXuj29HkpnaBha2w==
+    timeout: 1000
+    supportsMetadataExtraction: true
+owners: []
+dataProducts: []

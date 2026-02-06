@@ -1,0 +1,17 @@
+name: pw-storage-service-eb0296f6
+fullyQualifiedName: pw-storage-service-eb0296f6
+serviceType: S3
+connection:
+  config:
+    type: S3
+    awsConfig:
+      enabled: false
+      awsRegion: us-east-2
+      awsAccessKeyId: admin
+      awsSecretAccessKey: fernet:gAAAAABphdWslryAevlecNjxfltv80_SYikzLdOoqdUr50nHXqbY1foM0qjVwAgifjrYJrPzOAZ_KT82Gty5tGagLCb1x-S0Tw==
+      assumeRoleSessionName: OpenMetadataSession
+    supportsMetadataExtraction: true
+pipelines: []
+tags: []
+owners: []
+dataProducts: []

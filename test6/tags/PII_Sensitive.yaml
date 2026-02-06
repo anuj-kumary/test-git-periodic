@@ -1,0 +1,772 @@
+name: Sensitive
+fullyQualifiedName: PII.Sensitive
+description: "PII which if lost, compromised, or disclosed without authorization,\
+  \ could result in substantial harm, embarrassment, inconvenience, or unfairness\
+  \ to an individual."
+classification:
+  id: 97a19f46-90c3-4488-b650-fa6869864426
+  type: classification
+  name: PII
+  fullyQualifiedName: PII
+  description: "Personally Identifiable Information that, when used alone or with\
+    \ other relevant data, can identify an individual.<br/><br/>_Note to Legal - This\
+    \ tag category is provided as a starting point. Please review and update the tags\
+    \ based on your company policy. Also, add a reference to your PII policy document\
+    \ in this description._"
+  displayName: PII
+  deleted: false
+children: []
+usageCount: 5
+deprecated: false
+provider: system
+disabled: false
+mutuallyExclusive: false
+domains: []
+dataProducts: []
+owners: []
+reviewers: []
+entityStatus: Unprocessed
+recognizers:
+  - id: d7074168-ad67-4868-b742-5ff683400bf3
+    name: EnglishCreditCardRecognizer
+    displayName: English Credit Card Recognizer
+    description: Recognize common credit card numbers using regex + checksum.
+    enabled: true
+    isSystemDefault: true
+    recognizerConfig:
+      name: CreditCardRecognizer
+      type: predefined
+      context:
+        - credit
+        - card
+        - visa
+        - mastercard
+        - cc
+        - amex
+        - discover
+        - jcb
+        - diners
+        - maestro
+        - instapayment
+      supportedLanguage: en
+    confidenceThreshold: 0.6
+    exceptionList: []
+    version: 0.1
+    target: content
+  - id: cb1e0380-b97e-445d-9790-ed4aaee9135f
+    name: SpanishCreditCardRecognizer
+    displayName: Spanish Credit Card Recognizer
+    description: Recognize common credit card numbers using regex + checksum.
+    enabled: true
+    isSystemDefault: true
+    recognizerConfig:
+      name: CreditCardRecognizer
+      type: predefined
+      context:
+        - tarjeta
+        - credito
+        - visa
+        - mastercard
+        - cc
+        - amex
+        - discover
+        - jcb
+        - diners
+        - maestro
+        - instapayment
+      supportedLanguage: es
+    confidenceThreshold: 0.6
+    exceptionList: []
+    version: 0.1
+    target: content
+  - id: 17528ff6-8b73-4271-acc8-5eb6c97d6903
+    name: ItalianCreditCardRecognizer
+    displayName: Italian Credit Card Recognizer
+    description: Recognize common credit card numbers using regex + checksum.
+    enabled: true
+    isSystemDefault: true
+    recognizerConfig:
+      name: CreditCardRecognizer
+      type: predefined
+      supportedLanguage: it
+    confidenceThreshold: 0.6
+    exceptionList: []
+    version: 0.1
+    target: content
+  - id: 81a12163-44c2-49d3-b0d8-11eec83f42d1
+    name: PolishCreditCardRecognizer
+    displayName: Polish Credit Card Recognizer
+    description: Recognize common credit card numbers using regex + checksum.
+    enabled: true
+    isSystemDefault: true
+    recognizerConfig:
+      name: CreditCardRecognizer
+      type: predefined
+      supportedLanguage: pl
+    confidenceThreshold: 0.6
+    exceptionList: []
+    version: 0.1
+    target: content
+  - id: 63bae75d-4fe7-42dc-a96d-95a713af321b
+    name: UsBankRecognizer
+    displayName: Us Bank Recognizer
+    description: Recognizes US bank number using regex.
+    enabled: true
+    isSystemDefault: true
+    recognizerConfig:
+      name: UsBankRecognizer
+      type: predefined
+      supportedLanguage: en
+    confidenceThreshold: 0.6
+    exceptionList: []
+    version: 0.1
+    target: content
+  - id: a4168027-98f5-4151-af27-72471f2107fa
+    name: UsLicenseRecognizer
+    displayName: Us License Recognizer
+    description: Recognizes US driver license using regex.
+    enabled: true
+    isSystemDefault: true
+    recognizerConfig:
+      name: UsLicenseRecognizer
+      type: predefined
+      supportedLanguage: en
+    confidenceThreshold: 0.6
+    exceptionList: []
+    version: 0.1
+    target: content
+  - id: 62dda303-60b6-44bb-b043-005484be6ec3
+    name: UsItinRecognizer
+    displayName: Us Itin Recognizer
+    description: Recognizes US ITIN (Individual Taxpayer Identification Number) using
+      regex.
+    enabled: true
+    isSystemDefault: true
+    recognizerConfig:
+      name: UsItinRecognizer
+      type: predefined
+      supportedLanguage: en
+    confidenceThreshold: 0.6
+    exceptionList: []
+    version: 0.1
+    target: content
+  - id: f911f378-e6ba-464a-afe7-552f4d504b01
+    name: UsPassportRecognizer
+    displayName: Us Passport Recognizer
+    description: Recognizes US Passport number using regex.
+    enabled: true
+    isSystemDefault: true
+    recognizerConfig:
+      name: UsPassportRecognizer
+      type: predefined
+      supportedLanguage: en
+    confidenceThreshold: 0.6
+    exceptionList: []
+    version: 0.1
+    target: content
+  - id: 66c1e4ef-eb26-46ef-83e7-1a26a85d4f0d
+    name: UsSsnRecognizer
+    displayName: Us Ssn Recognizer
+    description: Recognize US Social Security Number (SSN) using regex.
+    enabled: true
+    isSystemDefault: true
+    recognizerConfig:
+      name: UsSsnRecognizer
+      type: predefined
+      supportedLanguage: en
+    confidenceThreshold: 0.6
+    exceptionList: []
+    version: 0.1
+    target: content
+  - id: 906b69cd-e913-4ec2-bab1-24fa2381cc8c
+    name: NhsRecognizer
+    displayName: Nhs Recognizer
+    description: Recognizes NHS number using regex and checksum.
+    enabled: true
+    isSystemDefault: true
+    recognizerConfig:
+      name: NhsRecognizer
+      type: predefined
+      supportedLanguage: en
+    confidenceThreshold: 0.6
+    exceptionList: []
+    version: 0.1
+    target: content
+  - id: 6cb2b453-c1f5-45dd-9b41-6413e73e971a
+    name: UkNinoRecognizer
+    displayName: Uk Nino Recognizer
+    description: Recognizes UK National Insurance Number using regex.
+    enabled: true
+    isSystemDefault: true
+    recognizerConfig:
+      name: UkNinoRecognizer
+      type: predefined
+      supportedLanguage: en
+    confidenceThreshold: 0.6
+    exceptionList: []
+    version: 0.1
+    target: content
+  - id: 506069b5-1207-4b2c-a90a-0a01cd054213
+    name: SgFinRecognizer
+    displayName: Sg Fin Recognizer
+    description: Recognize SG FIN/NRIC number using regex.
+    enabled: true
+    isSystemDefault: true
+    recognizerConfig:
+      name: SgFinRecognizer
+      type: predefined
+      supportedLanguage: en
+    confidenceThreshold: 0.6
+    exceptionList: []
+    version: 0.1
+    target: content
+  - id: 76a6b552-a870-4980-842d-58e6f95a2489
+    name: AuAbnRecognizer
+    displayName: Au Abn Recognizer
+    description: "Recognizes Australian Business Number (\"ABN\").<br/><br/>The Australian\
+      \ Business Number (ABN) is a unique 11 digit identifier issued to all entities\
+      \ registered in the Australian Business Register (ABR). The 11 digit ABN is\
+      \ structured as a 9 digit identifier<br/><br/>with two leading check digits.<br/><br/>The\
+      \ leading check digits are derived using a modulus 89 calculation.<br/><br/>This\
+      \ recognizer identifies ABN using regex, context words and checksum.<br/><br/>Reference:\
+      \ https://abr.business.gov.au/Help/AbnFormat"
+    enabled: true
+    isSystemDefault: true
+    recognizerConfig:
+      name: AuAbnRecognizer
+      type: predefined
+      supportedLanguage: en
+    confidenceThreshold: 0.6
+    exceptionList: []
+    version: 0.1
+    target: content
+  - id: 9162273c-a858-4e75-b9e2-9b0d1d3b1656
+    name: AuAcnRecognizer
+    displayName: Au Acn Recognizer
+    description: "Recognizes Australian Company Number (\"ACN\").<br/><br/>The Australian\
+      \ Company Number (ACN) is a nine digit number with the last digit being a check\
+      \ digit calculated using a modified modulus 10 calculation.<br/><br/>This recognizer\
+      \ identifies ACN using regex, context words, and checksum.<br/><br/>Reference:\
+      \ https://asic.gov.au/"
+    enabled: true
+    isSystemDefault: true
+    recognizerConfig:
+      name: AuAcnRecognizer
+      type: predefined
+      supportedLanguage: en
+    confidenceThreshold: 0.6
+    exceptionList: []
+    version: 0.1
+    target: content
+  - id: 69a4ff88-0f6e-41c9-8a80-7008f358f204
+    name: AuTfnRecognizer
+    displayName: Au Tfn Recognizer
+    description: "Recognizes Australian Tax File Numbers (\"TFN\").<br/><br/>The tax\
+      \ file number (TFN) is a unique identifier issued by the Australian Taxation\
+      \ Office to each taxpaying entity \\u2014 an individual, company,<br/><br/>superannuation\
+      \ fund, partnership, or trust.<br/><br/>The TFN consists of a nine digit number,\
+      \ usually presented in the format NNN NNN NNN.<br/><br/>TFN includes a check\
+      \ digit for detecting erroneous number based on simple modulo 11.<br/><br/>This\
+      \ recognizer uses regex, context words,<br/><br/>and checksum to identify TFN.<br/><br/>Reference:\
+      \ https://www.ato.gov.au/individuals/tax-file-number/"
+    enabled: true
+    isSystemDefault: true
+    recognizerConfig:
+      name: AuTfnRecognizer
+      type: predefined
+      supportedLanguage: en
+    confidenceThreshold: 0.6
+    exceptionList: []
+    version: 0.1
+    target: content
+  - id: 22421b9c-6828-42d2-ae73-9a326d408510
+    name: AuMedicareRecognizer
+    displayName: Au Medicare Recognizer
+    description: "Recognizes Australian Medicare number using regex, context words,\
+      \ and checksum.<br/><br/>Medicare number is a unique identifier issued by Australian\
+      \ Government that enables the cardholder to receive a rebates of medical expenses\
+      \ under Australia's Medicare system.<br/><br/>It uses a modulus 10 checksum\
+      \ scheme to validate the number.<br/><br/>Reference: https://en.wikipedia.org/wiki/Medicare_card_(Australia)"
+    enabled: true
+    isSystemDefault: true
+    recognizerConfig:
+      name: AuMedicareRecognizer
+      type: predefined
+      supportedLanguage: en
+    confidenceThreshold: 0.6
+    exceptionList: []
+    version: 0.1
+    target: content
+  - id: 4493b31a-51e2-4cda-8bed-6fd8154132e7
+    name: InPanRecognizer
+    displayName: In Pan Recognizer
+    description: |-
+      Recognizes Indian Permanent Account Number ("PAN").<br/><br/>The Permanent Account Number (PAN) is a ten digit alpha-numeric code with the last digit being a check digit calculated using a modified modulus 10 calculation.<br/><br/>This recognizer identifies PAN using regex and context words.<br/><br/>Reference: https://en.wikipedia.org/wiki/Permanent_account_number
+      https://incometaxindia.gov.in/Forms/tps/1.Permanent%20Account%20Number%20(PAN).pdf
+    enabled: true
+    isSystemDefault: true
+    recognizerConfig:
+      name: InPanRecognizer
+      type: predefined
+      supportedLanguage: en
+    confidenceThreshold: 0.6
+    exceptionList: []
+    version: 0.1
+    target: content
+  - id: a9e6f4e3-6b04-4ba0-8d03-e8a91a28e500
+    name: InAadhaarRecognizer
+    displayName: In Aadhaar Recognizer
+    description: "Recognizes Indian UIDAI Person Identification Number (\"AADHAAR\"\
+      ).<br/><br/>Reference: https://en.wikipedia.org/wiki/Aadhaar<br/><br/>A 12 digit\
+      \ unique number that is issued to each individual by Government of India"
+    enabled: true
+    isSystemDefault: true
+    recognizerConfig:
+      name: InAadhaarRecognizer
+      type: predefined
+      supportedLanguage: en
+    confidenceThreshold: 0.6
+    exceptionList: []
+    version: 0.1
+    target: content
+  - id: ed77c499-692e-4936-a2f4-c35c4dea414a
+    name: InVehicleRegistrationRecognizer
+    displayName: In Vehicle Registration Recognizer
+    description: |-
+      Recognizes Indian Vehicle Registration Number issued by RTO.<br/><br/>Reference(s):<br/><br/>https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_India
+      https://en.wikipedia.org/wiki/Regional_Transport_Office
+      https://en.wikipedia.org/wiki/List_of_Regional_Transport_Office_districts_in_India<br/><br/>The registration scheme changed over time with multiple formats in play over the years<br/><br/>India has multiple active patterns for registration plates issued to different vehicle categories
+    enabled: true
+    isSystemDefault: true
+    recognizerConfig:
+      name: InVehicleRegistrationRecognizer
+      type: predefined
+      supportedLanguage: en
+    confidenceThreshold: 0.6
+    exceptionList: []
+    version: 0.1
+    target: content
+  - id: a9a78531-51e4-481c-b80f-2685e87f7a18
+    name: InPassportRecognizer
+    displayName: In Passport Recognizer
+    description: Recognizes Indian Passport Number.<br/><br/>Indian Passport Number
+      is a eight digit alphanumeric number.<br/><br/>Reference:<br/><br/>https://www.bajajallianz.com/blog/travel-insurance-articles/where-is-passport-number-in-indian-passport.html
+    enabled: true
+    isSystemDefault: true
+    recognizerConfig:
+      name: InPassportRecognizer
+      type: predefined
+      supportedLanguage: en
+    confidenceThreshold: 0.6
+    exceptionList: []
+    version: 0.1
+    target: content
+  - id: ddc1587e-0e59-4a6b-8659-85d364103d6d
+    name: EsNifRecognizer
+    displayName: Es Nif Recognizer
+    description: Recognize NIF number using regex and checksum.
+    enabled: true
+    isSystemDefault: true
+    recognizerConfig:
+      name: EsNifRecognizer
+      type: predefined
+      supportedLanguage: es
+    confidenceThreshold: 0.6
+    exceptionList: []
+    version: 0.1
+    target: content
+  - id: 6aab6e53-c512-4b2f-89e3-10a4c34a3151
+    name: EsNieRecognizer
+    displayName: Es Nie Recognizer
+    description: |-
+      Recognize NIE number using regex and checksum.<br/><br/>Reference(s):<br/><br/>https://es.wikipedia.org/wiki/N%C3%BAmero_de_identidad_de_extranjero
+      https://www.interior.gob.es/opencms/ca/servicios-al-ciudadano/tramites-y-gestiones/dni/calculo-del-digito-de-control-del-nif-nie/
+    enabled: true
+    isSystemDefault: true
+    recognizerConfig:
+      name: EsNieRecognizer
+      type: predefined
+      supportedLanguage: es
+    confidenceThreshold: 0.6
+    exceptionList: []
+    version: 0.1
+    target: content
+  - id: d111685c-5820-4760-bf94-02c68c417e0a
+    name: ItDriverLicenseRecognizer
+    displayName: It Driver License Recognizer
+    description: Recognizes IT Driver License using regex.
+    enabled: true
+    isSystemDefault: true
+    recognizerConfig:
+      name: ItDriverLicenseRecognizer
+      type: predefined
+      supportedLanguage: it
+    confidenceThreshold: 0.6
+    exceptionList: []
+    version: 0.1
+    target: content
+  - id: 966224d4-c249-4a39-9e95-eb9da03203c5
+    name: ItFiscalCodeRecognizer
+    displayName: It Fiscal Code Recognizer
+    description: Recognizes IT Fiscal Code using regex.
+    enabled: true
+    isSystemDefault: true
+    recognizerConfig:
+      name: ItFiscalCodeRecognizer
+      type: predefined
+      supportedLanguage: it
+    confidenceThreshold: 0.6
+    exceptionList: []
+    version: 0.1
+    target: content
+  - id: 9ff4f098-e87e-4499-ac82-d892c96b3b77
+    name: ItVatCodeRecognizer
+    displayName: It Vat Code Recognizer
+    description: "Recognizes Italian VAT code using regex and checksum.<br/><br/>For\
+      \ more information about italian VAT code:<br/><br/>https://en.wikipedia.org/wiki/VAT_identification_number#:~:text=%5B2%5D)-,Italy,-Partita%20IVA"
+    enabled: true
+    isSystemDefault: true
+    recognizerConfig:
+      name: ItVatCodeRecognizer
+      type: predefined
+      supportedLanguage: it
+    confidenceThreshold: 0.6
+    exceptionList: []
+    version: 0.1
+    target: content
+  - id: 49e27182-81ef-42cb-ab42-7dd354764e76
+    name: ItIdentityCardRecognizer
+    displayName: It Identity Card Recognizer
+    description: Recognizes Italian Identity Card number using case-insensitive regex.
+    enabled: true
+    isSystemDefault: true
+    recognizerConfig:
+      name: ItIdentityCardRecognizer
+      type: predefined
+      supportedLanguage: it
+    confidenceThreshold: 0.6
+    exceptionList: []
+    version: 0.1
+    target: content
+  - id: 513054ca-ed0f-48ad-837a-be88058331bb
+    name: ItPassportRecognizer
+    displayName: It Passport Recognizer
+    description: Recognizes IT Passport number using case-insensitive regex.
+    enabled: true
+    isSystemDefault: true
+    recognizerConfig:
+      name: ItPassportRecognizer
+      type: predefined
+      supportedLanguage: it
+    confidenceThreshold: 0.6
+    exceptionList: []
+    version: 0.1
+    target: content
+  - id: c7f31914-ba82-4da0-b52f-ed53437c40ce
+    name: PlPeselRecognizer
+    displayName: Pl Pesel Recognizer
+    description: "Recognize PESEL number using regex and checksum.<br/><br/>For more\
+      \ information about PESEL: https://en.wikipedia.org/wiki/PESEL"
+    enabled: true
+    isSystemDefault: true
+    recognizerConfig:
+      name: PlPeselRecognizer
+      type: predefined
+      supportedLanguage: pl
+    confidenceThreshold: 0.6
+    exceptionList: []
+    version: 0.1
+    target: content
+  - id: 7411fd2b-5ea7-47eb-8872-83718bbe6fff
+    name: CryptoRecognizer
+    displayName: Crypto Recognizer
+    description: Recognize common crypto account numbers using regex + checksum.
+    enabled: true
+    isSystemDefault: true
+    recognizerConfig:
+      name: CryptoRecognizer
+      type: predefined
+    confidenceThreshold: 0.6
+    exceptionList: []
+    version: 0.1
+    target: content
+  - id: c13d9220-9c19-4fd7-86e9-35823d7706dc
+    name: EmailRecognizer
+    displayName: Email Recognizer
+    description: Recognize email addresses using regex.
+    enabled: true
+    isSystemDefault: true
+    recognizerConfig:
+      name: EmailRecognizer
+      type: predefined
+    confidenceThreshold: 0.6
+    exceptionList: []
+    version: 0.1
+    target: content
+  - id: c73974c6-9162-4e61-ac9a-3cdfc3a46546
+    name: IbanRecognizer
+    displayName: Iban Recognizer
+    description: Recognize IBAN code using regex and checksum.
+    enabled: true
+    isSystemDefault: true
+    recognizerConfig:
+      name: IbanRecognizer
+      type: predefined
+    confidenceThreshold: 0.6
+    exceptionList: []
+    version: 0.1
+    target: content
+  - id: 59b8ab9a-de45-415f-b85f-69f244b0f214
+    name: IpRecognizer
+    displayName: Ip Recognizer
+    description: Recognize IP address using regex.
+    enabled: true
+    isSystemDefault: true
+    recognizerConfig:
+      name: IpRecognizer
+      type: predefined
+    confidenceThreshold: 0.6
+    exceptionList: []
+    version: 0.1
+    target: content
+  - id: 03e15f67-0724-4f74-af5f-058754580444
+    name: MedicalLicenseRecognizer
+    displayName: Medical License Recognizer
+    description: Recognize common Medical license numbers using regex + checksum.
+    enabled: true
+    isSystemDefault: true
+    recognizerConfig:
+      name: MedicalLicenseRecognizer
+      type: predefined
+    confidenceThreshold: 0.6
+    exceptionList: []
+    version: 0.1
+    target: content
+  - id: f520d0f2-317e-40fe-b8c8-d4e784fdc12d
+    name: InVoterRecognizer
+    displayName: In Voter Recognizer
+    description: "Recognize Indian Voter/Election Id(EPIC).<br/><br/>The Elector's\
+      \ Photo Identity Card or Voter id is a ten digit alpha-numeric code issued by\
+      \ Election Commission of India to adult domiciles who have reached the age of\
+      \ 18<br/><br/>Ref: https://en.wikipedia.org/wiki/Voter_ID_(India)"
+    enabled: true
+    isSystemDefault: true
+    recognizerConfig:
+      name: InVoterRecognizer
+      type: predefined
+    confidenceThreshold: 0.6
+    exceptionList: []
+    version: 0.1
+    target: content
+  - id: 1c097419-ea87-4d69-8f43-ee490412df7c
+    name: AbaRoutingRecognizer
+    displayName: ABA Routing Recognizer
+    description: Recognize American Banking Association (ABA) routing number.<br/><br/>Also
+      known as routing transit number (RTN) and used to identify financial institutions
+      and process transactions.
+    enabled: true
+    isSystemDefault: true
+    recognizerConfig:
+      name: AbaRoutingRecognizer
+      type: predefined
+    confidenceThreshold: 0.6
+    exceptionList: []
+    version: 0.1
+    target: content
+  - id: dee6a03f-f686-4cd4-af1e-5edc8382d11b
+    name: FiPersonalIdentityCodeRecognizer
+    displayName: FI Personal Identity Code Recognizer
+    description: Recognizes and validates Finnish Personal Identity Codes (Henkilötunnus).
+    enabled: true
+    isSystemDefault: true
+    recognizerConfig:
+      name: FiPersonalIdentityCodeRecognizer
+      type: predefined
+      supportedLanguage: fi
+    confidenceThreshold: 0.6
+    exceptionList: []
+    version: 0.1
+    target: content
+  - id: 99b57a3e-75f5-4246-bc73-817c4353d04e
+    name: SgUenRecognizer
+    displayName: Singaporean UEN recognizer
+    description: Recognize Singapore UEN (Unique Entity Number) using regex.
+    enabled: true
+    isSystemDefault: true
+    recognizerConfig:
+      name: SgUenRecognizer
+      type: predefined
+    confidenceThreshold: 0.6
+    exceptionList: []
+    version: 0.1
+    target: content
+  - id: c91acb7f-20df-459e-870a-c52bea2438dc
+    name: SpacyRecognizer
+    displayName: Recognizer using spaCy NLP model
+    description: Recognize PII entities using a spaCy NLP model.
+    enabled: true
+    isSystemDefault: true
+    recognizerConfig:
+      name: SpacyRecognizer
+      type: predefined
+      supportedEntities:
+        - PERSON
+    confidenceThreshold: 0.6
+    exceptionList: []
+    version: 0.1
+    target: content
+  - id: 34d01b3b-41c7-4529-81f1-1393e14a4b6a
+    name: us_ssn
+    displayName: US SSN column name
+    description: A regex recognizer for column names
+    enabled: true
+    isSystemDefault: true
+    recognizerConfig:
+      type: pattern
+      context: []
+      patterns:
+        - name: us_ssn_pattern_0
+          regex: ^.*(ssn|social).*$
+          score: 0.6
+      regexFlags:
+        dotAll: true
+        multiline: true
+        ignoreCase: true
+      supportedEntity: US_SSN
+      supportedLanguage: en
+    confidenceThreshold: 0.6
+    exceptionList: []
+    version: 0.1
+    target: column_name
+  - id: 7f99dcd6-c447-4321-873b-7b5671c4e0e4
+    name: credit_card
+    displayName: Credit card column name
+    description: A regex recognizer for column names
+    enabled: true
+    isSystemDefault: true
+    recognizerConfig:
+      type: pattern
+      context: []
+      patterns:
+        - name: credit_card_pattern_0
+          regex: ^.*(credit).*(card).*$
+          score: 0.6
+      regexFlags:
+        dotAll: true
+        multiline: true
+        ignoreCase: true
+      supportedEntity: CREDIT_CARD
+      supportedLanguage: en
+    confidenceThreshold: 0.6
+    exceptionList: []
+    version: 0.1
+    target: column_name
+  - id: 124138b6-779e-481b-a009-e1f45f62592e
+    name: us_bank_number
+    displayName: US bank number column name
+    description: A regex recognizer for column names
+    enabled: true
+    isSystemDefault: true
+    recognizerConfig:
+      type: pattern
+      context: []
+      patterns:
+        - name: us_bank_number_pattern_0
+          regex: "\\b(account|acct|acc)[_-]?(number|num|no)\\b"
+          score: 0.6
+        - name: us_bank_number_pattern_1
+          regex: "\\bbank[_-]?(account|number|num|no)?\\b"
+          score: 0.6
+      regexFlags:
+        dotAll: true
+        multiline: true
+        ignoreCase: true
+      supportedEntity: US_BANK_NUMBER
+      supportedLanguage: en
+    confidenceThreshold: 0.6
+    exceptionList: []
+    version: 0.1
+    target: column_name
+  - id: 31523580-574c-4bf4-9f03-7a2b909f32c0
+    name: iban_code
+    displayName: Iban code column name
+    description: A regex recognizer for column names
+    enabled: true
+    isSystemDefault: true
+    recognizerConfig:
+      type: pattern
+      context: []
+      patterns:
+        - name: iban_code_pattern_0
+          regex: "\b(account|acct|acc)[_-]?(number|num|no)\b"
+          score: 0.6
+        - name: iban_code_pattern_1
+          regex: "\bbank[_-]?(account|number|num|no)?\b"
+          score: 0.6
+        - name: iban_code_pattern_2
+          regex: "\biban(?:[_]?(number|code))?\b"
+          score: 0.6
+        - name: iban_code_pattern_3
+          regex: "\bbank[_]?iban\b"
+          score: 0.6
+        - name: iban_code_pattern_4
+          regex: "\binternational[_]?(account|bank[_]?number)\b"
+          score: 0.6
+      regexFlags:
+        dotAll: true
+        multiline: true
+        ignoreCase: true
+      supportedEntity: IBAN_CODE
+      supportedLanguage: en
+    confidenceThreshold: 0.6
+    exceptionList: []
+    version: 0.1
+    target: column_name
+  - id: 2a0750fb-4b17-47ad-9349-e96e8620a560
+    name: email_address
+    displayName: Email address column name
+    description: A regex recognizer for column names
+    enabled: true
+    isSystemDefault: true
+    recognizerConfig:
+      type: pattern
+      context: []
+      patterns:
+        - name: email_address_pattern_0
+          regex: ^(email|e-mail|mail)(.*address)?$
+          score: 0.6
+      regexFlags:
+        dotAll: true
+        multiline: true
+        ignoreCase: true
+      supportedEntity: EMAIL_ADDRESS
+      supportedLanguage: en
+    confidenceThreshold: 0.6
+    exceptionList: []
+    version: 0.1
+    target: column_name
+  - id: 93bbba99-12b2-47b2-966d-770482cd0a77
+    name: person
+    displayName: Person column name
+    description: A regex recognizer for column names
+    enabled: true
+    isSystemDefault: true
+    recognizerConfig:
+      type: pattern
+      context: []
+      patterns:
+        - name: person_pattern_0
+          regex: ^.*(user|client|person|first|last|maiden|nick).*(name).*$
+          score: 0.6
+      regexFlags:
+        dotAll: true
+        multiline: true
+        ignoreCase: true
+      supportedEntity: PERSON
+      supportedLanguage: en
+    confidenceThreshold: 0.6
+    exceptionList: []
+    version: 0.1
+    target: column_name
+autoClassificationEnabled: true
+autoClassificationPriority: 100

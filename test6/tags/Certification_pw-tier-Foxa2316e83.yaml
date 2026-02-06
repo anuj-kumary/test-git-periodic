@@ -1,0 +1,28 @@
+name: pw-tier-Foxa2316e83
+displayName: PW Tier Foxa2316e83
+fullyQualifiedName: Certification.pw-tier-Foxa2316e83
+description: Tier tag for the Collate platform
+style:
+  color: "#FFD700"
+classification:
+  id: 82b92211-5ac9-4eab-b980-0ac9482b3e18
+  type: classification
+  name: Certification
+  fullyQualifiedName: Certification
+  description: Certifying Data Asset will provide the users with a clear idea of how
+    reliable a Data Asset is.
+  displayName: Certification
+  deleted: false
+children: []
+usageCount: 0
+deprecated: false
+disabled: false
+mutuallyExclusive: false
+domains: []
+dataProducts: []
+owners: []
+reviewers: []
+entityStatus: Unprocessed
+recognizers: []
+autoClassificationEnabled: false
+autoClassificationPriority: 50

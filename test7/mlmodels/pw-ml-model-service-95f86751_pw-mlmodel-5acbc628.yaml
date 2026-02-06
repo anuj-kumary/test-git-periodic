@@ -1,0 +1,57 @@
+name: pw-mlmodel-5acbc628
+fullyQualifiedName: pw-ml-model-service-95f86751.pw-mlmodel-5acbc628
+displayName: pw-mlmodel-5acbc628
+description: Description for pw-mlmodel-5acbc628
+algorithm: Time Series
+mlFeatures:
+  - name: sales-dc8af8f7
+    dataType: numerical
+    description: Sales amount
+    fullyQualifiedName: pw-ml-model-service-95f86751.pw-mlmodel-5acbc628.sales-dc8af8f7
+  - name: persona
+    dataType: categorical
+    description: type of buyer
+    fullyQualifiedName: pw-ml-model-service-95f86751.pw-mlmodel-5acbc628.persona
+owners: []
+tags: []
+service:
+  id: f380bdd2-7773-484c-8a3b-64a2f91b979a
+  type: mlmodelService
+  name: pw-ml-model-service-95f86751
+  fullyQualifiedName: pw-ml-model-service-95f86751
+  displayName: pw-ml-model-service-95f86751
+  deleted: false
+serviceType: Mlflow
+incrementalChangeDescription:
+  fieldsAdded: []
+  fieldsUpdated:
+    - name: certification
+      oldValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Manual\",\"state\":\"Confirmed\"},\"appliedDate\":1770382181395,\"\
+        expiryDate\":1772974181395}"
+      newValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Automated\",\"state\":\"Confirmed\"},\"appliedDate\":1770382185564,\"\
+        expiryDate\":1772974185564}"
+  fieldsDeleted: []
+  previousVersion: 0.4
+  changeSummary: {}
+domains: []
+dataProducts: []
+certification:
+  tagLabel:
+    tagFQN: Certification.Silver
+    name: Silver
+    description: Silver certified Data Asset.
+    style:
+      color: "#ADADAD"
+      iconURL: SilverCertification.svg
+    source: Classification
+    labelType: Manual
+    state: Confirmed
+  appliedDate: 1770382185565
+  expiryDate: 1772974185565
+entityStatus: Unprocessed

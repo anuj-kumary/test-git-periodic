@@ -1,0 +1,57 @@
+name: recommendation-engine
+fullyQualifiedName: sagemaker_svc.recommendation-engine
+algorithm: mlmodel
+dashboard:
+  id: 6e10a91c-3fbf-4675-ad17-42e68d9c4d1e
+  type: dashboard
+  name: eta_predictions_performance
+  fullyQualifiedName: sample_superset.eta_predictions_performance
+  description: ""
+  displayName: ETA Predictions Performance
+  deleted: false
+mlStore:
+  storage: s3://sagemaker-us-east-1-123456789/recommendations/collaborative-filter.tar.gz
+  imageRepository: 123456789.dkr.ecr.us-east-1.amazonaws.com/recommendation-engine:latest
+owners: []
+tags: []
+service:
+  id: 0ebd85b9-3c19-46d4-b89d-294f8f4f0855
+  type: mlmodelService
+  name: sagemaker_svc
+  fullyQualifiedName: sagemaker_svc
+  displayName: sagemaker_svc
+  deleted: false
+serviceType: SageMaker
+incrementalChangeDescription:
+  fieldsAdded: []
+  fieldsUpdated:
+    - name: certification
+      oldValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Manual\",\"state\":\"Confirmed\"},\"appliedDate\":1770382181690,\"\
+        expiryDate\":1772974181690}"
+      newValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Automated\",\"state\":\"Confirmed\"},\"appliedDate\":1770382185828,\"\
+        expiryDate\":1772974185828}"
+  fieldsDeleted: []
+  previousVersion: 0.4
+  changeSummary: {}
+domains: []
+dataProducts: []
+certification:
+  tagLabel:
+    tagFQN: Certification.Silver
+    name: Silver
+    description: Silver certified Data Asset.
+    style:
+      color: "#ADADAD"
+      iconURL: SilverCertification.svg
+    source: Classification
+    labelType: Manual
+    state: Confirmed
+  appliedDate: 1770382185828
+  expiryDate: 1772974185828
+entityStatus: Unprocessed

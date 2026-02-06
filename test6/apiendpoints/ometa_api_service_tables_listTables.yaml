@@ -1,0 +1,109 @@
+name: listTables
+displayName: List tables
+fullyQualifiedName: ometa_api_service.tables.listTables
+description: Get a list of tables
+endpointURL: https://docs.open-metadata.org/api/v1/tables
+requestMethod: GET
+responseSchema:
+  schemaType: JSON
+  schemaFields:
+    - name: data
+      dataType: RECORD
+      description: list of tables
+      fullyQualifiedName: ometa_api_service.tables.listTables.responseSchema.data
+      tags: []
+      children:
+        - name: id
+          dataType: STRING
+          description: ID of table
+          fullyQualifiedName: ometa_api_service.tables.listTables.responseSchema.data.id
+          tags: []
+        - name: name
+          dataType: STRING
+          description: name of table
+          fullyQualifiedName: ometa_api_service.tables.listTables.responseSchema.data.name
+          tags: []
+        - name: columns
+          dataType: RECORD
+          description: columns of table
+          fullyQualifiedName: ometa_api_service.tables.listTables.responseSchema.data.columns
+          tags: []
+          children: []
+    - name: errors
+      dataType: RECORD
+      description: list of errors
+      fullyQualifiedName: ometa_api_service.tables.listTables.responseSchema.errors
+      tags: []
+      children:
+        - name: entity
+          dataType: RECORD
+          description: entity object
+          fullyQualifiedName: ometa_api_service.tables.listTables.responseSchema.errors.entity
+          tags: []
+          children: []
+        - name: message
+          dataType: STRING
+          description: error message
+          fullyQualifiedName: ometa_api_service.tables.listTables.responseSchema.errors.message
+          tags: []
+    - name: paging
+      dataType: RECORD
+      description: paging
+      fullyQualifiedName: ometa_api_service.tables.listTables.responseSchema.paging
+      tags: []
+      children:
+        - name: total
+          dataType: INT
+          description: total pages
+          fullyQualifiedName: ometa_api_service.tables.listTables.responseSchema.paging.total
+          tags: []
+apiCollection:
+  id: 78b19002-90c6-4f32-8744-ab44df5f93f2
+  type: apiCollection
+  name: tables
+  fullyQualifiedName: ometa_api_service.tables
+  displayName: tables
+  deleted: false
+owners: []
+tags: []
+service:
+  id: c38aa3f1-c9ec-4152-a78d-88b42f8bffdf
+  type: apiService
+  name: ometa_api_service
+  fullyQualifiedName: ometa_api_service
+  displayName: ometa_api_service
+  deleted: false
+serviceType: Rest
+incrementalChangeDescription:
+  fieldsAdded: []
+  fieldsUpdated:
+    - name: certification
+      oldValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Manual\",\"state\":\"Confirmed\"},\"appliedDate\":1770382180651,\"\
+        expiryDate\":1772974180651}"
+      newValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Automated\",\"state\":\"Confirmed\"},\"appliedDate\":1770382184352,\"\
+        expiryDate\":1772974184352}"
+  fieldsDeleted: []
+  previousVersion: 0.4
+  changeSummary: {}
+domains: []
+dataProducts: []
+certification:
+  tagLabel:
+    tagFQN: Certification.Silver
+    name: Silver
+    description: Silver certified Data Asset.
+    style:
+      color: "#ADADAD"
+      iconURL: SilverCertification.svg
+    source: Classification
+    labelType: Manual
+    state: Confirmed
+  appliedDate: 1770382184355
+  expiryDate: 1772974184355
+entityStatus: Unprocessed

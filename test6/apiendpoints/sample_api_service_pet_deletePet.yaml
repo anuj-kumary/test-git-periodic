@@ -1,0 +1,56 @@
+name: deletePet
+displayName: Delete pet by ID
+fullyQualifiedName: sample_api_service.pet.deletePet
+description: Delete pet by ID
+endpointURL: https://petstore3.swagger.io/#/pet/deletePet
+requestMethod: DELETE
+apiCollection:
+  id: 7182489b-eb03-44ed-96e5-f4345793bf0f
+  type: apiCollection
+  name: pet
+  fullyQualifiedName: sample_api_service.pet
+  displayName: pet
+  deleted: false
+owners: []
+tags: []
+service:
+  id: 626210e4-d432-4b25-9c18-ac7b8e02f605
+  type: apiService
+  name: sample_api_service
+  fullyQualifiedName: sample_api_service
+  displayName: sample_api_service
+  deleted: false
+serviceType: Rest
+incrementalChangeDescription:
+  fieldsAdded: []
+  fieldsUpdated:
+    - name: certification
+      oldValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Manual\",\"state\":\"Confirmed\"},\"appliedDate\":1770382181962,\"\
+        expiryDate\":1772974181962}"
+      newValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Automated\",\"state\":\"Confirmed\"},\"appliedDate\":1770382185328,\"\
+        expiryDate\":1772974185328}"
+  fieldsDeleted: []
+  previousVersion: 0.4
+  changeSummary: {}
+domains: []
+dataProducts: []
+certification:
+  tagLabel:
+    tagFQN: Certification.Silver
+    name: Silver
+    description: Silver certified Data Asset.
+    style:
+      color: "#ADADAD"
+      iconURL: SilverCertification.svg
+    source: Classification
+    labelType: Manual
+    state: Confirmed
+  appliedDate: 1770382185331
+  expiryDate: 1772974185331
+entityStatus: Unprocessed

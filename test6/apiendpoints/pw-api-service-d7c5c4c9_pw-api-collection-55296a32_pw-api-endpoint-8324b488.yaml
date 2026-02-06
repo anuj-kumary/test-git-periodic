@@ -1,0 +1,114 @@
+name: pw-api-endpoint-8324b488
+displayName: pw-api-endpoint-8324b488
+fullyQualifiedName: pw-api-service-d7c5c4c9.pw-api-collection-55296a32.pw-api-endpoint-8324b488
+description: Description for pw-api-endpoint-8324b488
+endpointURL: https://sandbox-beta.open-metadata.org/swagger.json
+requestSchema:
+  schemaType: JSON
+  schemaFields:
+    - name: default
+      dataType: RECORD
+      fullyQualifiedName: pw-api-service-d7c5c4c9.pw-api-collection-55296a32.pw-api-endpoint-8324b488.requestSchema.default
+      tags: []
+      children:
+        - name: name
+          dataType: RECORD
+          fullyQualifiedName: pw-api-service-d7c5c4c9.pw-api-collection-55296a32.pw-api-endpoint-8324b488.requestSchema.default.name
+          tags: []
+          children:
+            - name: first_name
+              dataType: STRING
+              description: Description for schema field first_name
+              fullyQualifiedName: pw-api-service-d7c5c4c9.pw-api-collection-55296a32.pw-api-endpoint-8324b488.requestSchema.default.name.first_name
+              tags: []
+            - name: last_name
+              dataType: STRING
+              fullyQualifiedName: pw-api-service-d7c5c4c9.pw-api-collection-55296a32.pw-api-endpoint-8324b488.requestSchema.default.name.last_name
+              tags: []
+        - name: age
+          dataType: INT
+          fullyQualifiedName: pw-api-service-d7c5c4c9.pw-api-collection-55296a32.pw-api-endpoint-8324b488.requestSchema.default.age
+          tags: []
+        - name: club_name
+          dataType: STRING
+          fullyQualifiedName: pw-api-service-d7c5c4c9.pw-api-collection-55296a32.pw-api-endpoint-8324b488.requestSchema.default.club_name
+          tags: []
+responseSchema:
+  schemaType: JSON
+  schemaFields:
+    - name: default
+      dataType: RECORD
+      fullyQualifiedName: pw-api-service-d7c5c4c9.pw-api-collection-55296a32.pw-api-endpoint-8324b488.responseSchema.default
+      tags: []
+      children:
+        - name: name
+          dataType: RECORD
+          fullyQualifiedName: pw-api-service-d7c5c4c9.pw-api-collection-55296a32.pw-api-endpoint-8324b488.responseSchema.default.name
+          tags: []
+          children:
+            - name: first_name
+              dataType: STRING
+              fullyQualifiedName: pw-api-service-d7c5c4c9.pw-api-collection-55296a32.pw-api-endpoint-8324b488.responseSchema.default.name.first_name
+              tags: []
+            - name: last_name
+              dataType: STRING
+              fullyQualifiedName: pw-api-service-d7c5c4c9.pw-api-collection-55296a32.pw-api-endpoint-8324b488.responseSchema.default.name.last_name
+              tags: []
+        - name: age
+          dataType: INT
+          fullyQualifiedName: pw-api-service-d7c5c4c9.pw-api-collection-55296a32.pw-api-endpoint-8324b488.responseSchema.default.age
+          tags: []
+        - name: club_name
+          dataType: STRING
+          fullyQualifiedName: pw-api-service-d7c5c4c9.pw-api-collection-55296a32.pw-api-endpoint-8324b488.responseSchema.default.club_name
+          tags: []
+apiCollection:
+  id: 4ed65f0a-75b4-48cd-a3c7-04efc50d24b2
+  type: apiCollection
+  name: pw-api-collection-55296a32
+  fullyQualifiedName: pw-api-service-d7c5c4c9.pw-api-collection-55296a32
+  displayName: pw-api-collection-55296a32
+  deleted: false
+owners: []
+tags: []
+service:
+  id: 84a6490f-8ad0-4d07-bc55-18ef9fdef3c1
+  type: apiService
+  name: pw-api-service-d7c5c4c9
+  fullyQualifiedName: pw-api-service-d7c5c4c9
+  displayName: pw-api-service-d7c5c4c9
+  deleted: false
+serviceType: Rest
+incrementalChangeDescription:
+  fieldsAdded: []
+  fieldsUpdated:
+    - name: certification
+      oldValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Manual\",\"state\":\"Confirmed\"},\"appliedDate\":1770382181684,\"\
+        expiryDate\":1772974181684}"
+      newValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Automated\",\"state\":\"Confirmed\"},\"appliedDate\":1770382185109,\"\
+        expiryDate\":1772974185109}"
+  fieldsDeleted: []
+  previousVersion: 0.4
+  changeSummary: {}
+domains: []
+dataProducts: []
+certification:
+  tagLabel:
+    tagFQN: Certification.Silver
+    name: Silver
+    description: Silver certified Data Asset.
+    style:
+      color: "#ADADAD"
+      iconURL: SilverCertification.svg
+    source: Classification
+    labelType: Manual
+    state: Confirmed
+  appliedDate: 1770382185112
+  expiryDate: 1772974185112
+entityStatus: Unprocessed

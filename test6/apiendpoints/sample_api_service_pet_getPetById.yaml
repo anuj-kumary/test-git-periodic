@@ -1,0 +1,100 @@
+name: getPetById
+displayName: Find pet by ID
+fullyQualifiedName: sample_api_service.pet.getPetById
+description: Returns a single pet
+endpointURL: https://petstore3.swagger.io/#/pet/addPet
+requestMethod: GET
+responseSchema:
+  schemaType: JSON
+  schemaFields:
+    - name: id
+      dataType: INT
+      description: ID of pet that needs to be updated
+      fullyQualifiedName: sample_api_service.pet.getPetById.responseSchema.id
+      tags: []
+    - name: name
+      dataType: STRING
+      description: Name of pet
+      fullyQualifiedName: sample_api_service.pet.getPetById.responseSchema.name
+      tags: []
+    - name: category
+      dataType: RECORD
+      description: Category of pet
+      fullyQualifiedName: sample_api_service.pet.getPetById.responseSchema.category
+      tags: []
+      children:
+        - name: id
+          dataType: INT
+          description: ID of category
+          fullyQualifiedName: sample_api_service.pet.getPetById.responseSchema.category.id
+          tags: []
+        - name: name
+          dataType: STRING
+          description: Name of category
+          fullyQualifiedName: sample_api_service.pet.getPetById.responseSchema.category.name
+          tags: []
+    - name: photoUrls
+      dataType: ARRAY
+      description: URLs of pet's photos
+      fullyQualifiedName: sample_api_service.pet.getPetById.responseSchema.photoUrls
+      tags: []
+    - name: tags
+      dataType: ARRAY
+      description: Tags of pet
+      fullyQualifiedName: sample_api_service.pet.getPetById.responseSchema.tags
+      tags: []
+    - name: status
+      dataType: STRING
+      description: Status of pet
+      fullyQualifiedName: sample_api_service.pet.getPetById.responseSchema.status
+      tags: []
+apiCollection:
+  id: 7182489b-eb03-44ed-96e5-f4345793bf0f
+  type: apiCollection
+  name: pet
+  fullyQualifiedName: sample_api_service.pet
+  displayName: pet
+  deleted: false
+owners: []
+tags: []
+service:
+  id: 626210e4-d432-4b25-9c18-ac7b8e02f605
+  type: apiService
+  name: sample_api_service
+  fullyQualifiedName: sample_api_service
+  displayName: sample_api_service
+  deleted: false
+serviceType: Rest
+incrementalChangeDescription:
+  fieldsAdded: []
+  fieldsUpdated:
+    - name: certification
+      oldValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Manual\",\"state\":\"Confirmed\"},\"appliedDate\":1770382182036,\"\
+        expiryDate\":1772974182036}"
+      newValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Automated\",\"state\":\"Confirmed\"},\"appliedDate\":1770382185421,\"\
+        expiryDate\":1772974185421}"
+  fieldsDeleted: []
+  previousVersion: 0.4
+  changeSummary: {}
+domains: []
+dataProducts: []
+certification:
+  tagLabel:
+    tagFQN: Certification.Silver
+    name: Silver
+    description: Silver certified Data Asset.
+    style:
+      color: "#ADADAD"
+      iconURL: SilverCertification.svg
+    source: Classification
+    labelType: Manual
+    state: Confirmed
+  appliedDate: 1770382185422
+  expiryDate: 1772974185422
+entityStatus: Unprocessed

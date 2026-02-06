@@ -1,0 +1,56 @@
+name: deleteTable
+displayName: Delete table by ID
+fullyQualifiedName: ometa_api_service.tables.deleteTable
+description: Delete table by ID
+endpointURL: https://docs.open-metadata.org/api/v1/tables/%7Bid%7D
+requestMethod: DELETE
+apiCollection:
+  id: 78b19002-90c6-4f32-8744-ab44df5f93f2
+  type: apiCollection
+  name: tables
+  fullyQualifiedName: ometa_api_service.tables
+  displayName: tables
+  deleted: false
+owners: []
+tags: []
+service:
+  id: c38aa3f1-c9ec-4152-a78d-88b42f8bffdf
+  type: apiService
+  name: ometa_api_service
+  fullyQualifiedName: ometa_api_service
+  displayName: ometa_api_service
+  deleted: false
+serviceType: Rest
+incrementalChangeDescription:
+  fieldsAdded: []
+  fieldsUpdated:
+    - name: certification
+      oldValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Manual\",\"state\":\"Confirmed\"},\"appliedDate\":1770382180583,\"\
+        expiryDate\":1772974180583}"
+      newValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Automated\",\"state\":\"Confirmed\"},\"appliedDate\":1770382184293,\"\
+        expiryDate\":1772974184293}"
+  fieldsDeleted: []
+  previousVersion: 0.4
+  changeSummary: {}
+domains: []
+dataProducts: []
+certification:
+  tagLabel:
+    tagFQN: Certification.Silver
+    name: Silver
+    description: Silver certified Data Asset.
+    style:
+      color: "#ADADAD"
+      iconURL: SilverCertification.svg
+    source: Classification
+    labelType: Manual
+    state: Confirmed
+  appliedDate: 1770382184295
+  expiryDate: 1772974184295
+entityStatus: Unprocessed

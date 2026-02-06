@@ -1,0 +1,13 @@
+name: pw-api-service-9df193a4
+fullyQualifiedName: pw-api-service-9df193a4
+displayName: pw-api-service-9df193a4
+serviceType: Rest
+connection:
+  config:
+    type: Rest
+    openAPISchemaURL: https://sandbox-beta.open-metadata.org/swagger.json
+    supportsMetadataExtraction: true
+pipelines: []
+tags: []
+owners: []
+dataProducts: []

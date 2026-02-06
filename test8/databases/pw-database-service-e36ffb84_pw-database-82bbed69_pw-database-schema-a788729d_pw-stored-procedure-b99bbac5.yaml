@@ -1,0 +1,73 @@
+name: pw-stored-procedure-b99bbac5
+fullyQualifiedName: pw-database-service-e36ffb84.pw-database-82bbed69.pw-database-schema-a788729d.pw-stored-procedure-b99bbac5
+description: Description for pw-stored-procedure-79b55adf
+storedProcedureCode:
+  code: |-
+    CREATE OR REPLACE PROCEDURE output_message(message VARCHAR)
+    RETURNS VARCHAR NOT NULL
+    LANGUAGE SQL
+    AS
+    $$
+    BEGIN
+      RETURN message;
+    END;
+    $$
+    ;
+dataProducts: []
+incrementalChangeDescription:
+  fieldsAdded: []
+  fieldsUpdated:
+    - name: certification
+      oldValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Manual\",\"state\":\"Confirmed\"},\"appliedDate\":1770382180204,\"\
+        expiryDate\":1772974180204}"
+      newValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Automated\",\"state\":\"Confirmed\"},\"appliedDate\":1770382183215,\"\
+        expiryDate\":1772974183215}"
+  fieldsDeleted: []
+  previousVersion: 0.2
+  changeSummary: {}
+databaseSchema:
+  id: 8fd3dc71-17dc-4148-a19e-f73a1b66c747
+  type: databaseSchema
+  name: pw-database-schema-a788729d
+  fullyQualifiedName: pw-database-service-e36ffb84.pw-database-82bbed69.pw-database-schema-a788729d
+  displayName: pw-database-schema-a788729d
+  deleted: false
+database:
+  id: b961a8a0-c8c2-41dd-8897-7c541134522b
+  type: database
+  name: pw-database-82bbed69
+  fullyQualifiedName: pw-database-service-e36ffb84.pw-database-82bbed69
+  displayName: pw-database-82bbed69
+  deleted: false
+service:
+  id: d42412b2-2dee-4df7-937e-5c1a5d5d696f
+  type: databaseService
+  name: pw-database-service-e36ffb84
+  fullyQualifiedName: pw-database-service-e36ffb84
+  displayName: pw-database-service-e36ffb84
+  deleted: false
+serviceType: Mysql
+owners: []
+tags: []
+domains: []
+certification:
+  tagLabel:
+    tagFQN: Certification.Silver
+    name: Silver
+    description: Silver certified Data Asset.
+    style:
+      color: "#ADADAD"
+      iconURL: SilverCertification.svg
+    source: Classification
+    labelType: Manual
+    state: Confirmed
+  appliedDate: 1770382183217
+  expiryDate: 1772974183217
+processedLineage: false
+entityStatus: Unprocessed

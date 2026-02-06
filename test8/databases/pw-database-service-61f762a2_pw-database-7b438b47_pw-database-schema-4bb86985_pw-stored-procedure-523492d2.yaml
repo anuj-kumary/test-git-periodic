@@ -1,0 +1,43 @@
+name: pw-stored-procedure-523492d2
+fullyQualifiedName: pw-database-service-61f762a2.pw-database-7b438b47.pw-database-schema-4bb86985.pw-stored-procedure-523492d2
+description: Description for pw-stored-procedure-54555e29
+storedProcedureCode:
+  code: |-
+    CREATE OR REPLACE PROCEDURE output_message(message VARCHAR)
+    RETURNS VARCHAR NOT NULL
+    LANGUAGE SQL
+    AS
+    $$
+    BEGIN
+      RETURN message;
+    END;
+    $$
+    ;
+dataProducts: []
+databaseSchema:
+  id: fb3b81e8-d2e7-4efe-94a8-a480da707c0b
+  type: databaseSchema
+  name: pw-database-schema-4bb86985
+  fullyQualifiedName: pw-database-service-61f762a2.pw-database-7b438b47.pw-database-schema-4bb86985
+  displayName: pw-database-schema-4bb86985
+  deleted: false
+database:
+  id: f1a997d5-720f-43f5-8688-7b132a6c67b2
+  type: database
+  name: pw-database-7b438b47
+  fullyQualifiedName: pw-database-service-61f762a2.pw-database-7b438b47
+  displayName: pw-database-7b438b47
+  deleted: false
+service:
+  id: 2cb77e5c-a4d2-45ca-b449-f66ea9e2a34d
+  type: databaseService
+  name: pw-database-service-61f762a2
+  fullyQualifiedName: pw-database-service-61f762a2
+  displayName: pw-database-service-61f762a2
+  deleted: false
+serviceType: Mysql
+owners: []
+tags: []
+domains: []
+processedLineage: false
+entityStatus: Unprocessed

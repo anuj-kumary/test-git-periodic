@@ -1,0 +1,76 @@
+name: transform_and_load_data
+fullyQualifiedName: sample_data.ecommerce_db.shopify.transform_and_load_data
+description: Procedure to clean the customers data before loading
+storedProcedureCode:
+  code: |-
+    CREATE OR REPLACE FUNCTION TransformAndLoadData() RETURNS VOID AS $$ BEGIN
+     DELETE FROM dim_customer;
+     INSERT INTO dim_customer (dim_customer_name, dim_customer_email)
+     SELECT
+     TRIM(raw_customer_name),
+     LOWER(raw_customer_email)
+     FROM raw_customer;
+     COMMIT;
+     END; $$ LANGUAGE plpgsql;
+dataProducts: []
+incrementalChangeDescription:
+  fieldsAdded: []
+  fieldsUpdated:
+    - name: certification
+      oldValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Manual\",\"state\":\"Confirmed\"},\"appliedDate\":1770382180971,\"\
+        expiryDate\":1772974180971}"
+      newValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Automated\",\"state\":\"Confirmed\"},\"appliedDate\":1770382184135,\"\
+        expiryDate\":1772974184135}"
+  fieldsDeleted: []
+  previousVersion: 0.4
+  changeSummary: {}
+databaseSchema:
+  id: 4924e3ad-24d4-4928-b888-66a8a9f1ddb1
+  type: databaseSchema
+  name: shopify
+  fullyQualifiedName: sample_data.ecommerce_db.shopify
+  description: This **mock** database contains schema related to shopify sales and
+    orders with related dimension tables.
+  displayName: shopify
+  deleted: false
+database:
+  id: 2c678393-2cfc-4536-99d8-442c875cb38e
+  type: database
+  name: ecommerce_db
+  fullyQualifiedName: sample_data.ecommerce_db
+  description: This **mock** database contains schemas related to shopify sales and
+    orders with related dimension tables.
+  displayName: ecommerce_db
+  deleted: false
+service:
+  id: ce1347f4-cf72-4041-9190-4fc4d66134cc
+  type: databaseService
+  name: sample_data
+  fullyQualifiedName: sample_data
+  displayName: sample_data
+  deleted: false
+serviceType: BigQuery
+owners: []
+tags: []
+domains: []
+certification:
+  tagLabel:
+    tagFQN: Certification.Silver
+    name: Silver
+    description: Silver certified Data Asset.
+    style:
+      color: "#ADADAD"
+      iconURL: SilverCertification.svg
+    source: Classification
+    labelType: Manual
+    state: Confirmed
+  appliedDate: 1770382184136
+  expiryDate: 1772974184136
+processedLineage: false
+entityStatus: Unprocessed

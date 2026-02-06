@@ -1,0 +1,75 @@
+name: delete_records
+fullyQualifiedName: sample_data.ecommerce_db.shopify.delete_records
+description: Procedure delete the records
+storedProcedureCode:
+  code: |-
+    CREATE OR REPLACE PROCEDURE delete_records(table_name VARCHAR, condition VARCHAR) RETURNS INT NOT NULL LANGUAGE SQL AS $$
+    DECLARE
+      rows_deleted INT;
+    BEGIN
+      EXECUTE 'DELETE FROM ' || table_name || ' WHERE ' || condition INTO rows_deleted;
+      RETURN rows_deleted;
+    END;
+    $$;
+dataProducts: []
+incrementalChangeDescription:
+  fieldsAdded: []
+  fieldsUpdated:
+    - name: certification
+      oldValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Manual\",\"state\":\"Confirmed\"},\"appliedDate\":1770382180471,\"\
+        expiryDate\":1772974180471}"
+      newValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Automated\",\"state\":\"Confirmed\"},\"appliedDate\":1770382183556,\"\
+        expiryDate\":1772974183556}"
+  fieldsDeleted: []
+  previousVersion: 0.4
+  changeSummary: {}
+databaseSchema:
+  id: 4924e3ad-24d4-4928-b888-66a8a9f1ddb1
+  type: databaseSchema
+  name: shopify
+  fullyQualifiedName: sample_data.ecommerce_db.shopify
+  description: This **mock** database contains schema related to shopify sales and
+    orders with related dimension tables.
+  displayName: shopify
+  deleted: false
+database:
+  id: 2c678393-2cfc-4536-99d8-442c875cb38e
+  type: database
+  name: ecommerce_db
+  fullyQualifiedName: sample_data.ecommerce_db
+  description: This **mock** database contains schemas related to shopify sales and
+    orders with related dimension tables.
+  displayName: ecommerce_db
+  deleted: false
+service:
+  id: ce1347f4-cf72-4041-9190-4fc4d66134cc
+  type: databaseService
+  name: sample_data
+  fullyQualifiedName: sample_data
+  displayName: sample_data
+  deleted: false
+serviceType: BigQuery
+owners: []
+tags: []
+domains: []
+certification:
+  tagLabel:
+    tagFQN: Certification.Silver
+    name: Silver
+    description: Silver certified Data Asset.
+    style:
+      color: "#ADADAD"
+      iconURL: SilverCertification.svg
+    source: Classification
+    labelType: Manual
+    state: Confirmed
+  appliedDate: 1770382183557
+  expiryDate: 1772974183557
+processedLineage: false
+entityStatus: Unprocessed

@@ -1,0 +1,74 @@
+name: update_orders_table
+fullyQualifiedName: sample_data.ecommerce_db.shopify.update_orders_table
+description: This stored procedure is written java script to update the orders table
+storedProcedureCode:
+  code: "create or replace procedure read_result_set()\n  returns float not null\n\
+    \  language javascript\n  as     \n  $$  \n    var my_sql_command = \"select *\
+    \ from table1\";\n    var statement1 = snowflake.createStatement( {sqlText: my_sql_command}\
+    \ );\n    var result_set1 = statement1.execute();\n    // Loop through the results,\
+    \ processing one row at a time... \n    while (result_set1.next())  {\n      \
+    \ var column1 = result_set1.getColumnValue(1);\n       var column2 = result_set1.getColumnValue(2);\n\
+    \       // Do something with the retrieved values...\n       }\n  return 0.0;\
+    \ // Replace with something more useful.\n  $$\n  ;"
+dataProducts: []
+incrementalChangeDescription:
+  fieldsAdded: []
+  fieldsUpdated:
+    - name: certification
+      oldValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Manual\",\"state\":\"Confirmed\"},\"appliedDate\":1770382181292,\"\
+        expiryDate\":1772974181292}"
+      newValue: "{\"tagLabel\":{\"tagFQN\":\"Certification.Silver\",\"name\":\"Silver\"\
+        ,\"description\":\"Silver certified Data Asset.\",\"style\":{\"color\":\"\
+        #ADADAD\",\"iconURL\":\"SilverCertification.svg\"},\"source\":\"Classification\"\
+        ,\"labelType\":\"Automated\",\"state\":\"Confirmed\"},\"appliedDate\":1770382184449,\"\
+        expiryDate\":1772974184449}"
+  fieldsDeleted: []
+  previousVersion: 0.4
+  changeSummary: {}
+databaseSchema:
+  id: 4924e3ad-24d4-4928-b888-66a8a9f1ddb1
+  type: databaseSchema
+  name: shopify
+  fullyQualifiedName: sample_data.ecommerce_db.shopify
+  description: This **mock** database contains schema related to shopify sales and
+    orders with related dimension tables.
+  displayName: shopify
+  deleted: false
+database:
+  id: 2c678393-2cfc-4536-99d8-442c875cb38e
+  type: database
+  name: ecommerce_db
+  fullyQualifiedName: sample_data.ecommerce_db
+  description: This **mock** database contains schemas related to shopify sales and
+    orders with related dimension tables.
+  displayName: ecommerce_db
+  deleted: false
+service:
+  id: ce1347f4-cf72-4041-9190-4fc4d66134cc
+  type: databaseService
+  name: sample_data
+  fullyQualifiedName: sample_data
+  displayName: sample_data
+  deleted: false
+serviceType: BigQuery
+owners: []
+tags: []
+domains: []
+certification:
+  tagLabel:
+    tagFQN: Certification.Silver
+    name: Silver
+    description: Silver certified Data Asset.
+    style:
+      color: "#ADADAD"
+      iconURL: SilverCertification.svg
+    source: Classification
+    labelType: Manual
+    state: Confirmed
+  appliedDate: 1770382184451
+  expiryDate: 1772974184451
+processedLineage: false
+entityStatus: Unprocessed
